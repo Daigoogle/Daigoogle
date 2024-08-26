@@ -10,6 +10,14 @@
 
 // =-=-= インクルード部 =-=-=
 
+// 変数型定義
+using uint16 = unsigned short;
+using uint32 = unsigned long;
+using uint64 = unsigned long long;
+using int16 = short;
+using int32 = long;
+using int64 = long long;
+
 //__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__///
 //																	//
 //								fVec2								//

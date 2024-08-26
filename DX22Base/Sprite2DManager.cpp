@@ -163,7 +163,7 @@ void Sprite2DManager::Draw(void)
 
 void Sprite2DManager::UnInit(void)
 {
-
+	m_meshBuffer.release();
 }
 
 void Sprite2DManager::AddQueue(Sprite2DComponent* pComp)

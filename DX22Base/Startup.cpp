@@ -69,7 +69,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		}
 	}
 
-
 	// èIóπéû
 	timeEndPeriod(1);
 	Supervision::Finalize();

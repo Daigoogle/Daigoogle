@@ -115,7 +115,7 @@ void Sprite3DManager::Draw()
 }
 void Sprite3DManager::UnInit()
 {
-
+	m_MeshBuffer.release();
 }
 void Sprite3DManager::AddQueue(Sprite3DComponent* pComp)
 {

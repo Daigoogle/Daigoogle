@@ -47,8 +47,6 @@ private:
 	//std::unique_ptr<PixelShader>					m_pixelShader;
 	tPositionCBuffer						m_posCBuf;// 座標の定数バッファ
 	tLightCBuffer							m_ligCBuf;// ライティングバッファ
-
-	std::queue<ModelComponent*> m_queue;
 };
 
 #endif // !_____MODEL_MANAGER_H_____

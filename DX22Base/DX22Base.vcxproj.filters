@@ -53,6 +53,9 @@
     <Filter Include="_Scene">
       <UniqueIdentifier>{4d5e9ef3-dd91-4b94-813f-3468a5bdd959}</UniqueIdentifier>
     </Filter>
+    <Filter Include="__New">
+      <UniqueIdentifier>{76f8aaef-7bc5-42eb-9ed1-5021ce584840}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -238,9 +241,42 @@
     <ClCompile Include="Window.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
-    <ClCompile Include="SingletonsMng.cxx" />
-    <ClCompile Include="Supervision.cxx" />
-    <ClCompile Include="Vectors.cxx" />
+    <ClCompile Include="GameObject.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectInst.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectMng.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderMgr.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneBase.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMng.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="Vectors.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="Supervision.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="SingletonsMng.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPoolMng.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -419,8 +455,39 @@
       <Filter>Singleton</Filter>
     </ClInclude>
     <ClInclude Include="DefaultSetting.hxx" />
-    <ClInclude Include="SingletonsMng.hxx" />
-    <ClInclude Include="Vectors.hxx" />
+    <ClInclude Include="GameObject.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectInst.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectMng.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderMgr.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneBase.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMng.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Vectors.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonsMng.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPoolMng.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="VS_Model.hlsl">

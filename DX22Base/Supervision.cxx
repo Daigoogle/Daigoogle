@@ -25,16 +25,16 @@ bool Supervision::Initialize()
 	Sucsses &= Window::GetInstance().Init();
 	Sucsses &= DirectX11SetUp::GetInstance().Init();
 	Sucsses &= InputDeviceManager::GetInstance().Init();
-	Sucsses &= BaseObjectManager::GetInstance().Init();
-	Sucsses &= Sprite2DManager::GetInstance().Init();
-	Sucsses &= Sprite3DManager::GetInstance().Init();
-	Sucsses &= CubeManager::GetInstance().Init();
-	Sucsses &= ModelManager::GetInstance().Init();
-	Sucsses &= SkyBoxManager::GetInstance().Init();
-	Sucsses &= AudioManager::GetInstance().Init();
-	Sucsses &= CubeCollisionToDirectManager::GetInstance().Init();
-	Sucsses &= Fade::GetInstance().Init();
-	Sucsses &= SceneManager::GetInstance().Init();
+	//Sucsses &= BaseObjectManager::GetInstance().Init();
+	//Sucsses &= Sprite2DManager::GetInstance().Init();
+	//Sucsses &= Sprite3DManager::GetInstance().Init();
+	//Sucsses &= CubeManager::GetInstance().Init();
+	//Sucsses &= ModelManager::GetInstance().Init();
+	//Sucsses &= SkyBoxManager::GetInstance().Init();
+	//Sucsses &= AudioManager::GetInstance().Init();
+	//Sucsses &= CubeCollisionToDirectManager::GetInstance().Init();
+	//Sucsses &= Fade::GetInstance().Init();
+	//Sucsses &= SceneManager::GetInstance().Init();
 
 	if(Sucsses)
 		return true;
@@ -54,19 +54,19 @@ void Supervision::Drawing()
 	DepthStencil* pDS = Dx11.GetDefaultDSV();//DeapthStencilViewの取得
 
 	Dx11.SetRenderTargets(1, &pRT, nullptr);
-	SkyBoxManager::GetInstance().Draw();
+	//SkyBoxManager::GetInstance().Draw();
 
 	Dx11.SetRenderTargets(1, &pRT, pDS);
 
-	Sprite3DManager::GetInstance().Draw();
-	CubeManager::GetInstance().Draw();
-	ModelManager::GetInstance().Draw();
-	SceneManager::GetInstance().Draw();
+	//Sprite3DManager::GetInstance().Draw();
+	//CubeManager::GetInstance().Draw();
+	//ModelManager::GetInstance().Draw();
+	//SceneManager::GetInstance().Draw();
 
 	Dx11.SetRenderTargets(1, &pRT, nullptr);//深度バッファおっふ
 
-	Sprite2DManager::GetInstance().Draw();
-	Fade::GetInstance().Draw();
+	//Sprite2DManager::GetInstance().Draw();
+	//Fade::GetInstance().Draw();
 
 	Dx11.EndDraw();
 }
