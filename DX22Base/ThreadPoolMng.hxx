@@ -24,8 +24,7 @@ public:
 	~ThreadPoolMng();
 	
 	void AddPool(std::function<void()>);
-
-
+	std::function<void()> GetPoolFead();
 private:
 	std::shared_mutex m_Mutex;
 	std::vector<std::thread> m_Thread;

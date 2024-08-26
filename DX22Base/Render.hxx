@@ -18,6 +18,7 @@ public:
 	Render();
 	virtual ~Render();
 
+	void Draw();
 protected:
 };
 

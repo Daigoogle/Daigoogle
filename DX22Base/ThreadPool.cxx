@@ -1,7 +1,9 @@
 #include "ThreadPool.hxx"
+#include "ThreadPoolMng.hxx"
 
 ThreadPool::ThreadPool()
-	:IsEnd(false)
+	: IsEnd(false)
+	, EndCompleat(false)
 {
 
 }
@@ -15,6 +17,7 @@ void ThreadPool::PoolLoop()
 {
 	while (!IsEnd) 
 	{
-	
+		ThreadPoolMng::GetInstance().GetPoolFead()();
 	}
+	EndCompleat = true;
 }
