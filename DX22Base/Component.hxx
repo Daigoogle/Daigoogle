@@ -8,6 +8,8 @@
 #ifndef _____Component_HXX_____
 #define _____Component_HXX_____
 
+#include "Transform.hxx"
+
 class GameObjectInst;
 class GameObject;
 

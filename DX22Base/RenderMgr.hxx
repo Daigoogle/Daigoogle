@@ -28,6 +28,7 @@ public:
 
 	void AddQueue(Render* render);
 
+
 private:
 	std::unordered_map<uint32, MeshBuffer*> m_MeshBuffer;
 	std::queue<Render*> m_RenderQueue;

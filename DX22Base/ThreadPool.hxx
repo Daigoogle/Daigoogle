@@ -19,8 +19,8 @@ public:
 
 	void PoolLoop();
 private:
-	bool IsEnd;
-	bool EndCompleat;
+	bool m_IsEnd;
+	bool m_EndCompleat;
 };
 
 #endif // !_____ThreadPool_HXX_____

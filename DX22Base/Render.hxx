@@ -9,17 +9,23 @@
 #define _____Render_HXX_____
 
 // =-=-= インクルード部 =-=-=
-#include "RenderMgr.hxx"
+#include "Component.hxx"
 
-class Render
+class RenderMgr;
+
+/// @brief 描画物の基底クラス。単体での使用不可
+class Render :public Component
 {
 	friend class RenderMgr;
 public:
 	Render();
 	virtual ~Render();
 
-	void Draw();
 protected:
+	virtual bool Init() = 0;
+	void Update()override {}
+	virtual void Draw() = 0;
+	uint32 m_MeshID;
 };
 
 #endif // !_____Render_HXX_____

@@ -9,6 +9,11 @@
 #define _____Vectors_HXX_____
 
 // =-=-= インクルード部 =-=-=
+#if 1
+#include <DirectXMath.h>
+using fVec4x4 = DirectX::XMFLOAT4X4;
+using Matrix = DirectX::XMMATRIX;
+#endif
 
 // 変数型定義
 using uint16 = unsigned short;
@@ -17,6 +22,7 @@ using uint64 = unsigned long long;
 using int16 = short;
 using int32 = long;
 using int64 = long long;
+
 
 //__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__///
 //																	//

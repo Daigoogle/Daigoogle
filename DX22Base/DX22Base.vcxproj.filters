@@ -56,6 +56,9 @@
     <Filter Include="__New">
       <UniqueIdentifier>{76f8aaef-7bc5-42eb-9ed1-5021ce584840}</UniqueIdentifier>
     </Filter>
+    <Filter Include="__New\Draw">
+      <UniqueIdentifier>{b9f9c965-a4a8-4d4f-95bd-14c375468f83}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -117,9 +120,6 @@
     </ClCompile>
     <ClCompile Include="CubeCollisionToDirectManager.cpp">
       <Filter>Singleton</Filter>
-    </ClCompile>
-    <ClCompile Include="Transform.cpp">
-      <Filter>System</Filter>
     </ClCompile>
     <ClCompile Include="ScoreManager.cpp">
       <Filter>Singleton</Filter>
@@ -277,6 +277,18 @@
     <ClCompile Include="ThreadPool.cxx">
       <Filter>__New</Filter>
     </ClCompile>
+    <ClCompile Include="Cube.cxx">
+      <Filter>__New\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="plane.cxx">
+      <Filter>__New\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="Transform.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -397,9 +409,6 @@
     <ClInclude Include="CameraManager.h">
       <Filter>Singleton</Filter>
     </ClInclude>
-    <ClInclude Include="Transform.h">
-      <Filter>System</Filter>
-    </ClInclude>
     <ClInclude Include="PlayerInfo.h" />
     <ClInclude Include="PlayerForce.h" />
     <ClInclude Include="SceneInit.h">
@@ -486,6 +495,18 @@
       <Filter>__New</Filter>
     </ClInclude>
     <ClInclude Include="ThreadPool.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.hxx">
+      <Filter>__New\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="plane.hxx">
+      <Filter>__New\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Transform.hxx">
       <Filter>__New</Filter>
     </ClInclude>
   </ItemGroup>

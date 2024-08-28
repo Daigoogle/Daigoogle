@@ -193,6 +193,8 @@
     <ClCompile Include="CameraPlayer.cpp" />
     <ClCompile Include="ColliderBase.cpp" />
     <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Component.cxx" />
+    <ClCompile Include="Cube.cxx" />
     <ClCompile Include="CubeColliderComponent.cpp" />
     <ClCompile Include="CubeCollisionToDirectComponent.cpp" />
     <ClCompile Include="CubeCollisionToDirectManager.cpp" />
@@ -217,6 +219,7 @@
     <ClCompile Include="ModelRegister.cpp" />
     <ClCompile Include="MoveEmitter.cpp" />
     <ClCompile Include="NumSprite2D.cpp" />
+    <ClCompile Include="plane.cxx" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerForce.cpp" />
     <ClCompile Include="PlayerInfo.cpp" />
@@ -257,7 +260,7 @@
     <ClCompile Include="ThreadPoolMng.cxx" />
     <ClCompile Include="TrailEffect.cpp" />
     <ClCompile Include="TrailEffeect.cpp" />
-    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Transform.cxx" />
     <ClCompile Include="Vectors.cxx" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="_geometory.cpp" />
@@ -273,6 +276,8 @@
     <ClInclude Include="CameraPlayer.h" />
     <ClInclude Include="ColliderBase.h" />
     <ClInclude Include="Component.h" />
+    <ClInclude Include="Component.hxx" />
+    <ClInclude Include="Cube.hxx" />
     <ClInclude Include="CubeColliderComponent.h" />
     <ClInclude Include="CubeCollisionToDirectComponent.h" />
     <ClInclude Include="CubeCollisionToDirectManager.h" />
@@ -300,6 +305,7 @@
     <ClInclude Include="MoveEmitter.h" />
     <ClInclude Include="NumSprite2D.h" />
     <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="plane.hxx" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerForce.h" />
     <ClInclude Include="PlayerInfo.h" />
@@ -338,7 +344,7 @@
     <ClInclude Include="ThreadPool.hxx" />
     <ClInclude Include="ThreadPoolMng.hxx" />
     <ClInclude Include="TrailEffeect.h" />
-    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Transform.hxx" />
     <ClInclude Include="Vectors.hxx" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
