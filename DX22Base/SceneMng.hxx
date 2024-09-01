@@ -12,7 +12,8 @@
 #include <deque>
 #include <type_traits>
 #include "SingletonsMng.hxx"
-#include "SceneBase.hxx"
+
+class SceneBase;
 
 class SceneMng: public Singleton<SceneMng>
 {

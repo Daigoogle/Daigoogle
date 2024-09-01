@@ -17,12 +17,12 @@ class Component
 {
 	friend class GameObjectInst;
 public:
-	Component() :m_pGameObjectInst(nullptr) {}
-	virtual ~Component() {}
-
 	GameObject GetGameObject();
 
 private:
+	Component() :m_pGameObjectInst(nullptr) {}
+	virtual ~Component() {}
+
 	virtual bool Init() = 0;
 	virtual void Update() = 0;
 

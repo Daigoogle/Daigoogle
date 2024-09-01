@@ -12,11 +12,14 @@
 #include <list>
 #include <string>
 #include <memory>
+#include "Object.hxx"
+#include "Transform.hxx"
 #include "GameObjectMng.hxx"
 
 class Component;
+class Object;
 
-class GameObjectInst
+class GameObjectInst :public Object
 {
 	friend class GameObjectMng;
 	friend class GameObject;
@@ -60,13 +63,13 @@ private:
 
 	std::string m_Name;					// 名前
 	unsigned m_Tag;						// タグ
-	bool m_IsActive;					// アクティブかどうか
 	bool m_IsDelete;					// 削除フラグ
 	std::list<std::unique_ptr<Component>> m_Components;	// コンポーネント
 	uint32_t m_ObjectID;		// ID
-	std::list<GameObjectInst*> m_childs;// 子オブジェクト
-	GameObjectInst* m_pParent;			// 親オブジェクト
-	SceneBase* m_pScene;				// シーン
+
+	bool m_IsFollowParent;				// 親に追従するかどうか
+
+	Transform m_Transform;				// 位置情報
 };
 
 #endif // !_____GameObjectInst_HXX_____

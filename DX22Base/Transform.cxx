@@ -13,7 +13,7 @@ Transform::~Transform()
 	m_Parent = nullptr;
 }
 
-void Transform::Init()
+bool Transform::Init()
 {
 }
 void Transform::Update()

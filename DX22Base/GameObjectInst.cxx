@@ -6,11 +6,8 @@ uint32_t GameObjectInst::ms_ObjectID = 0;
 GameObjectInst::GameObjectInst()
 	: m_Name("Nameless")
 	, m_Tag(0)
-	, m_IsActive(true)
 	, m_IsDelete(false)
 	, m_ObjectID(ms_ObjectID++)
-	, m_pParent(nullptr)
-	, m_pScene(nullptr)
 {
 
 }

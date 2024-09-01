@@ -289,6 +289,12 @@
     <ClCompile Include="Transform.cxx">
       <Filter>__New</Filter>
     </ClCompile>
+    <ClCompile Include="Object.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="Rigidbody.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -509,6 +515,12 @@
     <ClInclude Include="Transform.hxx">
       <Filter>__New</Filter>
     </ClInclude>
+    <ClInclude Include="Object.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Rigidbody.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="VS_Model.hlsl">
@@ -539,5 +551,6 @@
     <None Include="ColliderJudgement.cuh">
       <Filter>Cuda</Filter>
     </None>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

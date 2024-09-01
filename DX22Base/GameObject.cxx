@@ -18,11 +18,6 @@ GameObject::~GameObject()
 
 }
 
-void GameObject::SetInstance(GameObjectInst* pInstance)
-{
-	m_pInstance = pInstance;
-}
-
 bool GameObject::IsNull() const
 {
 	if (m_pInstance)

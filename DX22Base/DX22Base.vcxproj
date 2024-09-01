@@ -219,6 +219,7 @@
     <ClCompile Include="ModelRegister.cpp" />
     <ClCompile Include="MoveEmitter.cpp" />
     <ClCompile Include="NumSprite2D.cpp" />
+    <ClCompile Include="Object.cxx" />
     <ClCompile Include="plane.cxx" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerForce.cpp" />
@@ -229,6 +230,7 @@
     <ClCompile Include="PutLog.cpp" />
     <ClCompile Include="Render.cxx" />
     <ClCompile Include="RenderMgr.cxx" />
+    <ClCompile Include="Rigidbody.cxx" />
     <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneBase.cxx" />
     <ClCompile Include="SceneComponentTest.cpp" />
@@ -305,6 +307,7 @@
     <ClInclude Include="MoveEmitter.h" />
     <ClInclude Include="NumSprite2D.h" />
     <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="Object.hxx" />
     <ClInclude Include="plane.hxx" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerForce.h" />
@@ -316,6 +319,7 @@
     <ClInclude Include="Render.hxx" />
     <ClInclude Include="RenderMgr.hxx" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="Rigidbody.hxx" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneBase.hxx" />
     <ClInclude Include="SceneComponentTest.h" />
@@ -396,6 +400,7 @@
     <ResourceCompile Include="DX22Base.rc" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="ColliderJudgement.cu" />
     <None Include="ColliderJudgement.cuh" />
   </ItemGroup>

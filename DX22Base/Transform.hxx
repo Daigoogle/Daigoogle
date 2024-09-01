@@ -12,7 +12,7 @@
 #include "Vectors.hxx"
 #include <memory>
 #include <DirectXMath.h>
-#include "Component.h"
+#include "Component.hxx"
 
 /// @brief class Transform
 /// @brief public : Component
@@ -22,7 +22,7 @@ public:
 	Transform();
 	~Transform();
 
-	void Init();
+	bool Init()override;
 	void Update();
 	void UnInit();
 

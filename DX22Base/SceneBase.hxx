@@ -9,22 +9,23 @@
 #define _____Class_HXX_____
 
 // =-=-= インクルード部 =-=-=
+#include "Object.hxx"
+#include "SceneMng.hxx"
 
 class GameObject;
 
-class SceneBase
+class SceneBase:public Object
 {
+	friend class SceneMng;
 public:
-	SceneBase() {}
-	virtual ~SceneBase();
+	
 
+private:
 	virtual bool Init() = 0;
 	virtual void Update() {};
 
-	GameObject MakeObject();
-
-private:
-
+	SceneBase() {}
+	virtual ~SceneBase();
 };
 
 #endif // !_____Class_HXX_____

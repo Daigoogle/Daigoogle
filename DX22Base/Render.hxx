@@ -23,7 +23,7 @@ public:
 
 protected:
 	virtual bool Init() = 0;
-	void Update()override {}
+	void Update()override final;
 	virtual void Draw() = 0;
 	uint32 m_MeshID;
 };
