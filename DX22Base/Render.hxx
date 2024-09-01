@@ -10,22 +10,38 @@
 
 // =-=-= インクルード部 =-=-=
 #include "Component.hxx"
+#include "Shader.h"
 
-class RenderMgr;
+class RenderMng;
+class MeshBuffer;
 
 /// @brief 描画物の基底クラス。単体での使用不可
 class Render :public Component
 {
-	friend class RenderMgr;
+	friend class RenderMng;
 public:
 	Render();
 	virtual ~Render();
+
+
 
 protected:
 	virtual bool Init() = 0;
 	void Update()override {}
 	virtual void Draw() = 0;
-	uint32 m_MeshID;
+
+	MeshBuffer* m_pMeshBuffer;
+	Texture* m_pTexture;
+
+	PixelShader* m_PixelShader;
+	VertexShader* m_VertexShader;
+
+	fVec2 m_uvOffSet;
+	fVec2 m_uvScale;
+	fVec4 m_Color;
+
+	std::vector<std::shared_ptr<char[]>>	m_vtxShaderWriteDatas;
+	std::vector<std::shared_ptr<char[]>>	m_pixelShaderWriteDatas;
 };
 
 #endif // !_____Render_HXX_____

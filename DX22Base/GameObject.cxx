@@ -108,3 +108,10 @@ SceneBase* GameObject::GetScene()
 		return nullptr;
 	return m_pInstance->m_pScene;
 }
+
+Transform& GameObject::GetTransform()
+{
+	if (!m_pInstance)
+		return;
+	return m_pInstance->m_Transform;
+}

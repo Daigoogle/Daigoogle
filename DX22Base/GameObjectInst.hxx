@@ -13,6 +13,7 @@
 #include <string>
 #include <memory>
 #include "GameObjectMng.hxx"
+#include "Transform.hxx"
 
 class Component;
 
@@ -67,6 +68,8 @@ private:
 	std::list<GameObjectInst*> m_childs;// 子オブジェクト
 	GameObjectInst* m_pParent;			// 親オブジェクト
 	SceneBase* m_pScene;				// シーン
+
+	Transform m_Transform;
 };
 
 #endif // !_____GameObjectInst_HXX_____

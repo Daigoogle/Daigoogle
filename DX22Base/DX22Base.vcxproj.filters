@@ -253,7 +253,7 @@
     <ClCompile Include="Render.cxx">
       <Filter>__New</Filter>
     </ClCompile>
-    <ClCompile Include="RenderMgr.cxx">
+    <ClCompile Include="RenderMng.cxx">
       <Filter>__New</Filter>
     </ClCompile>
     <ClCompile Include="SceneBase.cxx">
@@ -476,7 +476,7 @@
     <ClInclude Include="Render.hxx">
       <Filter>__New</Filter>
     </ClInclude>
-    <ClInclude Include="RenderMgr.hxx">
+    <ClInclude Include="RenderMng.hxx">
       <Filter>__New</Filter>
     </ClInclude>
     <ClInclude Include="SceneBase.hxx">

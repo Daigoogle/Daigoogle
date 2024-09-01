@@ -78,6 +78,9 @@ public:
 	/// @brief シーンの取得
 	/// @return シーン
 	SceneBase* GetScene();
+	/// @brief Transformの取得
+	/// @return Transform
+	Transform& GetTransform();
 private:
 	GameObjectInst* m_pInstance;// 実体
 };

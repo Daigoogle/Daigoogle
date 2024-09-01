@@ -228,7 +228,7 @@
     <ClCompile Include="Polyline.cpp" />
     <ClCompile Include="PutLog.cpp" />
     <ClCompile Include="Render.cxx" />
-    <ClCompile Include="RenderMgr.cxx" />
+    <ClCompile Include="RenderMng.cxx" />
     <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneBase.cxx" />
     <ClCompile Include="SceneComponentTest.cpp" />
@@ -314,7 +314,7 @@
     <ClInclude Include="Polyline.h" />
     <ClInclude Include="PutLog.h" />
     <ClInclude Include="Render.hxx" />
-    <ClInclude Include="RenderMgr.hxx" />
+    <ClInclude Include="RenderMng.hxx" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneBase.hxx" />

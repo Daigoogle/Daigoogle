@@ -17,8 +17,12 @@ public:
 	plane();
 	~plane();
 
-private:
+	bool Init()override;
+	void Draw()override;
 
+private:
+	bool m_IsBillboard;
+	
 };
 
 #endif // !_____plane_HXX_____

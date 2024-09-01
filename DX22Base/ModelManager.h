@@ -43,8 +43,6 @@ private:
 	};									//// ライトの定数バッファ	
 
 	std::vector<ModelComponent*>	m_modelQueue;// モデルを格納する配列
-	//std::unique_ptr<VertexShader>					m_vertexShader;
-	//std::unique_ptr<PixelShader>					m_pixelShader;
 	tPositionCBuffer						m_posCBuf;// 座標の定数バッファ
 	tLightCBuffer							m_ligCBuf;// ライティングバッファ
 };

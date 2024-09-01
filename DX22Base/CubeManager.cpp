@@ -74,7 +74,7 @@ bool CubeManager::Init()
 
 void CubeManager::Draw()
 {
-	CameraBase* Camm = Singleton<CameraManager>::GetInstance().GetMainCamera();
+	CameraBase* Camm = CameraManager::GetInstance().GetMainCamera();
 	while (!m_queue.empty())
 	{
 		// データの取り出し
