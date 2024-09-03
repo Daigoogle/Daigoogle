@@ -86,7 +86,6 @@ public:
 	{
 		//初めて呼び出されたならインスタンスの生成
 		std::call_once(initFlag, Create);
-		_GetInstance = __GetInstance;
 		return *instance;
 	}
 
@@ -99,14 +98,14 @@ public:
 
 	/// @brief 関数ポインタ
 	static const getInst &GetInstance;
-
 private:
-	static getInst _GetInstance;
+	static getInst _GetInstfuncP;
 
 	/// @brief インスタンスを生成する
 	static void Create()
 	{
 		instance = new Type;
+		_GetInstfuncP = __GetInstance;
 		Supervision::addFinalizer(&Singleton<Type>::destroy);
 	}
 
@@ -145,7 +144,7 @@ protected:
 // 静的メンバを定義
 template<typename Type> std::once_flag Singleton<Type>::initFlag;
 template <typename Type> Type* Singleton<Type>::instance = nullptr;
-template <typename Type> const Singleton<Type>::getInst &Singleton<Type>::GetInstance = Singleton<Type>::_GetInstance;
-template <typename Type> Singleton<Type>::getInst Singleton<Type>::_GetInstance = Singleton<Type>::__CreateInstance;
+template <typename Type> const Singleton<Type>::getInst &Singleton<Type>::GetInstance = Singleton<Type>::_GetInstfuncP;
+template <typename Type> Singleton<Type>::getInst Singleton<Type>::_GetInstfuncP = Singleton<Type>::__CreateInstance;
 
 #endif // !_____SingletonsMng_HXX_____

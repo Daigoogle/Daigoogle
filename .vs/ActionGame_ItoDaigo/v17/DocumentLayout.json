@@ -3,6 +3,122 @@
   "WorkspaceRootPath": "C:\\HAL\\Project\\EmploymentWorks\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\RenderMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MeshBuffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\MeshBuffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelRegister.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\RenderMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\SingletonsMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelRegister.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Model.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Render.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Render.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\_model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\SingletonsMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DefaltModel_PS.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DefaltModel_PS.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite2DManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite2DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite2DManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\plane.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite3DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CubeComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\GameObjectMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\GameObjectMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\GameObject.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectInst.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\GameObjectInst.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Supervision.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Supervision.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\plane.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Shader.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -15,120 +131,36 @@
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ShaderList.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Render.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\plane.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Render.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Transform.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Transform.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\RenderMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\RenderMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CubeComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\GameObject.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\SingletonsMng.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MeshBuffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\MeshBuffer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Cube.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Cube.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Transform.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Transform.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\GameObject.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectInst.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\GameObjectInst.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CubeManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Supervision.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Supervision.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Cube.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Cube.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\plane.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\SingletonsMng.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CubeManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite2DManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite3DManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelRegister.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Model.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelRegister.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ModelManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Component.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -179,24 +211,12 @@
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\SceneComponentTest.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite2DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite2DComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite3DComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite3DComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Sprite2DManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Startup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -231,14 +251,6 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\xtree||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DirectX11SetUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DirectX11SetUp.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DirectX11SetUp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DirectX11SetUp.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeCollisionToDirectComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -361,10 +373,6 @@
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Texture.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Shader.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MeshBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\MeshBuffer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -401,16 +409,8 @@
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\easing.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\_model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_geometory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\_geometory.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Model.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\HexTiling.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -429,16 +429,8 @@
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\SpriteTileMap_PS.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DefaltModel_PS.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DefaltModel_PS.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraDebug.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CameraDebug.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CubeComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SkyBoxComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -540,38 +532,6 @@
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DotColliderComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeColliderComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CubeColliderComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeColliderComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\CubeColliderComponent.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\SceneBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ColliderBase.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\ColliderBase.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TrailEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\TrailEffect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Polyline.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Polyline.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Polyline.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Polyline.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\rpcndr.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -592,26 +552,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MoveEmitter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\MoveEmitter.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TrailEffeect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\TrailEffeect.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PutLog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\PutLog.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PutLog.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\PutLog.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\VS_Model.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\VS_Model.hlsl||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PolygonColliderComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\PolygonColliderComponent.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory||{3B902123-F8A7-4915-9F01-361F908088D0}"
@@ -642,11 +582,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 25,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 54,
               "Title": "Startup.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Startup.cpp",
               "RelativeDocumentMoniker": "DX22Base\\Startup.cpp",
@@ -659,27 +599,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 26,
               "Title": "Supervision.cxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Supervision.cxx",
               "RelativeDocumentMoniker": "DX22Base\\Supervision.cxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Supervision.cxx",
               "RelativeToolTip": "DX22Base\\Supervision.cxx",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAEYAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-21T06:28:32.393Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 4,
               "Title": "SingletonsMng.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.hxx",
               "RelativeDocumentMoniker": "DX22Base\\SingletonsMng.hxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.hxx",
               "RelativeToolTip": "DX22Base\\SingletonsMng.hxx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAAAI0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-21T07:25:24.405Z",
               "IsPinned": true,
@@ -687,13 +626,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "SingletonsMng.cxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.cxx",
               "RelativeDocumentMoniker": "DX22Base\\SingletonsMng.cxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SingletonsMng.cxx",
               "RelativeToolTip": "DX22Base\\SingletonsMng.cxx",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-22T08:55:13.548Z",
               "IsPinned": true,
@@ -701,13 +640,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 1,
               "Title": "MeshBuffer.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MeshBuffer.h",
               "RelativeDocumentMoniker": "DX22Base\\MeshBuffer.h",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MeshBuffer.h",
               "RelativeToolTip": "DX22Base\\MeshBuffer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-03T01:53:12.399Z",
               "IsPinned": true,
@@ -715,13 +654,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "RenderMng.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.hxx",
               "RelativeDocumentMoniker": "DX22Base\\RenderMng.hxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.hxx",
               "RelativeToolTip": "DX22Base\\RenderMng.hxx",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-25T06:44:17.377Z",
               "IsPinned": true,
@@ -729,13 +668,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "RenderMng.cxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.cxx",
               "RelativeDocumentMoniker": "DX22Base\\RenderMng.cxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\RenderMng.cxx",
               "RelativeToolTip": "DX22Base\\RenderMng.cxx",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-25T13:51:00.126Z",
               "IsPinned": true,
@@ -743,13 +682,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "Render.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.hxx",
               "RelativeDocumentMoniker": "DX22Base\\Render.hxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.hxx",
               "RelativeToolTip": "DX22Base\\Render.hxx",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-25T13:51:00.726Z",
               "IsPinned": true,
@@ -757,13 +696,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Render.cxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.cxx",
               "RelativeDocumentMoniker": "DX22Base\\Render.cxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Render.cxx",
               "RelativeToolTip": "DX22Base\\Render.cxx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-28T13:00:26.605Z",
               "IsPinned": true,
@@ -771,83 +710,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Transform.hxx",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Transform.hxx",
-              "RelativeDocumentMoniker": "DX22Base\\Transform.hxx",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Transform.hxx",
-              "RelativeToolTip": "DX22Base\\Transform.hxx",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.386Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Transform.cxx",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Transform.cxx",
-              "RelativeDocumentMoniker": "DX22Base\\Transform.cxx",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Transform.cxx",
-              "RelativeToolTip": "DX22Base\\Transform.cxx",
-              "ViewState": "AgIAAHcAAAAAAAAAAAApwIIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.38Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "plane.cxx",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.cxx",
-              "RelativeDocumentMoniker": "DX22Base\\plane.cxx",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.cxx",
-              "RelativeToolTip": "DX22Base\\plane.cxx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-01T04:42:50.002Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GameObject.hxx",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.hxx",
-              "RelativeDocumentMoniker": "DX22Base\\GameObject.hxx",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.hxx",
-              "RelativeToolTip": "DX22Base\\GameObject.hxx",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFIAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-01T06:40:22.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "plane.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.hxx",
               "RelativeDocumentMoniker": "DX22Base\\plane.hxx",
               "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.hxx",
               "RelativeToolTip": "DX22Base\\plane.hxx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-28T13:04:50.901Z",
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Cube.cxx",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Cube.cxx",
-              "RelativeDocumentMoniker": "DX22Base\\Cube.cxx",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Cube.cxx",
-              "RelativeToolTip": "DX22Base\\Cube.cxx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "plane.cxx",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.cxx",
+              "RelativeDocumentMoniker": "DX22Base\\plane.cxx",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\plane.cxx",
+              "RelativeToolTip": "DX22Base\\plane.cxx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-09-01T04:42:51.085Z",
+              "WhenOpened": "2024-09-01T04:42:50.002Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -868,33 +753,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CubeManager.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\CubeManager.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.cpp",
-              "RelativeToolTip": "DX22Base\\CubeManager.cpp",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAAE8AAAANAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ModelRegister.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\ModelRegister.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.cpp",
+              "RelativeToolTip": "DX22Base\\ModelRegister.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.311Z",
+              "WhenOpened": "2024-08-03T01:53:12.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CubeManager.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.h",
-              "RelativeDocumentMoniker": "DX22Base\\CubeManager.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.h",
-              "RelativeToolTip": "DX22Base\\CubeManager.h",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 5,
               "Title": "ModelComponent.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelComponent.h",
               "RelativeDocumentMoniker": "DX22Base\\ModelComponent.h",
@@ -907,111 +779,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GameObjectInst.hxx",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectInst.hxx",
-              "RelativeDocumentMoniker": "DX22Base\\GameObjectInst.hxx",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectInst.hxx",
-              "RelativeToolTip": "DX22Base\\GameObjectInst.hxx",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAEcAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "ModelRegister.h",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.h",
+              "RelativeDocumentMoniker": "DX22Base\\ModelRegister.h",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.h",
+              "RelativeToolTip": "DX22Base\\ModelRegister.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-28T18:40:02Z",
+              "WhenOpened": "2024-08-03T01:53:12.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GameObject.cxx",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.cxx",
-              "RelativeDocumentMoniker": "DX22Base\\GameObject.cxx",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.cxx",
-              "RelativeToolTip": "DX22Base\\GameObject.cxx",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-28T18:51:48.482Z",
+              "DocumentIndex": 7,
+              "Title": "Model.h",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.h",
+              "RelativeDocumentMoniker": "DX22Base\\Model.h",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.h",
+              "RelativeToolTip": "DX22Base\\Model.h",
+              "ViewState": "AgIAAHcAAAAAAAAAAAAAwG0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T01:53:12.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "CubeComponent.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.h",
-              "RelativeDocumentMoniker": "DX22Base\\CubeComponent.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.h",
-              "RelativeToolTip": "DX22Base\\CubeComponent.h",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAF0AAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Shader.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.h",
-              "RelativeDocumentMoniker": "DX22Base\\Shader.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.h",
-              "RelativeToolTip": "DX22Base\\Shader.h",
-              "ViewState": "AgIAABcAAAAAAAAAAAAWwCwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.398Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ShaderList.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.h",
-              "RelativeDocumentMoniker": "DX22Base\\ShaderList.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.h",
-              "RelativeToolTip": "DX22Base\\ShaderList.h",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShaderList.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\ShaderList.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.cpp",
-              "RelativeToolTip": "DX22Base\\ShaderList.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Sprite2DManager.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.h",
-              "RelativeDocumentMoniker": "DX22Base\\Sprite2DManager.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.h",
-              "RelativeToolTip": "DX22Base\\Sprite2DManager.h",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.394Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Sprite3DManager.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DManager.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\Sprite3DManager.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DManager.cpp",
-              "RelativeToolTip": "DX22Base\\Sprite3DManager.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.369Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
               "Title": "ModelManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.h",
               "RelativeDocumentMoniker": "DX22Base\\ModelManager.h",
@@ -1024,7 +818,293 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 11,
+              "Title": "_model.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_model.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\_model.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_model.cpp",
+              "RelativeToolTip": "DX22Base\\_model.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.414Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Model.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\Model.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.cpp",
+              "RelativeToolTip": "DX22Base\\Model.cpp",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAowOAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ModelManager.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\ModelManager.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.cpp",
+              "RelativeToolTip": "DX22Base\\ModelManager.cpp",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAAAIoAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DefaltModel_PS.hlsl",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DefaltModel_PS.hlsl",
+              "RelativeDocumentMoniker": "DX22Base\\DefaltModel_PS.hlsl",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DefaltModel_PS.hlsl",
+              "RelativeToolTip": "DX22Base\\DefaltModel_PS.hlsl",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2024-08-03T01:53:12.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Sprite2DManager.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\Sprite2DManager.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.cpp",
+              "RelativeToolTip": "DX22Base\\Sprite2DManager.cpp",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Sprite2DComponent.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\Sprite2DComponent.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.cpp",
+              "RelativeToolTip": "DX22Base\\Sprite2DComponent.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Sprite2DManager.h",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.h",
+              "RelativeDocumentMoniker": "DX22Base\\Sprite2DManager.h",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.h",
+              "RelativeToolTip": "DX22Base\\Sprite2DManager.h",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAABcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T01:53:12.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Sprite3DComponent.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\Sprite3DComponent.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.cpp",
+              "RelativeToolTip": "DX22Base\\Sprite3DComponent.cpp",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAEwBYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CubeComponent.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\CubeComponent.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.cpp",
+              "RelativeToolTip": "DX22Base\\CubeComponent.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAHgAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GameObjectMng.cxx",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectMng.cxx",
+              "RelativeDocumentMoniker": "DX22Base\\GameObjectMng.cxx",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectMng.cxx",
+              "RelativeToolTip": "DX22Base\\GameObjectMng.cxx",
+              "ViewState": "AgIAAFYAAAAAAAAAAAD4v2oAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-01T14:40:48.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GameObjectMng.hxx",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectMng.hxx",
+              "RelativeDocumentMoniker": "DX22Base\\GameObjectMng.hxx",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectMng.hxx",
+              "RelativeToolTip": "DX22Base\\GameObjectMng.hxx",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-01T14:33:48.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "GameObject.hxx",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.hxx",
+              "RelativeDocumentMoniker": "DX22Base\\GameObject.hxx",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.hxx",
+              "RelativeToolTip": "DX22Base\\GameObject.hxx",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-09-01T06:40:22.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GameObjectInst.hxx",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectInst.hxx",
+              "RelativeDocumentMoniker": "DX22Base\\GameObjectInst.hxx",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObjectInst.hxx",
+              "RelativeToolTip": "DX22Base\\GameObjectInst.hxx",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-28T18:40:02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Shader.h",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.h",
+              "RelativeDocumentMoniker": "DX22Base\\Shader.h",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.h",
+              "RelativeToolTip": "DX22Base\\Shader.h",
+              "ViewState": "AgIAABcAAAAAAAAAAAAWwBgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T01:53:12.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Cube.cxx",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Cube.cxx",
+              "RelativeDocumentMoniker": "DX22Base\\Cube.cxx",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Cube.cxx",
+              "RelativeToolTip": "DX22Base\\Cube.cxx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-09-01T04:42:51.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "CubeManager.h",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.h",
+              "RelativeDocumentMoniker": "DX22Base\\CubeManager.h",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.h",
+              "RelativeToolTip": "DX22Base\\CubeManager.h",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T01:53:12.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GameObject.cxx",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.cxx",
+              "RelativeDocumentMoniker": "DX22Base\\GameObject.cxx",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\GameObject.cxx",
+              "RelativeToolTip": "DX22Base\\GameObject.cxx",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-28T18:51:48.482Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CubeComponent.h",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.h",
+              "RelativeDocumentMoniker": "DX22Base\\CubeComponent.h",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.h",
+              "RelativeToolTip": "DX22Base\\CubeComponent.h",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAF0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T01:53:12.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ShaderList.h",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.h",
+              "RelativeDocumentMoniker": "DX22Base\\ShaderList.h",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.h",
+              "RelativeToolTip": "DX22Base\\ShaderList.h",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-08-03T01:53:12.387Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ShaderList.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\ShaderList.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ShaderList.cpp",
+              "RelativeToolTip": "DX22Base\\ShaderList.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Shader.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\Shader.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.cpp",
+              "RelativeToolTip": "DX22Base\\Shader.cpp",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAWwBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CubeManager.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\CubeManager.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeManager.cpp",
+              "RelativeToolTip": "DX22Base\\CubeManager.cpp",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAAAE8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Sprite3DManager.cpp",
+              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DManager.cpp",
+              "RelativeDocumentMoniker": "DX22Base\\Sprite3DManager.cpp",
+              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DManager.cpp",
+              "RelativeToolTip": "DX22Base\\Sprite3DManager.cpp",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-08-03T01:53:12.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
               "Title": "ModelComponent.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelComponent.cpp",
               "RelativeDocumentMoniker": "DX22Base\\ModelComponent.cpp",
@@ -1032,25 +1112,11 @@
               "RelativeToolTip": "DX22Base\\ModelComponent.cpp",
               "ViewState": "AgIAAHsAAAAAAAAAAAAAAF8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-03T01:53:12.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "ModelRegister.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.h",
-              "RelativeDocumentMoniker": "DX22Base\\ModelRegister.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.h",
-              "RelativeToolTip": "DX22Base\\ModelRegister.h",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 36,
               "Title": "Cube.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Cube.hxx",
               "RelativeDocumentMoniker": "DX22Base\\Cube.hxx",
@@ -1058,51 +1124,11 @@
               "RelativeToolTip": "DX22Base\\Cube.hxx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-28T13:02:36.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-28T13:02:36.79Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Model.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.h",
-              "RelativeDocumentMoniker": "DX22Base\\Model.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.h",
-              "RelativeToolTip": "DX22Base\\Model.h",
-              "ViewState": "AgIAAM8AAAAAAAAAAAAAALcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "ModelRegister.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\ModelRegister.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelRegister.cpp",
-              "RelativeToolTip": "DX22Base\\ModelRegister.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.368Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "ModelManager.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\ModelManager.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ModelManager.cpp",
-              "RelativeToolTip": "DX22Base\\ModelManager.cpp",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAAAIgAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.39Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 40,
               "Title": "Component.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Component.hxx",
               "RelativeDocumentMoniker": "DX22Base\\Component.hxx",
@@ -1114,7 +1140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 41,
               "Title": "Vectors.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Vectors.hxx",
               "RelativeDocumentMoniker": "DX22Base\\Vectors.hxx",
@@ -1126,7 +1152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 42,
               "Title": "Component.cxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Component.cxx",
               "RelativeDocumentMoniker": "DX22Base\\Component.cxx",
@@ -1138,7 +1164,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 43,
               "Title": "Component.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Component.h",
               "RelativeDocumentMoniker": "DX22Base\\Component.h",
@@ -1150,7 +1176,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 44,
               "Title": "ThreadPool.cxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ThreadPool.cxx",
               "RelativeDocumentMoniker": "DX22Base\\ThreadPool.cxx",
@@ -1162,7 +1188,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 45,
               "Title": "ThreadPool.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ThreadPool.hxx",
               "RelativeDocumentMoniker": "DX22Base\\ThreadPool.hxx",
@@ -1174,7 +1200,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 46,
               "Title": "ThreadPoolMng.cxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ThreadPoolMng.cxx",
               "RelativeDocumentMoniker": "DX22Base\\ThreadPoolMng.cxx",
@@ -1186,7 +1212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 47,
               "Title": "ThreadPoolMng.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ThreadPoolMng.hxx",
               "RelativeDocumentMoniker": "DX22Base\\ThreadPoolMng.hxx",
@@ -1198,7 +1224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 55,
               "Title": "debug_heap.cpp",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Source\\10.0.22621.0\\ucrt\\heap\\debug_heap.cpp",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Source\\10.0.22621.0\\ucrt\\heap\\debug_heap.cpp",
@@ -1210,7 +1236,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 62,
               "Title": "xtree",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\xtree",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.41.34120\\include\\xtree",
@@ -1222,7 +1248,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 145,
               "Title": "yvals_core.h",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\yvals_core.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\yvals_core.h",
@@ -1234,7 +1260,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 144,
               "Title": "vector",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\vector",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\vector",
@@ -1246,7 +1272,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 121,
               "Title": "vector",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\vector",
@@ -1258,7 +1284,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 133,
               "Title": "rpcndr.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\rpcndr.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\rpcndr.h",
@@ -1270,7 +1296,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 134,
               "Title": "cstddef",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\cstddef",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\cstddef",
@@ -1282,7 +1308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 140,
               "Title": "WTypesbase.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\WTypesbase.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\WTypesbase.h",
@@ -1294,7 +1320,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 141,
               "Title": "wtypes.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\wtypes.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\shared\\wtypes.h",
@@ -1306,7 +1332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
+              "DocumentIndex": 142,
               "Title": "objidl.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\objidl.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\objidl.h",
@@ -1318,7 +1344,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 143,
               "Title": "objidlbase.h",
               "DocumentMoniker": "C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\objidlbase.h",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.22621.0\\um\\objidlbase.h",
@@ -1330,7 +1356,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 139,
               "Title": "xmemory",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory",
               "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\xmemory",
@@ -1342,7 +1368,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 50,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Player.h",
               "RelativeDocumentMoniker": "DX22Base\\Player.h",
@@ -1354,7 +1380,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 49,
               "Title": "TrailEffeect.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TrailEffeect.h",
               "RelativeDocumentMoniker": "DX22Base\\TrailEffeect.h",
@@ -1366,7 +1392,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 48,
               "Title": "Sprite3DManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DManager.h",
               "RelativeDocumentMoniker": "DX22Base\\Sprite3DManager.h",
@@ -1378,7 +1404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 51,
               "Title": "SceneComponentTest.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneComponentTest.h",
               "RelativeDocumentMoniker": "DX22Base\\SceneComponentTest.h",
@@ -1390,19 +1416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Sprite2DComponent.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\Sprite2DComponent.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.cpp",
-              "RelativeToolTip": "DX22Base\\Sprite2DComponent.cpp",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 52,
               "Title": "Sprite2DComponent.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DComponent.h",
               "RelativeDocumentMoniker": "DX22Base\\Sprite2DComponent.h",
@@ -1414,7 +1428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 53,
               "Title": "Sprite3DComponent.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.h",
               "RelativeDocumentMoniker": "DX22Base\\Sprite3DComponent.h",
@@ -1426,31 +1440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "Sprite3DComponent.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\Sprite3DComponent.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3DComponent.cpp",
-              "RelativeToolTip": "DX22Base\\Sprite3DComponent.cpp",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAEwBYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.356Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Sprite2DManager.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\Sprite2DManager.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite2DManager.cpp",
-              "RelativeToolTip": "DX22Base\\Sprite2DManager.cpp",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 56,
               "Title": "TextureRegister.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TextureRegister.cpp",
               "RelativeDocumentMoniker": "DX22Base\\TextureRegister.cpp",
@@ -1462,7 +1452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 57,
               "Title": "fade.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\fade.h",
               "RelativeDocumentMoniker": "DX22Base\\fade.h",
@@ -1474,7 +1464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 58,
               "Title": "fade.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\fade.cpp",
               "RelativeDocumentMoniker": "DX22Base\\fade.cpp",
@@ -1486,7 +1476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 59,
               "Title": "SceneManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SceneManager.cpp",
@@ -1498,7 +1488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 60,
               "Title": "CameraManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\CameraManager.cpp",
@@ -1510,7 +1500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 61,
               "Title": "SceneManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneManager.h",
               "RelativeDocumentMoniker": "DX22Base\\SceneManager.h",
@@ -1522,31 +1512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "DirectX11SetUp.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DirectX11SetUp.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\DirectX11SetUp.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DirectX11SetUp.cpp",
-              "RelativeToolTip": "DX22Base\\DirectX11SetUp.cpp",
-              "ViewState": "AgIAADQAAAAAAAAAAAAhwDcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
-              "Title": "DirectX11SetUp.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DirectX11SetUp.h",
-              "RelativeDocumentMoniker": "DX22Base\\DirectX11SetUp.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DirectX11SetUp.h",
-              "RelativeToolTip": "DX22Base\\DirectX11SetUp.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.4Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 63,
               "Title": "CubeCollisionToDirectComponent.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeCollisionToDirectComponent.h",
               "RelativeDocumentMoniker": "DX22Base\\CubeCollisionToDirectComponent.h",
@@ -1558,7 +1524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 64,
               "Title": "CubeCollisionToDirectComponent.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeCollisionToDirectComponent.cpp",
               "RelativeDocumentMoniker": "DX22Base\\CubeCollisionToDirectComponent.cpp",
@@ -1570,7 +1536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 65,
               "Title": "Geometory.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Geometory.h",
               "RelativeDocumentMoniker": "DX22Base\\Geometory.h",
@@ -1582,7 +1548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 67,
               "Title": "TagManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TagManager.h",
               "RelativeDocumentMoniker": "DX22Base\\TagManager.h",
@@ -1594,7 +1560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 68,
               "Title": "TagManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TagManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\TagManager.cpp",
@@ -1606,7 +1572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 69,
               "Title": "ScoreManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ScoreManager.h",
               "RelativeDocumentMoniker": "DX22Base\\ScoreManager.h",
@@ -1618,7 +1584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 70,
               "Title": "ScoreManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ScoreManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\ScoreManager.cpp",
@@ -1630,7 +1596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 66,
               "Title": "SkyBoxManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SkyBoxManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SkyBoxManager.cpp",
@@ -1642,7 +1608,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 71,
               "Title": "InputDeviceManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\InputDeviceManager.h",
               "RelativeDocumentMoniker": "DX22Base\\InputDeviceManager.h",
@@ -1654,7 +1620,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 72,
               "Title": "InputDeviceManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\InputDeviceManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\InputDeviceManager.cpp",
@@ -1666,7 +1632,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 73,
               "Title": "CubeCollisionToDirectManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeCollisionToDirectManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\CubeCollisionToDirectManager.cpp",
@@ -1678,7 +1644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 74,
               "Title": "ColliderManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\ColliderManager.cpp",
@@ -1690,7 +1656,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 75,
               "Title": "ColliderManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderManager.h",
               "RelativeDocumentMoniker": "DX22Base\\ColliderManager.h",
@@ -1702,7 +1668,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 76,
               "Title": "CameraManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraManager.h",
               "RelativeDocumentMoniker": "DX22Base\\CameraManager.h",
@@ -1714,7 +1680,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 77,
               "Title": "BaseObjectManager.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\BaseObjectManager.cpp",
               "RelativeDocumentMoniker": "DX22Base\\BaseObjectManager.cpp",
@@ -1726,7 +1692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 78,
               "Title": "Effect.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Effect.cpp",
               "RelativeDocumentMoniker": "DX22Base\\Effect.cpp",
@@ -1738,7 +1704,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 79,
               "Title": "Sprite.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite.h",
               "RelativeDocumentMoniker": "DX22Base\\Sprite.h",
@@ -1750,7 +1716,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 80,
               "Title": "BaseObjectManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\BaseObjectManager.h",
               "RelativeDocumentMoniker": "DX22Base\\BaseObjectManager.h",
@@ -1762,7 +1728,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 81,
               "Title": "SceneInit.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneInit.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SceneInit.cpp",
@@ -1774,7 +1740,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 82,
               "Title": "SceneComponentTest.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneComponentTest.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SceneComponentTest.cpp",
@@ -1786,7 +1752,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 83,
               "Title": "SkyBoxManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SkyBoxManager.h",
               "RelativeDocumentMoniker": "DX22Base\\SkyBoxManager.h",
@@ -1798,7 +1764,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 84,
               "Title": "SceneGame.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneGame.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SceneGame.cpp",
@@ -1810,7 +1776,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 85,
               "Title": "SoundEffectComponent.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SoundEffectComponent.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SoundEffectComponent.cpp",
@@ -1822,7 +1788,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 86,
               "Title": "PlayerForce.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PlayerForce.cpp",
               "RelativeDocumentMoniker": "DX22Base\\PlayerForce.cpp",
@@ -1834,7 +1800,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 87,
               "Title": "BaseObjectInstance.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\BaseObjectInstance.cpp",
               "RelativeDocumentMoniker": "DX22Base\\BaseObjectInstance.cpp",
@@ -1846,7 +1812,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 88,
               "Title": "TextureRegister.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TextureRegister.h",
               "RelativeDocumentMoniker": "DX22Base\\TextureRegister.h",
@@ -1858,7 +1824,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 89,
               "Title": "CubeCollisionToDirectManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeCollisionToDirectManager.h",
               "RelativeDocumentMoniker": "DX22Base\\CubeCollisionToDirectManager.h",
@@ -1870,7 +1836,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 90,
               "Title": "AudioManager.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\AudioManager.h",
               "RelativeDocumentMoniker": "DX22Base\\AudioManager.h",
@@ -1882,7 +1848,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 91,
               "Title": "Texture.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Texture.cpp",
               "RelativeDocumentMoniker": "DX22Base\\Texture.cpp",
@@ -1894,7 +1860,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 92,
               "Title": "Texture.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Texture.h",
               "RelativeDocumentMoniker": "DX22Base\\Texture.h",
@@ -1906,19 +1872,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
-              "Title": "Shader.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\Shader.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Shader.cpp",
-              "RelativeToolTip": "DX22Base\\Shader.cpp",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAAAAQBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.37Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 93,
               "Title": "MeshBuffer.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MeshBuffer.cpp",
               "RelativeDocumentMoniker": "DX22Base\\MeshBuffer.cpp",
@@ -1930,7 +1884,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 95,
               "Title": "ColliderJudgement.cuh",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderJudgement.cuh",
               "RelativeDocumentMoniker": "DX22Base\\ColliderJudgement.cuh",
@@ -1942,7 +1896,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 94,
               "Title": "SkyBoxComponent.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SkyBoxComponent.h",
               "RelativeDocumentMoniker": "DX22Base\\SkyBoxComponent.h",
@@ -1954,7 +1908,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 97,
               "Title": "NumSprite2D.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\NumSprite2D.h",
               "RelativeDocumentMoniker": "DX22Base\\NumSprite2D.h",
@@ -1966,7 +1920,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 99,
               "Title": "CameraPlayer.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraPlayer.cpp",
               "RelativeDocumentMoniker": "DX22Base\\CameraPlayer.cpp",
@@ -1978,7 +1932,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 96,
               "Title": "DefaultSetting.hxx",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DefaultSetting.hxx",
               "RelativeDocumentMoniker": "DX22Base\\DefaultSetting.hxx",
@@ -1990,7 +1944,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 100,
               "Title": "easing.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\easing.cpp",
               "RelativeDocumentMoniker": "DX22Base\\easing.cpp",
@@ -2002,7 +1956,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 101,
               "Title": "easing.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\easing.h",
               "RelativeDocumentMoniker": "DX22Base\\easing.h",
@@ -2014,7 +1968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 98,
               "Title": "NumSprite2D.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\NumSprite2D.cpp",
               "RelativeDocumentMoniker": "DX22Base\\NumSprite2D.cpp",
@@ -2026,19 +1980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
-              "Title": "_model.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_model.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\_model.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_model.cpp",
-              "RelativeToolTip": "DX22Base\\_model.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 102,
               "Title": "_geometory.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\_geometory.cpp",
               "RelativeDocumentMoniker": "DX22Base\\_geometory.cpp",
@@ -2047,18 +1989,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-19T11:44:31.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 102,
-              "Title": "Model.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\Model.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Model.cpp",
-              "RelativeToolTip": "DX22Base\\Model.cpp",
-              "ViewState": "AQIAAFECAAAAAAAAAAAowFUCAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.366Z"
             },
             {
               "$type": "Document",
@@ -2098,18 +2028,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
-              "Title": "DefaltModel_PS.hlsl",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DefaltModel_PS.hlsl",
-              "RelativeDocumentMoniker": "DX22Base\\DefaltModel_PS.hlsl",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DefaltModel_PS.hlsl",
-              "RelativeToolTip": "DX22Base\\DefaltModel_PS.hlsl",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAADAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-08-03T01:53:12.389Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 106,
               "Title": "SpriteTileMap_PS.hlsl",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SpriteTileMap_PS.hlsl",
@@ -2122,7 +2040,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 107,
               "Title": "CameraDebug.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraDebug.h",
               "RelativeDocumentMoniker": "DX22Base\\CameraDebug.h",
@@ -2134,7 +2052,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 109,
               "Title": "CameraBase.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraBase.cpp",
               "RelativeDocumentMoniker": "DX22Base\\CameraBase.cpp",
@@ -2146,19 +2064,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
-              "Title": "CubeComponent.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\CubeComponent.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeComponent.cpp",
-              "RelativeToolTip": "DX22Base\\CubeComponent.cpp",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAHgAAAAkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.31Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 108,
               "Title": "SkyBoxComponent.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SkyBoxComponent.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SkyBoxComponent.cpp",
@@ -2170,7 +2076,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 112,
               "Title": "SoundEffectComponent.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SoundEffectComponent.h",
               "RelativeDocumentMoniker": "DX22Base\\SoundEffectComponent.h",
@@ -2182,7 +2088,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 120,
               "Title": "SceneGame.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneGame.h",
               "RelativeDocumentMoniker": "DX22Base\\SceneGame.h",
@@ -2194,7 +2100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 118,
               "Title": "PlayerForce.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PlayerForce.h",
               "RelativeDocumentMoniker": "DX22Base\\PlayerForce.h",
@@ -2206,7 +2112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 119,
               "Title": "PlayerInfo.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PlayerInfo.h",
               "RelativeDocumentMoniker": "DX22Base\\PlayerInfo.h",
@@ -2218,7 +2124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 117,
               "Title": "PlayerInfo.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PlayerInfo.cpp",
               "RelativeDocumentMoniker": "DX22Base\\PlayerInfo.cpp",
@@ -2230,7 +2136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 116,
               "Title": "SceneTitle.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneTitle.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SceneTitle.cpp",
@@ -2242,7 +2148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 110,
               "Title": "Sound.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sound.cpp",
               "RelativeDocumentMoniker": "DX22Base\\Sound.cpp",
@@ -2254,7 +2160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 111,
               "Title": "Sound.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sound.h",
               "RelativeDocumentMoniker": "DX22Base\\Sound.h",
@@ -2266,7 +2172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 113,
               "Title": "SceneResult.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneResult.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SceneResult.cpp",
@@ -2278,7 +2184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 114,
               "Title": "SceneTitle.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneTitle.h",
               "RelativeDocumentMoniker": "DX22Base\\SceneTitle.h",
@@ -2290,7 +2196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 122,
               "Title": "Sprite3D_Defalt_PS.hlsl",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Sprite3D_Defalt_PS.hlsl",
               "RelativeDocumentMoniker": "DX22Base\\Sprite3D_Defalt_PS.hlsl",
@@ -2302,7 +2208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 115,
               "Title": "SceneResult.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneResult.h",
               "RelativeDocumentMoniker": "DX22Base\\SceneResult.h",
@@ -2314,7 +2220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 125,
               "Title": "CameraBase.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraBase.h",
               "RelativeDocumentMoniker": "DX22Base\\CameraBase.h",
@@ -2326,7 +2232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 124,
               "Title": "BaseObject.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\BaseObject.h",
               "RelativeDocumentMoniker": "DX22Base\\BaseObject.h",
@@ -2338,7 +2244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 123,
               "Title": "BaseObjectInstance.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\BaseObjectInstance.h",
               "RelativeDocumentMoniker": "DX22Base\\BaseObjectInstance.h",
@@ -2350,7 +2256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 126,
               "Title": "SceneBase.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneBase.cpp",
               "RelativeDocumentMoniker": "DX22Base\\SceneBase.cpp",
@@ -2362,7 +2268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 127,
               "Title": "CameraDebug.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CameraDebug.cpp",
               "RelativeDocumentMoniker": "DX22Base\\CameraDebug.cpp",
@@ -2374,7 +2280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 128,
               "Title": "Component.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Component.cpp",
               "RelativeDocumentMoniker": "DX22Base\\Component.cpp",
@@ -2386,7 +2292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 129,
               "Title": "BaseObject.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\BaseObject.cpp",
               "RelativeDocumentMoniker": "DX22Base\\BaseObject.cpp",
@@ -2398,7 +2304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 130,
               "Title": "PolygonColliderComponent.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PolygonColliderComponent.cpp",
               "RelativeDocumentMoniker": "DX22Base\\PolygonColliderComponent.cpp",
@@ -2410,7 +2316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 131,
               "Title": "DotColliderComponent.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DotColliderComponent.h",
               "RelativeDocumentMoniker": "DX22Base\\DotColliderComponent.h",
@@ -2422,7 +2328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 132,
               "Title": "DotColliderComponent.cpp",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\DotColliderComponent.cpp",
               "RelativeDocumentMoniker": "DX22Base\\DotColliderComponent.cpp",
@@ -2435,102 +2341,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 135,
-              "Title": "CubeColliderComponent.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeColliderComponent.h",
-              "RelativeDocumentMoniker": "DX22Base\\CubeColliderComponent.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeColliderComponent.h",
-              "RelativeToolTip": "DX22Base\\CubeColliderComponent.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 136,
-              "Title": "CubeColliderComponent.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeColliderComponent.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\CubeColliderComponent.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\CubeColliderComponent.cpp",
-              "RelativeToolTip": "DX22Base\\CubeColliderComponent.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 137,
-              "Title": "SceneBase.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneBase.h",
-              "RelativeDocumentMoniker": "DX22Base\\SceneBase.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneBase.h",
-              "RelativeToolTip": "DX22Base\\SceneBase.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.403Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 138,
-              "Title": "ColliderBase.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderBase.h",
-              "RelativeDocumentMoniker": "DX22Base\\ColliderBase.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderBase.h",
-              "RelativeToolTip": "DX22Base\\ColliderBase.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 139,
-              "Title": "ColliderBase.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderBase.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\ColliderBase.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\ColliderBase.cpp",
-              "RelativeToolTip": "DX22Base\\ColliderBase.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.404Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 140,
-              "Title": "TrailEffect.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TrailEffect.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\TrailEffect.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TrailEffect.cpp",
-              "RelativeToolTip": "DX22Base\\TrailEffect.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.405Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 141,
-              "Title": "Polyline.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Polyline.h",
-              "RelativeDocumentMoniker": "DX22Base\\Polyline.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Polyline.h",
-              "RelativeToolTip": "DX22Base\\Polyline.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 142,
-              "Title": "Polyline.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Polyline.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\Polyline.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Polyline.cpp",
-              "RelativeToolTip": "DX22Base\\Polyline.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.411Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 145,
               "Title": "SceneInit.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\SceneInit.h",
               "RelativeDocumentMoniker": "DX22Base\\SceneInit.h",
@@ -2542,7 +2352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 137,
               "Title": "resource.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\resource.h",
               "RelativeDocumentMoniker": "DX22Base\\resource.h",
@@ -2554,7 +2364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 136,
               "Title": "Effect.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\Effect.h",
               "RelativeDocumentMoniker": "DX22Base\\Effect.h",
@@ -2566,7 +2376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 138,
               "Title": "MoveEmitter.h",
               "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\MoveEmitter.h",
               "RelativeDocumentMoniker": "DX22Base\\MoveEmitter.h",
@@ -2575,66 +2385,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-08-03T01:53:12.423Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 149,
-              "Title": "TrailEffeect.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TrailEffeect.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\TrailEffeect.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\TrailEffeect.cpp",
-              "RelativeToolTip": "DX22Base\\TrailEffeect.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAIBJwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.425Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 150,
-              "Title": "PutLog.cpp",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PutLog.cpp",
-              "RelativeDocumentMoniker": "DX22Base\\PutLog.cpp",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PutLog.cpp",
-              "RelativeToolTip": "DX22Base\\PutLog.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-08-03T01:53:12.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 151,
-              "Title": "PutLog.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PutLog.h",
-              "RelativeDocumentMoniker": "DX22Base\\PutLog.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PutLog.h",
-              "RelativeToolTip": "DX22Base\\PutLog.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.426Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 152,
-              "Title": "VS_Model.hlsl",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\VS_Model.hlsl",
-              "RelativeDocumentMoniker": "DX22Base\\VS_Model.hlsl",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\VS_Model.hlsl",
-              "RelativeToolTip": "DX22Base\\VS_Model.hlsl",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-08-03T01:53:12.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 153,
-              "Title": "PolygonColliderComponent.h",
-              "DocumentMoniker": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PolygonColliderComponent.h",
-              "RelativeDocumentMoniker": "DX22Base\\PolygonColliderComponent.h",
-              "ToolTip": "C:\\HAL\\Project\\EmploymentWorks\\DX22Base\\PolygonColliderComponent.h",
-              "RelativeToolTip": "DX22Base\\PolygonColliderComponent.h",
-              "ViewState": "AQIAAAcAAAAAAAAAAABBwAwAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-03T01:53:12.43Z"
             }
           ]
         }

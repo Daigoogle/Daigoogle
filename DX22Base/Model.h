@@ -223,5 +223,4 @@ private:
 	Transforms		m_nodeTransform[MAX_TRANSFORM];	// アニメーション別変形情報
 };
 
-
 #endif // __MODEL_H__

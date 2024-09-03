@@ -10,6 +10,7 @@ Shader::Shader(Kind kind)
 	: m_kind(kind)
 {
 }
+
 Shader::~Shader()
 {
 	std::vector<ID3D11Buffer*>::iterator it = m_pBuffers.begin();
@@ -19,6 +20,7 @@ Shader::~Shader()
 		++it;
 	}
 }
+
 HRESULT Shader::Load(const char* pFileName)
 {
 	HRESULT hr = E_FAIL;

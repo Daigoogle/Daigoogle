@@ -62,8 +62,7 @@ GameObject GameObjectMng::MakeObject(SceneBase* pScene)
 {
 	GameObjectInst* pInst = new GameObjectInst;// インスタンスの生成
 	pInst->m_pScene = pScene;		// シーンの設定
-	GameObject obj;					// オブジェクトの生成
-	obj.SetInstance(pInst);	// インスタンスを設定
+	GameObject obj(pInst);	// インスタンスを設定
 	m_ObjectsLoadQueue[pScene].push(pInst);// キューに追加
 	return obj;
 }

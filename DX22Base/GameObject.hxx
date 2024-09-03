@@ -19,7 +19,6 @@ public:
 	GameObject(GameObjectInst* pInstance);
 	~GameObject();
 
-	void SetInstance(GameObjectInst* pInstance);
 	bool IsNull() const;
 
 	/// @brief コンポーネントの追加

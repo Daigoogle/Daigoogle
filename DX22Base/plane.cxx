@@ -15,7 +15,6 @@ plane::~plane()
 
 bool plane::Init()
 {
-	if()
 
 	m_pMeshBuffer = RenderMng::GetInstance().GetMeshBuffer("Plane");
 	return true;

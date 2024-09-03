@@ -1,5 +1,6 @@
 #include "Render.hxx"
 #include "RenderMng.hxx"
+#include "ShaderList.h"
 
 Render::Render()
 	: m_Color({ 1.0f, 1.0f, 1.0f, 1.0f })
@@ -16,4 +17,14 @@ Render::Render()
 Render::~Render()
 {
 
+}
+
+void Render::InitSetting()
+{
+	if (!m_VertexShader) {
+	}
+	if (!m_PixelShader) {
+	}
+	if (!m_pTexture) {
+	}
 }

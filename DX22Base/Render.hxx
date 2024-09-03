@@ -30,6 +30,8 @@ protected:
 	void Update()override {}
 	virtual void Draw() = 0;
 
+	void InitSetting();
+
 	MeshBuffer* m_pMeshBuffer;
 	Texture* m_pTexture;
 

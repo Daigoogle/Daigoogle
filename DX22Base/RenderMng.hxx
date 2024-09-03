@@ -1,5 +1,5 @@
 //	ファイル名	：RenderMgr.hxx
-//	  概  要	：
+//	  概  要		：
 //	作	成	者	：daigo
 //	 作成日時	：2024/06/11 20:35:52
 //_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
@@ -9,11 +9,13 @@
 #define _____RenderMgr_HXX_____
 
 // =-=-= インクルード部 =-=-=
+#include <unordered_map>
+#include <queue>
 #include "Vectors.hxx"
 #include "SingletonsMng.hxx"
 #include "MeshBuffer.h"
-#include <unordered_map>
-#include <queue>
+#include "Model.h"
+#include "Shader.h"
 
 class Render;
 
@@ -27,28 +29,33 @@ enum MeshType
 {
 	MESH_plane = 0,
 	MESH_Cube,
-	MESH_Model,
 };
 
 class RenderMng: public Singleton<RenderMng>
 {
 	friend class Singleton<RenderMng>;
-	using MeshBufIterator = std::unordered_map<uint32, MeshBuffer*>::const_iterator;
-	using TextureIterator = std::unordered_map<uint32, Texture>::const_iterator;
 public:
-	RenderMng();
-	~RenderMng();
-
+	/// @brief 
+	/// @return 
 	bool Init() override;
 	void Update() override;
 
 	void AddQueue(Render* render);
 
-	MeshBuffer* GetMeshBuffer(std::string MeshPath);
-	Texture* GetTexture(std::string TexturePath);
+	MeshBuffer* GetMeshBuffer(MeshType type);
+	Model* GetModel(const std::string& Path);
+	Texture* GetTexture(const std::string& Path);
+	VertexShader* GetVertexShader(const std::string& Path);
+	PixelShader* GetPixelShader(const std::string& Path);
 private:
-	std::unordered_map<std::string, MeshBuffer*> m_MeshBuffer;
-	std::unordered_map<std::string, Texture> m_MeshType;
+	RenderMng();
+	~RenderMng();
+
+	std::unordered_map<std::string, Model*> m_Model;
+	std::unordered_map<std::string, Texture*> m_Texture;
+	std::unordered_map<std::string, VertexShader*> m_VertexShader;
+	std::unordered_map<std::string, PixelShader*> m_PixelShader;
+	std::array<MeshBuffer*, 2> m_MeshBuffer;
 	std::queue<Render*> m_RenderQueue;
 };
 

@@ -24,11 +24,12 @@ bool RenderMng::Init()
 		{{ 0.5f,-0.5f, 0.0f}, {1.0f, 1.0f}},
 	};
 
-	MeshBuffer::Description desc = m_MeshBuffer["Plane"]->GetDesc();
-	desc.pVtx = vtx;
-	desc.vtxSize = sizeof(Vertex);
-	desc.vtxCount = _countof(vtx);
-	desc.topology = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP;
+	MeshBuffer::Description desc0;
+	desc0.pVtx = vtx;
+	desc0.vtxSize = sizeof(Vertex);
+	desc0.vtxCount = _countof(vtx);
+	desc0.topology = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP;
+	m_MeshBuffer[MeshType::MESH_plane] = new MeshBuffer(desc0);
 
 	// 元データの 
 	Vertex vtx[] = {
@@ -75,22 +76,21 @@ bool RenderMng::Init()
 
 	};
 	// バッファの作成
-	MeshBuffer::Description desc = m_MeshBuffer["Cube"]->GetDesc();
-	desc.pVtx = vtx;
-	desc.vtxCount = _countof(vtx);
-	desc.vtxSize = 20;//20;
-	desc.pIdx = idx;
-	desc.idxCount = 36;
-	desc.idxSize = sizeof(int);//4;
-	desc.topology = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
-
+	MeshBuffer::Description desc1;
+	desc1.pVtx = vtx;
+	desc1.vtxCount = _countof(vtx);
+	desc1.vtxSize = 20;
+	desc1.pIdx = idx;
+	desc1.idxCount = 36;
+	desc1.idxSize = sizeof(int);
+	desc1.topology = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
+	m_MeshBuffer[MeshType::MESH_Cube] = new MeshBuffer(desc1);
 
 	return true;
 }
 
 void RenderMng::Update()
 {
-
 	DirectX11SetUp& Dx11 = DirectX11SetUp::GetInstance();
 	Dx11.BeginDraw();
 
@@ -105,7 +105,7 @@ void RenderMng::Update()
 		//ThreadPoolMng::GetInstance().AddPool([render]() {render->Draw();});
 		render->Draw();
 	}
-		
+	
 	Dx11.EndDraw();
 }
 
@@ -114,12 +114,36 @@ void RenderMng::AddQueue(Render* render)
 	m_RenderQueue.push(render);
 }
 
-MeshBuffer* RenderMng::GetMeshBuffer(std::string MeshPath)
+MeshBuffer* RenderMng::GetMeshBuffer(MeshType type)
 {
-	return m_MeshBuffer[MeshPath];
+	return m_MeshBuffer[type];
 }
 
-Texture* RenderMng::GetTexture(std::string TexturePath)
+Model* RenderMng::GetModel(const std::string& ModelPath)
 {
-	return &m_MeshType[TexturePath];
+	if(m_Model.count(ModelPath))
+		return m_Model[ModelPath];
+	m_Model[ModelPath] = new Model;
+	m_Model[ModelPath]->Load(ModelPath.c_str(), 1.0f, Model::XFlip)
+#ifdef _DEBUG
+		? true : ERROR;
+#else
+		;
+#endif // _DEBUG
+
+}
+
+Texture* RenderMng::GetTexture(const std::string& TexturePath)
+{
+	return m_Texture[TexturePath];
+}
+
+VertexShader* RenderMng::GetVertexShader(const std::string& VertexShaderPath)
+{
+	return m_VertexShader[VertexShaderPath];
+}
+
+PixelShader* RenderMng::GetPixelShader(const std::string& PixelShaderPath)
+{
+	return m_PixelShader[PixelShaderPath];
 }
