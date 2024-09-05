@@ -200,6 +200,7 @@
     <ClCompile Include="CubeCollisionToDirectManager.cpp" />
     <ClCompile Include="CubeManager.cpp" />
     <ClCompile Include="CubeComponent.cpp" />
+    <ClCompile Include="DebugRestriction.cxx" />
     <ClCompile Include="DirectX11SetUp.cpp" />
     <ClCompile Include="DotColliderComponent.cpp" />
     <ClCompile Include="easing.cpp" />
@@ -283,6 +284,7 @@
     <ClInclude Include="CubeCollisionToDirectManager.h" />
     <ClInclude Include="CubeManager.h" />
     <ClInclude Include="CubeComponent.h" />
+    <ClInclude Include="DebugRestriction.hxx" />
     <ClInclude Include="DefaultSetting.hxx" />
     <ClInclude Include="Defines.h" />
     <ClInclude Include="DirectX11SetUp.h" />

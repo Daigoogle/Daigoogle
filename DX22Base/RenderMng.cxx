@@ -2,6 +2,10 @@
 #include "Render.hxx"
 #include "ThreadPoolMng.hxx"
 #include "DirectX11SetUp.h"
+#ifdef _DEBUG
+#include "DebugRestriction.hxx"
+#endif // _DEBUG
+
 
 RenderMng::RenderMng()
 	: Singleton(UPDATE_ORDER::LAST_UPDATE)
@@ -121,16 +125,15 @@ MeshBuffer* RenderMng::GetMeshBuffer(MeshType type)
 
 Model* RenderMng::GetModel(const std::string& ModelPath)
 {
-	if(m_Model.count(ModelPath))
-		return m_Model[ModelPath];
-	m_Model[ModelPath] = new Model;
-	m_Model[ModelPath]->Load(ModelPath.c_str(), 1.0f, Model::XFlip)
+	if (!m_Model.count(ModelPath)) {
+		m_Model[ModelPath] = new Model;
+		m_Model[ModelPath]->Load(ModelPath.c_str(), 1.0f, Model::XFlip);
+	}
 #ifdef _DEBUG
-		? true : ERROR;
+	return static_cast<Model*>(IsNullptr(m_Model[ModelPath]));
 #else
-		;
+	return m_Model[ModelPath];
 #endif // _DEBUG
-
 }
 
 Texture* RenderMng::GetTexture(const std::string& TexturePath)
