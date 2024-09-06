@@ -1,12 +1,23 @@
 #include "Cube.hxx"
-#include "RenderMgr.hxx"
+#include "RenderMng.hxx"
 
 Cube::Cube()
 {
-	m_MeshID = MESH_Cube;
 }
 
 Cube::~Cube()
 {
 
+}
+
+void Cube::Draw()
+{
+	RenderMng::GetInstance().AddQueue(this);
+}
+
+bool Cube::Init()
+{
+	m_pMeshBuffer = RenderMng::GetInstance().GetMeshBuffer(MESH_Cube);
+	Render::InitSetting();
+	return true;
 }

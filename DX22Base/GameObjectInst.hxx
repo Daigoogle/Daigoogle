@@ -14,6 +14,7 @@
 #include <memory>
 #include "GameObjectMng.hxx"
 #include "Transform.hxx"
+#include "DebugRestriction.hxx"
 
 class Component;
 
@@ -36,8 +37,7 @@ private:
 	template<typename TypeComp>
 	TypeComp* AddComponent()
 	{
-		std::unique_ptr<TypeComp> pComp(new TypeComp);
-		pComp->m_pGameObjectInst = this;
+		std::unique_ptr<TypeComp> pComp(new TypeComp(this));
 		m_Components.push_back(std::move(pComp));
 		return pComp.get();
 	}
@@ -51,6 +51,7 @@ private:
 			if (pComp != nullptr)
 				return pComp;
 		}
+		DebugBreakPoint_
 		return nullptr;
 	}
 

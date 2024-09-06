@@ -23,8 +23,6 @@ public:
 	Render();
 	virtual ~Render();
 
-
-
 protected:
 	virtual bool Init() = 0;
 	void Update()override {}

@@ -12,7 +12,7 @@
 #include "Vectors.hxx"
 #include <memory>
 #include <DirectXMath.h>
-#include "Component.h"
+#include "Component.hxx"
 
 /// @brief class Transform
 /// @brief public : Component
@@ -22,9 +22,8 @@ public:
 	Transform();
 	~Transform();
 
-	void Init();
-	void Update();
-	void UnInit();
+	bool Init()override;
+	void Update()override;
 
 	void  SetLocalPosition(fVec3 Get);
 	fVec3 GetLocalPosition();

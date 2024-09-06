@@ -192,7 +192,12 @@
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="CameraPlayer.cpp" />
     <ClCompile Include="ColliderBase.cpp" />
-    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Component.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="Component.cxx" />
     <ClCompile Include="Cube.cxx" />
     <ClCompile Include="CubeColliderComponent.cpp" />
@@ -276,7 +281,12 @@
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="CameraPlayer.h" />
     <ClInclude Include="ColliderBase.h" />
-    <ClInclude Include="Component.h" />
+    <ClInclude Include="Component.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
     <ClInclude Include="Component.hxx" />
     <ClInclude Include="Cube.hxx" />
     <ClInclude Include="CubeColliderComponent.h" />

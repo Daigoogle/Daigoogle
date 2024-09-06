@@ -1,14 +1,22 @@
 #include "DebugRestriction.hxx"
 #ifdef _DEBUG
-#include <windows.h>
 
-void* IsNullptr(void* ptr)
+bool _falseCheckFunc(bool b)
 {
-	if (!ptr) {
-		OutputDebugString("[ nullptr ]が発生しました。参照・依存関係を見直してください。");
+	if (!b) {
+		OutputDebugString("■◆■◆■ !-!-!-! ■◆■◆■ ：falseが返されました。\n");
 		DebugBreak();
 	}
-	return ptr;
+	return b;
+}
+
+HRESULT _HResultCheckFunc(HRESULT hr)
+{
+	if (FAILED(hr)) {
+		OutputDebugString("■◆■◆■ !-!-!-! ■◆■◆■ ：HRESULTが失敗しました。\n");
+		DebugBreak();
+	}
+	return hr;
 }
 
 #endif // _DEBUG

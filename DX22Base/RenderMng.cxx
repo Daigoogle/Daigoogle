@@ -2,9 +2,7 @@
 #include "Render.hxx"
 #include "ThreadPoolMng.hxx"
 #include "DirectX11SetUp.h"
-#ifdef _DEBUG
 #include "DebugRestriction.hxx"
-#endif // _DEBUG
 
 
 RenderMng::RenderMng()
@@ -120,33 +118,43 @@ void RenderMng::AddQueue(Render* render)
 
 MeshBuffer* RenderMng::GetMeshBuffer(MeshType type)
 {
-	return m_MeshBuffer[type];
+	return NullptrCheck(m_MeshBuffer[type]);
 }
 
 Model* RenderMng::GetModel(const std::string& ModelPath)
 {
 	if (!m_Model.count(ModelPath)) {
 		m_Model[ModelPath] = new Model;
-		m_Model[ModelPath]->Load(ModelPath.c_str(), 1.0f, Model::XFlip);
+		FalseCheck(m_Model[ModelPath]->Load(ModelPath.c_str(), 1.0f, Model::XFlip));
 	}
-#ifdef _DEBUG
-	return static_cast<Model*>(IsNullptr(m_Model[ModelPath]));
-#else
-	return m_Model[ModelPath];
-#endif // _DEBUG
+	return NullptrCheck(m_Model[ModelPath]);
 }
 
 Texture* RenderMng::GetTexture(const std::string& TexturePath)
 {
-	return m_Texture[TexturePath];
+	if (!m_Texture.count(TexturePath)) {
+		m_Texture[TexturePath] = new Texture;
+		HResultCheck( m_Texture[TexturePath]->Create(TexturePath.c_str()));
+	}
+	return NullptrCheck( m_Texture[TexturePath]);
 }
 
 VertexShader* RenderMng::GetVertexShader(const std::string& VertexShaderPath)
 {
-	return m_VertexShader[VertexShaderPath];
+	if (!m_VertexShader.count(VertexShaderPath))
+	{
+		m_VertexShader[VertexShaderPath] = new VertexShader();
+		HResultCheck(m_VertexShader[VertexShaderPath]->Load(VertexShaderPath.c_str()));
+	}
+	return NullptrCheck(m_VertexShader[VertexShaderPath]);
 }
 
 PixelShader* RenderMng::GetPixelShader(const std::string& PixelShaderPath)
 {
-	return m_PixelShader[PixelShaderPath];
+	if (!m_PixelShader.count(PixelShaderPath))
+	{
+		m_PixelShader[PixelShaderPath] = new PixelShader();
+		HResultCheck(m_PixelShader[PixelShaderPath]->Load(PixelShaderPath.c_str()));
+	}
+	return NullptrCheck(m_PixelShader[PixelShaderPath]);
 }

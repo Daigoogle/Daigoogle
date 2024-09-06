@@ -1,21 +1,50 @@
-//	ƒtƒ@ƒCƒ‹–¼	FDebugRestriction.hxx
-//	  ŠT  —v		FƒfƒoƒbƒO‚ÌÛ‚Ég—p‚·‚éˆ—‚Å‚·B
-//					‚»‚êˆÈŠO‚Å‚Íg—p‚Å‚«‚Ü‚¹‚ñ‚Ì‚Å[ #ifdef _DEBUG ]‚ÅˆÍ‚ñ‚Å‚­‚¾‚³‚¢B
-//	ì	¬	Ò	Fdaigo
-//	 ì¬“ú	F2024/09/06 3:17:38
+ï»¿//	ãƒ•ã‚¡ã‚¤ãƒ«å	ï¼šDebugRestriction.hxx
+//	  æ¦‚  è¦		ï¼šãƒ‡ãƒãƒƒã‚°ã®éš›ã«ä½¿ç”¨ã™ã‚‹å‡¦ç†ã§ã™ã€‚
+//					ãã‚Œä»¥å¤–ã§ã¯ä½¿ç”¨ã§ãã¾ã›ã‚“ã®ã§[ #ifdef _DEBUG ]ã§å›²ã‚“ã§ãã ã•ã„ã€‚
+//	ä½œ	æˆ	è€…	ï¼šdaigo
+//	 ä½œæˆæ—¥æ™‚	ï¼š2024/09/06 3:17:38
 //_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 
-// =-=-= ƒCƒ“ƒNƒ‹[ƒhƒK[ƒh•” =-=-=
+// =-=-= ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰ã‚¬ãƒ¼ãƒ‰éƒ¨ =-=-=
 #ifndef _____DebugRestriction_HXX_____
 #define _____DebugRestriction_HXX_____
 
-// =-=-= ƒfƒoƒbƒOŒÀ’èˆ— =-=-=
+// =-=-= ã‚¤ãƒ³ã‚¯ãƒ«ãƒ¼ãƒ‰éƒ¨ =-=-=
+#ifdef _DEBUG
+#include <windows.h>
+#endif // _DEBUG
+
+// =-=-= ãƒã‚¯ãƒ­å®šç¾©éƒ¨ =-=-=
+#ifdef _DEBUG
+#define NullptrCheck(ptr) _NullptrCheckFunc(ptr)
+#define NullptrCheck_void_(ptr) _NullptrCheckFunc(ptr);
+#define FalseCheck(b) _falseCheckFunc(b)
+#define HResultCheck(hr) _HResultCheckFunc(hr)
+#define DebugBreakPoint_ DebugBreak();
+#else // Release
+#define NullptrCheck(ptr) ptr
+#define NullptrCheck_void_(ptr) 
+#define FalseCheck(b) b
+#define HResultCheck(hr) hr
+#define DebugBreakPoint_ 
+#endif // _DEBUG
+
+// =-=-= ãƒ‡ãƒãƒƒã‚°é™å®šå‡¦ç† =-=-=
 #ifdef _DEBUG
 
-// =-=-= ƒCƒ“ƒNƒ‹[ƒh•” =-=-=
+template<typename Type>
+Type* _NullptrCheckFunc(Type* ptr)
+{
+	std::string str = "â– â—†â– â—†â–  !-!-!-! â– â—†â– â—†â–  ï¼š" + typeid(Type).name() + " ã® [ nullptr ]ãŒç™ºç”Ÿã—ã¾ã—ãŸã€‚å‚ç…§ãƒ»ä¾å­˜é–¢ä¿‚ã‚’è¦‹ç›´ã—ã¦ãã ã•ã„ã€‚\n";
+	if (!ptr) {
+		OutputDebugString(str.c_str());
+		DebugBreak();
+	}
+	return ptr;
+}
 
-void* IsNullptr(void*);
-
+bool _falseCheckFunc(bool b);
+HRESULT _HResultCheckFunc(HRESULT hr);
 
 #endif // _DEBUG
 #endif // !_____DebugRestriction_HXX_____

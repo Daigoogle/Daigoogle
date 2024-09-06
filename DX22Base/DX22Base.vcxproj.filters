@@ -423,9 +423,6 @@
     <ClInclude Include="BaseObjectInstance.h">
       <Filter>System</Filter>
     </ClInclude>
-    <ClInclude Include="Component.h">
-      <Filter>System</Filter>
-    </ClInclude>
     <ClInclude Include="fade.h">
       <Filter>Draw</Filter>
     </ClInclude>
@@ -514,6 +511,9 @@
     </ClInclude>
     <ClInclude Include="DebugRestriction.hxx">
       <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>System</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

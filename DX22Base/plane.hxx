@@ -17,9 +17,9 @@ public:
 	plane();
 	~plane();
 
-	bool Init()override;
 	void Draw()override;
-
+protected:
+	bool Init()override;
 private:
 	bool m_IsBillboard;
 	

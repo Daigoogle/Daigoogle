@@ -13,13 +13,11 @@ Transform::~Transform()
 	m_Parent = nullptr;
 }
 
-void Transform::Init()
+bool Transform::Init()
 {
+	true;
 }
 void Transform::Update()
-{
-}
-void Transform::UnInit()
 {
 }
 
