@@ -33,7 +33,7 @@ private:
 
 	UINT SCREEN_WIDTH = 1280;
 	UINT SCREEN_HEIGHT = 720;
-	const char* APP_TITLE = "AT12B ItoDaigo";
+	const char* APP_TITLE = "AT13C ItoDaigo";
 
 	bool m_bFullScreen;
 };

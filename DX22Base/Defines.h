@@ -9,6 +9,10 @@
 // リソースパス
 #define ASSET(path)	"Assets/"path
 
+#define DIRECTX11_PRJ
+//#define DIRECTX12_PRJ
+//#define VULKAN_PRJ
+
 //// タイトル
 //#ifdef _DEBUG
 //#define APP_TITLE "AT12B ItoDaigo : Debug"

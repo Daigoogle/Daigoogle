@@ -12,6 +12,7 @@
 // =-=-= インクルード部 =-=-=
 #ifdef _DEBUG
 #include <windows.h>
+#include <string>
 #endif // _DEBUG
 
 // =-=-= マクロ定義部 =-=-=
@@ -35,9 +36,12 @@
 template<typename Type>
 Type* _NullptrCheckFunc(Type* ptr)
 {
-	std::string str = "■◆■◆■ !-!-!-! ■◆■◆■ ：" + typeid(Type).name() + " の [ nullptr ]が発生しました。参照・依存関係を見直してください。\n";
+	std::string stri;
+	stri += "■◆■◆■ !-!-!-! ■◆■◆■ ：";
+	stri += typeid(Type).name();
+	stri += " の [ nullptr ]が発生しました。参照・依存関係を見直してください。\n";
 	if (!ptr) {
-		OutputDebugString(str.c_str());
+		OutputDebugString(stri.c_str());
 		DebugBreak();
 	}
 	return ptr;

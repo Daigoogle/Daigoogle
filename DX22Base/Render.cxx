@@ -1,6 +1,5 @@
 #include "Render.hxx"
 #include "RenderMng.hxx"
-#include "ShaderList.h"
 
 Render::Render()
 	: m_Color({ 1.0f, 1.0f, 1.0f, 1.0f })

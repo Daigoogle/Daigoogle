@@ -17,18 +17,15 @@ class Component
 {
 	friend class GameObjectInst;
 public:
-
-	GameObject GetGameObject();
-
-protected:
-	Component():m_pGameObjectInst(nullptr) {};
+	Component() :m_pGameObjectInst(nullptr) {};
 	virtual ~Component() {}
 
 	virtual bool Init() = 0;
 	virtual void Update() = 0;
 
+	GameObject GetGameObject();
+
 private:
-	
 	GameObjectInst* m_pGameObjectInst;
 };
 

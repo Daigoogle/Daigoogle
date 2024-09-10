@@ -2,7 +2,6 @@
 
 #include <windows.h>
 #include "Defines.h"
-#include "Main.h"
 #include "SingletonsMng.hxx"
 #include <stdio.h>
 #include <crtdbg.h>
@@ -15,8 +14,7 @@
 //LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 // エントリポイント
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
-{
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
 	Window& window = Window::GetInstance();

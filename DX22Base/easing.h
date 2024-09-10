@@ -19,7 +19,6 @@
 #ifndef _____EASING_H_____
 #define _____EASING_H_____
 
-
 namespace Easing
 {
 	float InSine(float num);

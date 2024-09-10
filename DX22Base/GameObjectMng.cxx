@@ -12,7 +12,11 @@ GameObjectMng::GameObjectMng()
 
 GameObjectMng::~GameObjectMng()
 {
-
+	for (auto& elem : m_ObjectsQueue)
+		for (auto& obj : elem.second)
+			delete obj;
+	m_ObjectsDeleteQueue.clear();
+	m_ObjectsLoadQueue.clear();
 }
 
 bool GameObjectMng::Init()
@@ -31,9 +35,9 @@ void GameObjectMng::InitObjects()
 {
 	// キューの中身を全て初期化
 	for (auto& elem: m_ObjectsLoadQueue){
-		while (elem.second.empty()){
+		while (!elem.second.empty()){
 			 elem.second.front()->Init();
-			 m_ObjectsQueue[elem.first].push_back(std::move(elem.second.front()));// InitからUpdateに移動
+			 m_ObjectsQueue[elem.first].push_back(elem.second.front());// InitからUpdateに移動
 			 elem.second.pop();
 		}
 	}
@@ -55,7 +59,7 @@ void GameObjectMng::UpdateObjects(SceneBase* pScene)
 
 void GameObjectMng::DeleteSceneObjects(SceneBase* pScene)
 {
-	m_ObjectsQueue[pScene].clear();
+	
 }
 
 GameObject GameObjectMng::MakeObject(SceneBase* pScene)

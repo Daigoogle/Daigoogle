@@ -16,7 +16,7 @@ class RenderMng;
 class MeshBuffer;
 
 /// @brief 描画物の基底クラス。単体での使用不可
-class Render :public Component
+class Render
 {
 	friend class RenderMng;
 public:
@@ -25,7 +25,6 @@ public:
 
 protected:
 	virtual bool Init() = 0;
-	void Update()override {}
 	virtual void Draw() = 0;
 
 	void InitSetting();

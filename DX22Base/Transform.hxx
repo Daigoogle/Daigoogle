@@ -10,20 +10,15 @@
 #define _____TRANSFORM_H_____
 
 #include "Vectors.hxx"
-#include <memory>
-#include <DirectXMath.h>
-#include "Component.hxx"
+//#include "Component.hxx"
 
 /// @brief class Transform
 /// @brief public : Component
-class Transform:public Component
+class Transform
 {
 public:
 	Transform();
 	~Transform();
-
-	bool Init()override;
-	void Update()override;
 
 	void  SetLocalPosition(fVec3 Get);
 	fVec3 GetLocalPosition();

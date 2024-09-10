@@ -37,7 +37,8 @@ private:
 	template<typename TypeComp>
 	TypeComp* AddComponent()
 	{
-		std::unique_ptr<TypeComp> pComp(new TypeComp(this));
+		std::unique_ptr<TypeComp> pComp(new TypeComp);
+		pComp->m_pGameObjectInst = this;
 		m_Components.push_back(std::move(pComp));
 		return pComp.get();
 	}
@@ -47,9 +48,8 @@ private:
 	{
 		for (const auto elem : m_Components)
 		{
-			TypeComp* pComp = dynamic_cast<TypeComp*>(elem.get());
-			if (pComp != nullptr)
-				return pComp;
+			if (typeid(TypeComp) == typeid(elem.get()))
+				return elem.get();
 		}
 		DebugBreakPoint_
 		return nullptr;
@@ -58,14 +58,14 @@ private:
 	void Delete();
 
 private:
-	static uint32_t ms_ObjectID;
+	static uint32 ms_ObjectID;
 
 	std::string m_Name;					// 名前
 	unsigned m_Tag;						// タグ
 	bool m_IsActive;					// アクティブかどうか
 	bool m_IsDelete;					// 削除フラグ
 	std::list<std::unique_ptr<Component>> m_Components;	// コンポーネント
-	uint32_t m_ObjectID;		// ID
+	uint32 m_ObjectID;		// ID
 	std::list<GameObjectInst*> m_childs;// 子オブジェクト
 	GameObjectInst* m_pParent;			// 親オブジェクト
 	SceneBase* m_pScene;				// シーン

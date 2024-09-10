@@ -1,13 +1,13 @@
 #include "CameraPlayer.h"
 #include "InputDeviceManager.h"
 #include "easing.h"
+#include "GameObject.hxx"
 
-CameraPlayer::CameraPlayer(CPlayer * pPlayer):
-	m_pPlayer(pPlayer),
-	m_radXZ(-3.5f),
-	m_radY(0.1f),
-	m_dist(1.0f),
-	m_Frame(0)
+CameraPlayer::CameraPlayer()
+	: m_radXZ(-3.5f)
+	, m_radY(0.1f)
+	, m_dist(1.0f)
+	, m_Frame(0)
 {
 }
 
@@ -16,14 +16,14 @@ CameraPlayer::~CameraPlayer()
 
 }
 
-void CameraPlayer::Init()
+bool CameraPlayer::Init()
 {
-
+	return true;
 }
 
 void CameraPlayer::Update()
 {
-	m_look = m_pPlayer->GetPos();//注視点をプレイヤーの位置とする
+	m_look = Vec::ToXMFLOAT3(this->GetGameObject().GetTransform().GetWorldPosition());//注視点をプレイヤーの位置とする
 	m_look.y += 0.4f;	//位置調整
 
 	const float Speed = 0.1f;
@@ -53,9 +53,4 @@ void CameraPlayer::Update()
 	m_pos.x = (cosf(m_radY) * sinf(m_radXZ) * m_dist) + m_look.x;
 	m_pos.y = (sinf(m_radY) * m_dist) + m_look.y;
 	m_pos.z = (cosf(m_radY) * cosf(m_radXZ) * m_dist) + m_look.z;
-}
-
-void CameraPlayer::UnInit()
-{
-
 }

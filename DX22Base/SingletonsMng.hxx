@@ -11,6 +11,7 @@
 // =-=-= インクルード部 =-=-=
 #include <array>
 #include <deque>
+#include <stack>
 #include <mutex>
 #include <type_traits>
 #ifdef _DEBUG
@@ -71,7 +72,7 @@ private:
 
 private:
 	static std::array<std::deque<_SingletonBase*>, static_cast<int>(UPDATE_ORDER::LAST_UPDATE) + 1> m_Updaters;//更新処理
-	static std::deque<void(*)()> m_finalizers;//終了処理
+	static std::stack<void(*)()> m_finalizers;//終了処理
 };
 
 /// @brief シングルトンのインスタンスを生成・保持するクラス

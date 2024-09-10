@@ -117,14 +117,6 @@ fVec2 operator/(const fVec2& Left, const float Right)
 //								fVec3								//
 //																	//
 //__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__///
-float fVec3::length(fVec3 Vector)
-{
-	return powf(Vector.x * Vector.x + Vector.y * Vector.y + Vector.z * Vector.z, 0.5f);
-}
-fVec3 fVec3::Nomalize(fVec3 Vector)
-{
-	return (Vector / length(Vector));
-}
 bool operator==(const fVec3& Left, const fVec3& Right)
 {
 	bool ans = true;
@@ -674,3 +666,19 @@ nVec4 operator/(const nVec4& Left, const int Right)
 	}
 	return ans;
 }
+
+float Vec::length(fVec3 Vector)
+{
+	return powf(Vector.x * Vector.x + Vector.y * Vector.y + Vector.z * Vector.z, 0.5f);
+}
+fVec3 Vec::Nomalize(fVec3 Vector)
+{
+	return (Vector / length(Vector));
+}
+
+#ifdef DIRECTX11_PRJ
+DirectX::XMFLOAT3 Vec::ToXMFLOAT3(fVec3 Vector)
+{
+	return { Vector.x, Vector.y, Vector.z };
+}
+#endif // DIRECTX11_PRJ

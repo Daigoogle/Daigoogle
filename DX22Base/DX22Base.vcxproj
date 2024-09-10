@@ -183,34 +183,16 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AudioManager.cpp" />
-    <ClCompile Include="BaseObject.cpp" />
-    <ClCompile Include="BaseObjectInstance.cpp" />
-    <ClCompile Include="BaseObjectManager.cpp" />
     <ClCompile Include="CameraBase.cpp" />
     <ClCompile Include="CameraDebug.cpp" />
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="CameraPlayer.cpp" />
-    <ClCompile Include="ColliderBase.cpp" />
-    <ClCompile Include="Component.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="Component.cxx" />
     <ClCompile Include="Cube.cxx" />
-    <ClCompile Include="CubeColliderComponent.cpp" />
-    <ClCompile Include="CubeCollisionToDirectComponent.cpp" />
-    <ClCompile Include="CubeCollisionToDirectManager.cpp" />
-    <ClCompile Include="CubeManager.cpp" />
-    <ClCompile Include="CubeComponent.cpp" />
     <ClCompile Include="DebugRestriction.cxx" />
     <ClCompile Include="DirectX11SetUp.cpp" />
-    <ClCompile Include="DotColliderComponent.cpp" />
     <ClCompile Include="easing.cpp" />
     <ClCompile Include="Effect.cpp" />
-    <ClCompile Include="fade.cpp" />
     <ClCompile Include="GameObject.cxx" />
     <ClCompile Include="GameObjectInst.cxx" />
     <ClCompile Include="GameObjectMng.cxx" />
@@ -218,54 +200,27 @@
     <ClCompile Include="ItemUI.cpp" />
     <ClCompile Include="MeshBuffer.cpp" />
     <ClCompile Include="Geometory.cpp" />
-    <ClCompile Include="Main.cpp" />
     <ClCompile Include="Model.cpp" />
-    <ClCompile Include="ModelComponent.cpp" />
-    <ClCompile Include="ModelManager.cpp" />
-    <ClCompile Include="ModelRegister.cpp" />
     <ClCompile Include="MoveEmitter.cpp" />
-    <ClCompile Include="NumSprite2D.cpp" />
     <ClCompile Include="plane.cxx" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayerForce.cpp" />
-    <ClCompile Include="PlayerInfo.cpp" />
-    <ClCompile Include="PolygonColliderComponent.cpp" />
-    <ClCompile Include="ColliderManager.cpp" />
     <ClCompile Include="Polyline.cpp" />
     <ClCompile Include="PutLog.cpp" />
     <ClCompile Include="Render.cxx" />
     <ClCompile Include="RenderMng.cxx" />
-    <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneBase.cxx" />
-    <ClCompile Include="SceneComponentTest.cpp" />
-    <ClCompile Include="SceneInit.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneMng.cxx" />
-    <ClCompile Include="SceneResult.cpp" />
-    <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="ScoreManager.cpp" />
     <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="ShaderList.cpp" />
     <ClCompile Include="SingletonsMng.cxx" />
-    <ClCompile Include="SkyBoxComponent.cpp" />
-    <ClCompile Include="SkyBoxManager.cpp" />
     <ClCompile Include="Sound.cpp" />
-    <ClCompile Include="SoundEffectComponent.cpp" />
     <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="Sprite2DManager.cpp" />
-    <ClCompile Include="Sprite2DComponent.cpp" />
-    <ClCompile Include="Sprite3DManager.cpp" />
-    <ClCompile Include="Sprite3DComponent.cpp" />
     <ClCompile Include="Startup.cpp" />
     <ClCompile Include="Supervision.cxx" />
     <ClCompile Include="TagManager.cpp" />
+    <ClCompile Include="testScene.cxx" />
     <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="SceneGame.cpp" />
-    <ClCompile Include="TextureRegister.cpp" />
     <ClCompile Include="ThreadPool.cxx" />
     <ClCompile Include="ThreadPoolMng.cxx" />
-    <ClCompile Include="TrailEffect.cpp" />
-    <ClCompile Include="TrailEffeect.cpp" />
     <ClCompile Include="Transform.cxx" />
     <ClCompile Include="Vectors.cxx" />
     <ClCompile Include="Window.cpp" />
@@ -273,35 +228,18 @@
     <ClCompile Include="_model.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AudioManager.h" />
-    <ClInclude Include="BaseObjectInstance.h" />
-    <ClInclude Include="BaseObjectManager.h" />
     <ClInclude Include="CameraBase.h" />
     <ClInclude Include="CameraDebug.h" />
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="CameraPlayer.h" />
-    <ClInclude Include="ColliderBase.h" />
-    <ClInclude Include="Component.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="Component.hxx" />
     <ClInclude Include="Cube.hxx" />
-    <ClInclude Include="CubeColliderComponent.h" />
-    <ClInclude Include="CubeCollisionToDirectComponent.h" />
-    <ClInclude Include="CubeCollisionToDirectManager.h" />
-    <ClInclude Include="CubeManager.h" />
-    <ClInclude Include="CubeComponent.h" />
     <ClInclude Include="DebugRestriction.hxx" />
     <ClInclude Include="DefaultSetting.hxx" />
     <ClInclude Include="Defines.h" />
     <ClInclude Include="DirectX11SetUp.h" />
-    <ClInclude Include="DotColliderComponent.h" />
     <ClInclude Include="easing.h" />
     <ClInclude Include="Effect.h" />
-    <ClInclude Include="fade.h" />
     <ClInclude Include="GameObject.hxx" />
     <ClInclude Include="GameObjectInst.hxx" />
     <ClInclude Include="GameObjectMng.hxx" />
@@ -309,53 +247,26 @@
     <ClInclude Include="ItemUI.h" />
     <ClInclude Include="MeshBuffer.h" />
     <ClInclude Include="Geometory.h" />
-    <ClInclude Include="Main.h" />
     <ClInclude Include="Model.h" />
-    <ClInclude Include="ModelComponent.h" />
-    <ClInclude Include="ModelManager.h" />
-    <ClInclude Include="ModelRegister.h" />
     <ClInclude Include="MoveEmitter.h" />
-    <ClInclude Include="NumSprite2D.h" />
-    <ClInclude Include="BaseObject.h" />
     <ClInclude Include="plane.hxx" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerForce.h" />
-    <ClInclude Include="PlayerInfo.h" />
-    <ClInclude Include="PolygonColliderComponent.h" />
-    <ClInclude Include="ColliderManager.h" />
     <ClInclude Include="Polyline.h" />
     <ClInclude Include="PutLog.h" />
     <ClInclude Include="Render.hxx" />
     <ClInclude Include="RenderMng.hxx" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneBase.hxx" />
-    <ClInclude Include="SceneComponentTest.h" />
-    <ClInclude Include="SceneGame.h" />
-    <ClInclude Include="SceneInit.h" />
-    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneMng.hxx" />
-    <ClInclude Include="SceneResult.h" />
-    <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="ScoreManager.h" />
     <ClInclude Include="Shader.h" />
-    <ClInclude Include="ShaderList.h" />
     <ClInclude Include="SingletonsMng.hxx" />
-    <ClInclude Include="SkyBoxComponent.h" />
-    <ClInclude Include="SkyBoxManager.h" />
     <ClInclude Include="Sound.h" />
-    <ClInclude Include="SoundEffectComponent.h" />
     <ClInclude Include="Sprite.h" />
-    <ClInclude Include="Sprite2DManager.h" />
-    <ClInclude Include="Sprite2DComponent.h" />
-    <ClInclude Include="Sprite3DManager.h" />
-    <ClInclude Include="Sprite3DComponent.h" />
     <ClInclude Include="TagManager.h" />
+    <ClInclude Include="testScene.hxx" />
     <ClInclude Include="Texture.h" />
-    <ClInclude Include="TextureRegister.h" />
     <ClInclude Include="ThreadPool.hxx" />
     <ClInclude Include="ThreadPoolMng.hxx" />
-    <ClInclude Include="TrailEffeect.h" />
     <ClInclude Include="Transform.hxx" />
     <ClInclude Include="Vectors.hxx" />
     <ClInclude Include="Window.h" />
@@ -406,10 +317,6 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DX22Base.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ColliderJudgement.cu" />
-    <None Include="ColliderJudgement.cuh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

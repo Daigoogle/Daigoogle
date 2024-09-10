@@ -13,13 +13,21 @@ RenderMng::RenderMng()
 
 RenderMng::~RenderMng()
 {
-
+	m_Model.clear();
+	m_Texture.clear();
+	m_VertexShader.clear();
+	m_PixelShader.clear();
+	for (auto& elem : m_MeshBuffer)
+	{
+		//delete elem;
+		//elem = nullptr;
+	}
 }
 
 bool RenderMng::Init()
 {
 	// ----------メッシュバッファの初期化---------
-	Vertex vtx[] = {
+	Vertex vtx0[] = {
 		{{-0.5f, 0.5f, 0.0f}, {0.0f, 0.0f}},
 		{{ 0.5f, 0.5f, 0.0f}, {1.0f, 0.0f}},
 		{{-0.5f,-0.5f, 0.0f}, {0.0f, 1.0f}},
@@ -27,14 +35,14 @@ bool RenderMng::Init()
 	};
 
 	MeshBuffer::Description desc0;
-	desc0.pVtx = vtx;
+	desc0.pVtx = vtx0;
 	desc0.vtxSize = sizeof(Vertex);
-	desc0.vtxCount = _countof(vtx);
+	desc0.vtxCount = _countof(vtx0);
 	desc0.topology = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP;
 	m_MeshBuffer[MeshType::MESH_plane] = new MeshBuffer(desc0);
 
 	// 元データの 
-	Vertex vtx[] = {
+	Vertex vtx1[] = {
 		//-z面
 		{{-0.5f, 0.5f,-0.5f},{0.0f,0.0f}},//0
 		{{ 0.5f, 0.5f,-0.5f},{1.0f,0.0f}},//1
@@ -68,7 +76,7 @@ bool RenderMng::Init()
 		{{ 0.5f,0.5f,0.5f},{1.0f,1.0f}},//5
 	};
 
-	int idx[] = {
+	int idx1[] = {
 		0,1,2,		1,3,2,		//-Z面
 		6,5,4,		6,7,5,		//Z面
 		10,9,0,		10,11,9,	//-x
@@ -79,10 +87,10 @@ bool RenderMng::Init()
 	};
 	// バッファの作成
 	MeshBuffer::Description desc1;
-	desc1.pVtx = vtx;
-	desc1.vtxCount = _countof(vtx);
+	desc1.pVtx = vtx1;
+	desc1.vtxCount = _countof(vtx1);
 	desc1.vtxSize = 20;
-	desc1.pIdx = idx;
+	desc1.pIdx = idx1;
 	desc1.idxCount = 36;
 	desc1.idxSize = sizeof(int);
 	desc1.topology = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;

@@ -11,7 +11,15 @@ SceneMng::SceneMng()
 
 SceneMng::~SceneMng()
 {
-
+	if (m_NowScene)	{
+		delete m_NowScene;
+		m_NowScene = nullptr;
+	}
+	if (m_NextScene) {
+		delete m_NextScene;
+		m_NextScene = nullptr;
+	}
+	m_LoadScenes.clear();
 }
 
 bool SceneMng::Init()
@@ -22,8 +30,9 @@ bool SceneMng::Init()
 void SceneMng::Update()
 {
 	if (m_NextScene){
-		m_NowScene.release();
-		m_NowScene = std::move(m_NextScene);
+		delete m_NowScene;
+		m_NowScene = m_NextScene;
+		m_NextScene = nullptr;
 	}
 	if(m_NowScene)
 		m_NowScene->Update();

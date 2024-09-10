@@ -9,7 +9,7 @@
 #define _____SceneMng_HXX_____
 
 // =-=-= インクルード部 =-=-=
-#include <deque>
+#include <vector>
 #include <type_traits>
 #include "SingletonsMng.hxx"
 #include "SceneBase.hxx"
@@ -26,11 +26,11 @@ public:
 	{
 		// 既にロード済みシーンならば生成しない
 		for (const auto& elem : m_LoadScenes) {
-			if (dynamic_cast<TypeScene>(elem.get())) {
+			if (dynamic_cast<TypeScene*>(elem)) {
 				return;
 			}
 		}
-		m_LoadScenes.push_back(std::make_unique<TypeScene>());
+		m_LoadScenes.push_back(new TypeScene);
 		
 		// 本来は並列化！！！
 		m_LoadScenes.back()->Init();
@@ -40,27 +40,28 @@ public:
 	void ChangeScene()
 	{
 		// 既にロード済みか調べる
-		for (const auto& elem : m_LoadScenes) {
-			if (dynamic_cast<TypeScene>(elem.get())) {
-				m_NextScene = std::move(elem);
+		for (int i = 0; i < m_LoadScenes.size();i++) {
+			if (dynamic_cast<TypeScene*>(m_LoadScenes[i]) != nullptr) {
+				m_NextScene = m_LoadScenes[i];
+				m_LoadScenes.erase(m_LoadScenes.begin() + i);
 				return;
 			}
 		}
 		// ロードしていない場合はロードする
-		m_NextScene = std::make_unique<TypeScene>();
+		m_NextScene = new TypeScene;
 
 		// 本来は並列化！！！
 		m_NextScene->Init();
 	}
 
-	SceneBase* GetNowScene() const { return m_NowScene.get(); }
+	SceneBase* GetNowScene() const { return m_NowScene; }
 private:
 	SceneMng();
 	~SceneMng();
 	
-	std::unique_ptr<SceneBase> m_NowScene;
-	std::unique_ptr<SceneBase> m_NextScene;
-	std::deque<std::unique_ptr<SceneBase>> m_LoadScenes;
+	SceneBase* m_NowScene;
+	SceneBase* m_NextScene;
+	std::vector<SceneBase*> m_LoadScenes;
 };
 
 #endif // !_____SceneMng_HXX_____

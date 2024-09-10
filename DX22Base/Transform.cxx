@@ -4,21 +4,18 @@ using namespace tf;
 
 const static float c_fPi_180 = 3.1415926535f / 180.0f;
 
-Transform::Transform() :m_localPosition(), m_localRotation(), m_localScale(), m_Parent(), m_HaveParent(false)
+Transform::Transform() 
+	: m_localPosition()
+	, m_localRotation()
+	, m_localScale()
+	, m_Parent()
+	, m_HaveParent(false)
 {
 	m_localScale = m_localScale + 1.0f;
 }
 Transform::~Transform()
 {
 	m_Parent = nullptr;
-}
-
-bool Transform::Init()
-{
-	true;
-}
-void Transform::Update()
-{
 }
 
 void  Transform::SetLocalPosition(fVec3 Get)
