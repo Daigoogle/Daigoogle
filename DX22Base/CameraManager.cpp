@@ -14,7 +14,7 @@ CameraManager::~CameraManager()
 
 }
 
-void CameraManager::SetCamera(CameraBase* cam)
+void CameraManager::SetMainCamera(CameraBase* cam)
 {
 	m_pMainCamera = cam;
 }

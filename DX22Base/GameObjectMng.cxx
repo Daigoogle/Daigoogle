@@ -59,7 +59,8 @@ void GameObjectMng::UpdateObjects(SceneBase* pScene)
 
 void GameObjectMng::DeleteSceneObjects(SceneBase* pScene)
 {
-	
+	m_ObjectsQueue[pScene].clear();
+	m_ObjectsQueue.erase(pScene);
 }
 
 GameObject GameObjectMng::MakeObject(SceneBase* pScene)

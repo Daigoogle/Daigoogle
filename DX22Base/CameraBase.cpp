@@ -1,4 +1,5 @@
 #include "CameraBase.h"
+#include "CameraManager.h"
 
 CameraBase::CameraBase():
 	m_pos(0.0f,0.0f,-3.0f),
@@ -47,4 +48,9 @@ DirectX::XMFLOAT4X4 CameraBase::GetProjMatrix()
 	DirectX::XMStoreFloat4x4(&mat, proj);
 
 	return mat;
+}
+
+void CameraBase::SetMainCamera()
+{
+	CameraManager::GetInstance().SetMainCamera(this);
 }

@@ -6,6 +6,7 @@
 #include "InputDeviceManager.h"
 #include "SceneMng.hxx"
 #include "GameObjectMng.hxx"
+#include "RenderMng.hxx"
 
 #include "testScene.hxx"
 
@@ -21,6 +22,7 @@ bool Supervision::Initialize()
 	Sucsses &= InputDeviceManager::GetInstance().Init();
 	Sucsses &= GameObjectMng::GetInstance().Init();
 	Sucsses &= SceneMng::GetInstance().Init();
+	Sucsses &= RenderMng::GetInstance().Init();
 
 	SceneMng::GetInstance().ChangeScene<testScene>();
 

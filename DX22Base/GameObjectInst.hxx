@@ -40,7 +40,7 @@ private:
 		std::unique_ptr<TypeComp> pComp(new TypeComp);
 		pComp->m_pGameObjectInst = this;
 		m_Components.push_back(std::move(pComp));
-		return pComp.get();
+		return static_cast<TypeComp*>(m_Components.back().get());
 	}
 
 	template<typename TypeComp>

@@ -16,16 +16,22 @@ class RenderMng;
 class MeshBuffer;
 
 /// @brief 描画物の基底クラス。単体での使用不可
-class Render
+class Render :public Component
 {
 	friend class RenderMng;
 public:
 	Render();
 	virtual ~Render();
 
+	void SetTexture(const std::string& Path);
+	void SetPixelShader(const std::string& Path);
+	void SetVertexShader(const std::string& Path);
+
+	void Update()override;
 protected:
 	virtual bool Init() = 0;
 	virtual void Draw() = 0;
+
 
 	void InitSetting();
 

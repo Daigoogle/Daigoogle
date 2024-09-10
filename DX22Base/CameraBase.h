@@ -24,6 +24,8 @@ public:
 		return m_look;
 	}
 
+	void SetMainCamera();
+
 protected:
 
 

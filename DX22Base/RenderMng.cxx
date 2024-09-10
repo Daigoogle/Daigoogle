@@ -34,12 +34,12 @@ bool RenderMng::Init()
 		{{ 0.5f,-0.5f, 0.0f}, {1.0f, 1.0f}},
 	};
 
-	MeshBuffer::Description desc0;
+	MeshBuffer::Description desc0 = {};
 	desc0.pVtx = vtx0;
 	desc0.vtxSize = sizeof(Vertex);
 	desc0.vtxCount = _countof(vtx0);
 	desc0.topology = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP;
-	m_MeshBuffer[MeshType::MESH_plane] = new MeshBuffer(desc0);
+	m_MeshBuffer[MeshType::MESH_plane] = std::make_unique<MeshBuffer>(desc0);
 
 	// 元データの 
 	Vertex vtx1[] = {
@@ -86,7 +86,7 @@ bool RenderMng::Init()
 
 	};
 	// バッファの作成
-	MeshBuffer::Description desc1;
+	MeshBuffer::Description desc1 = {};
 	desc1.pVtx = vtx1;
 	desc1.vtxCount = _countof(vtx1);
 	desc1.vtxSize = 20;
@@ -94,7 +94,7 @@ bool RenderMng::Init()
 	desc1.idxCount = 36;
 	desc1.idxSize = sizeof(int);
 	desc1.topology = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
-	m_MeshBuffer[MeshType::MESH_Cube] = new MeshBuffer(desc1);
+	m_MeshBuffer[MeshType::MESH_Cube] = std::make_unique<MeshBuffer>(desc1);
 
 	return true;
 }
@@ -126,7 +126,7 @@ void RenderMng::AddQueue(Render* render)
 
 MeshBuffer* RenderMng::GetMeshBuffer(MeshType type)
 {
-	return NullptrCheck(m_MeshBuffer[type]);
+	return NullptrCheck(m_MeshBuffer[type].get());
 }
 
 Model* RenderMng::GetModel(const std::string& ModelPath)

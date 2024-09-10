@@ -1,6 +1,9 @@
 #include "testScene.hxx"
 #include "GameObject.hxx"
-#include "plane.hxx"
+#include "Cube.hxx"
+#include "CameraDebug.h"
+
+#include "CameraManager.h"
 
 testScene::testScene()
 {
@@ -15,7 +18,12 @@ testScene::~testScene()
 bool testScene::Init()
 {
 	GameObject obj = MakeObject();
-	obj.AddComponent<plane>();
+	Cube* cube = obj.AddComponent<Cube>();
+	cube->SetTexture("Assets/Texture/Init_FROM.png");
+
+	GameObject Camra = MakeObject();
+	CameraBase* cmr = Camra.AddComponent<CameraDebug>();
+	CameraManager::GetInstance().SetMainCamera(cmr);
 
 	return true;
 }

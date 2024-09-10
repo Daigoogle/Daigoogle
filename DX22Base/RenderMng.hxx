@@ -55,7 +55,7 @@ private:
 	std::unordered_map<std::string, Texture*> m_Texture;
 	std::unordered_map<std::string, VertexShader*> m_VertexShader;
 	std::unordered_map<std::string, PixelShader*> m_PixelShader;
-	std::array<MeshBuffer*, 2> m_MeshBuffer;
+	std::array<std::unique_ptr<MeshBuffer>, 2> m_MeshBuffer;
 	std::queue<Render*> m_RenderQueue;
 };
 

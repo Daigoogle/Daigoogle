@@ -11,7 +11,7 @@
 // =-=-= インクルード部 =-=-=
 #include "Render.hxx"
 
-class Cube :public Render, public Component
+class Cube :public Render
 {
 public:
 	Cube();

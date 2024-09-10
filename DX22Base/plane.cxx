@@ -16,6 +16,8 @@ plane::~plane()
 bool plane::Init()
 {
 	m_pMeshBuffer = RenderMng::GetInstance().GetMeshBuffer(MESH_plane);
+	m_VertexShader = RenderMng::GetInstance().GetVertexShader("Assets/Shader/Sprite3D_Defalt_VS.cso");
+	m_PixelShader = RenderMng::GetInstance().GetPixelShader("Assets/Shader/Sprite3D_Defalt_PS.cso");
 	Render::InitSetting();
 	return true;
 }

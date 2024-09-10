@@ -11,7 +11,7 @@
 // =-=-= インクルード部 =-=-=
 #include "Render.hxx"
 
-class plane :public Render ,public Component
+class plane :public Render
 {
 public:
 	plane();
@@ -20,7 +20,6 @@ public:
 	void Draw()override;
 protected:
 	bool Init()override;
-	void Update()override {}
 private:
 	bool m_IsBillboard;
 	
