@@ -20,10 +20,9 @@ bool testScene::Init()
 	GameObject obj = MakeObject();
 	Cube* cube = obj.AddComponent<Cube>();
 	cube->SetTexture("Assets/Texture/Init_FROM.png");
-
+	
 	GameObject Camra = MakeObject();
-	CameraBase* cmr = Camra.AddComponent<CameraDebug>();
-	CameraManager::GetInstance().SetMainCamera(cmr);
-
+	Camra.AddComponent<CameraDebug>()->SetMainCamera();
+	
 	return true;
 }

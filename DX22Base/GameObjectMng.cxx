@@ -12,11 +12,20 @@ GameObjectMng::GameObjectMng()
 
 GameObjectMng::~GameObjectMng()
 {
-	for (auto& elem : m_ObjectsQueue)
-		for (auto& obj : elem.second)
-			delete obj;
+	for (auto& elem : m_ObjectsLoadQueue){
+		while (!elem.second.empty()){
+			delete elem.second.front();
+			elem.second.pop();
+		}
+	}
+	for (auto& elem : m_ObjectsQueue) {
+		while (!elem.second.empty()){
+			delete elem.second.back();
+			elem.second.pop_back();
+		}
+	}
+		
 	m_ObjectsDeleteQueue.clear();
-	m_ObjectsLoadQueue.clear();
 }
 
 bool GameObjectMng::Init()
@@ -59,7 +68,8 @@ void GameObjectMng::UpdateObjects(SceneBase* pScene)
 
 void GameObjectMng::DeleteSceneObjects(SceneBase* pScene)
 {
-	m_ObjectsQueue[pScene].clear();
+	for(auto& elem : m_ObjectsQueue[pScene])
+		delete elem;
 	m_ObjectsQueue.erase(pScene);
 }
 

@@ -17,11 +17,6 @@ RenderMng::~RenderMng()
 	m_Texture.clear();
 	m_VertexShader.clear();
 	m_PixelShader.clear();
-	for (auto& elem : m_MeshBuffer)
-	{
-		//delete elem;
-		//elem = nullptr;
-	}
 }
 
 bool RenderMng::Init()
@@ -132,37 +127,37 @@ MeshBuffer* RenderMng::GetMeshBuffer(MeshType type)
 Model* RenderMng::GetModel(const std::string& ModelPath)
 {
 	if (!m_Model.count(ModelPath)) {
-		m_Model[ModelPath] = new Model;
+		m_Model[ModelPath] = std::make_unique<Model>();
 		FalseCheck(m_Model[ModelPath]->Load(ModelPath.c_str(), 1.0f, Model::XFlip));
 	}
-	return NullptrCheck(m_Model[ModelPath]);
+	return NullptrCheck(m_Model[ModelPath].get());
 }
 
 Texture* RenderMng::GetTexture(const std::string& TexturePath)
 {
 	if (!m_Texture.count(TexturePath)) {
-		m_Texture[TexturePath] = new Texture;
+		m_Texture[TexturePath] = std::make_unique<Texture>();
 		HResultCheck( m_Texture[TexturePath]->Create(TexturePath.c_str()));
 	}
-	return NullptrCheck( m_Texture[TexturePath]);
+	return NullptrCheck( m_Texture[TexturePath].get());
 }
 
 VertexShader* RenderMng::GetVertexShader(const std::string& VertexShaderPath)
 {
 	if (!m_VertexShader.count(VertexShaderPath))
 	{
-		m_VertexShader[VertexShaderPath] = new VertexShader();
+		m_VertexShader[VertexShaderPath] = std::make_unique<VertexShader>();
 		HResultCheck(m_VertexShader[VertexShaderPath]->Load(VertexShaderPath.c_str()));
 	}
-	return NullptrCheck(m_VertexShader[VertexShaderPath]);
+	return NullptrCheck(m_VertexShader[VertexShaderPath].get());
 }
 
 PixelShader* RenderMng::GetPixelShader(const std::string& PixelShaderPath)
 {
 	if (!m_PixelShader.count(PixelShaderPath))
 	{
-		m_PixelShader[PixelShaderPath] = new PixelShader();
+		m_PixelShader[PixelShaderPath] = std::make_unique<PixelShader>();
 		HResultCheck(m_PixelShader[PixelShaderPath]->Load(PixelShaderPath.c_str()));
 	}
-	return NullptrCheck(m_PixelShader[PixelShaderPath]);
+	return NullptrCheck(m_PixelShader[PixelShaderPath].get());
 }

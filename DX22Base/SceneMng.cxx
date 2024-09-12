@@ -2,8 +2,8 @@
 
 SceneMng::SceneMng()
 	: Singleton(UPDATE_ORDER::SECOND_UPDATE)
-	, m_NowScene(nullptr)
-	, m_NextScene(nullptr)
+	, m_NowScene()
+	, m_NextScene()
 	, m_LoadScenes()
 {
 
@@ -11,14 +11,6 @@ SceneMng::SceneMng()
 
 SceneMng::~SceneMng()
 {
-	if (m_NowScene)	{
-		delete m_NowScene;
-		m_NowScene = nullptr;
-	}
-	if (m_NextScene) {
-		delete m_NextScene;
-		m_NextScene = nullptr;
-	}
 	m_LoadScenes.clear();
 }
 
@@ -30,9 +22,8 @@ bool SceneMng::Init()
 void SceneMng::Update()
 {
 	if (m_NextScene){
-		delete m_NowScene;
-		m_NowScene = m_NextScene;
-		m_NextScene = nullptr;
+		m_NowScene.release();
+		m_NowScene = std::move(m_NextScene);
 	}
 	if(m_NowScene)
 		m_NowScene->Update();
