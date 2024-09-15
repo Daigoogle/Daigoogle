@@ -7,6 +7,7 @@
 #include "SceneMng.hxx"
 #include "GameObjectMng.hxx"
 #include "RenderMng.hxx"
+#include "ThreadPoolMng.hxx"
 
 #include "testScene.hxx"
 
@@ -26,6 +27,8 @@ bool Supervision::Initialize()
 
 	SceneMng::GetInstance().ChangeScene<testScene>();
 
+	Sucsses &= ThreadPoolMng::GetInstance().Init();
+
 	if(Sucsses)
 		return true;
 	return false;
@@ -34,21 +37,4 @@ bool Supervision::Initialize()
 /// @brief 描画処理を行う
 void Supervision::Drawing()
 {
-	//// 描画処理はこの中へ
-
-	////BeginDrawDirectX();
-	//DirectX11SetUp& Dx11 = DirectX11SetUp::GetInstance();
-	//Dx11.BeginDraw();
-
-	//RenderTarget* pRT = Dx11.GetDefaultRTV();//デフォルトで使用しているRenderTargetViewの取得
-	//DepthStencil* pDS = Dx11.GetDefaultDSV();//DeapthStencilViewの取得
-
-	//Dx11.SetRenderTargets(1, &pRT, nullptr);
-
-	//Dx11.SetRenderTargets(1, &pRT, pDS);
-
-
-	//Dx11.SetRenderTargets(1, &pRT, nullptr);//深度バッファおっふ
-
-	//Dx11.EndDraw();
 }

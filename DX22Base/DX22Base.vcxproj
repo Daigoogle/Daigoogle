@@ -115,7 +115,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -166,7 +166,7 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -183,6 +183,7 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnyUpdateComp.cxx" />
     <ClCompile Include="CameraBase.cpp" />
     <ClCompile Include="CameraDebug.cpp" />
     <ClCompile Include="CameraManager.cpp" />
@@ -221,6 +222,7 @@
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="ThreadPool.cxx" />
     <ClCompile Include="ThreadPoolMng.cxx" />
+    <ClCompile Include="Time.cxx" />
     <ClCompile Include="Transform.cxx" />
     <ClCompile Include="Vectors.cxx" />
     <ClCompile Include="Window.cpp" />
@@ -228,6 +230,7 @@
     <ClCompile Include="_model.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnyUpdateComp.hxx" />
     <ClInclude Include="CameraBase.h" />
     <ClInclude Include="CameraDebug.h" />
     <ClInclude Include="CameraManager.h" />
@@ -267,6 +270,7 @@
     <ClInclude Include="Texture.h" />
     <ClInclude Include="ThreadPool.hxx" />
     <ClInclude Include="ThreadPoolMng.hxx" />
+    <ClInclude Include="Time.hxx" />
     <ClInclude Include="Transform.hxx" />
     <ClInclude Include="Vectors.hxx" />
     <ClInclude Include="Window.h" />

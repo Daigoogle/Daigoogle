@@ -96,26 +96,36 @@ bool RenderMng::Init()
 
 void RenderMng::Update()
 {
-	DirectX11SetUp& Dx11 = DirectX11SetUp::GetInstance();
-	Dx11.BeginDraw();
+	auto func = [this]() {
+		std::lock_guard<std::mutex> lock(m_Mutex);
+		std::queue<Render*> temp;
+		temp.swap(m_RenderQueue);
 
-	RenderTarget* pRT = Dx11.GetDefaultRTV();//デフォルトで使用しているRenderTargetViewの取得
-	DepthStencil* pDS = Dx11.GetDefaultDSV();//DeapthStencilViewの取得
+		DirectX11SetUp& Dx11 = DirectX11SetUp::GetInstance();
 
-	Dx11.SetRenderTargets(1, &pRT, pDS);
+		Dx11.BeginDraw();
 
-	while (!m_RenderQueue.empty()) {
-		Render* render = m_RenderQueue.front();
-		m_RenderQueue.pop();
-		//ThreadPoolMng::GetInstance().AddPool([render]() {render->Draw();});
-		render->Draw();
-	}
-	
-	Dx11.EndDraw();
+		RenderTarget* pRT = Dx11.GetDefaultRTV();//デフォルトで使用しているRenderTargetViewの取得
+		DepthStencil* pDS = Dx11.GetDefaultDSV();//DeapthStencilViewの取得
+
+		Dx11.SetRenderTargets(1, &pRT, pDS);
+
+		while (!temp.empty()) {
+			Render* render = temp.front();
+			temp.pop();
+			//ThreadPoolMng::GetInstance().AddPool([render]() {render->Draw();});
+			render->Draw();
+		}
+
+		Dx11.EndDraw();
+	};
+
+	ThreadPoolMng::GetInstance().AddPool(func);
 }
 
 void RenderMng::AddQueue(Render* render)
 {
+	std::lock_guard<std::mutex> lock(m_Mutex);
 	m_RenderQueue.push(render);
 }
 

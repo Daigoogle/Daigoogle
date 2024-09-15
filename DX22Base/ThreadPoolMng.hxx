@@ -11,23 +11,28 @@
 // =-=-= インクルード部 =-=-=
 #include "SingletonsMng.hxx"
 #include <vector>
-#include <thread>
 #include <shared_mutex>
 #include <functional>
 #include <queue>
+
+#include "ThreadPool.hxx"
 
 class ThreadPoolMng :public Singleton<ThreadPoolMng>
 {
 	friend class Singleton<ThreadPoolMng>;
 public:
-	ThreadPoolMng();
-	~ThreadPoolMng();
-	
+	bool Init() override;
+
 	void AddPool(std::function<void()>);
 	std::function<void()> GetPoolFead();
+
+private:
+	ThreadPoolMng();
+	~ThreadPoolMng();
+
 private:
 	std::shared_mutex m_Mutex;
-	std::vector<std::thread> m_Thread;
+	std::vector<std::unique_ptr<ThreadPool>> m_ThreadClass;
 	std::queue<std::function<void()>> m_Pool;
 };
 

@@ -181,6 +181,12 @@
     <ClCompile Include="testScene.cxx">
       <Filter>_Scene</Filter>
     </ClCompile>
+    <ClCompile Include="AnyUpdateComp.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -296,6 +302,12 @@
     </ClInclude>
     <ClInclude Include="testScene.hxx">
       <Filter>_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="AnyUpdateComp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.hxx">
+      <Filter>__New</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -40,6 +40,8 @@ void CameraDebug::Update()
 	m_pos.x = (cosf(m_radY) * sinf(m_radXZ) * m_radius )+ m_look.x;
 	m_pos.y = (sinf(m_radY) * m_radius )+ 1.0f;
 	m_pos.z = (cosf(m_radY) * cosf(m_radXZ) * m_radius )+ m_look.z;
+
+	m_look = { 0.0f,0.0f,0.0f };
 	
 	this->GetGameObject().GetTransform().SetLocalPosition({m_pos.x,m_pos.y,m_pos.z});
 }																			

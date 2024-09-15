@@ -58,7 +58,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		{
 			DWORD nowTime = timeGetTime();
 			float diff = static_cast<float>(nowTime - preExecTime);
-			if (diff >= 1000.0f / 60)
+			//if (diff >= 1000.0f / 60)
 			{
 				Supervision::Updater();
 				Supervision::Drawing();
