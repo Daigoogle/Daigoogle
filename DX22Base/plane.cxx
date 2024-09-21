@@ -1,19 +1,19 @@
-#include "plane.hxx"
+#include "Plane.hxx"
 #include "RenderMng.hxx"
 #include "GameObject.hxx"
 #include "CameraManager.h"
 
-plane::plane()
+Plane::Plane()
 	: m_IsBillboard(false)
 {
 }
 
-plane::~plane()
+Plane::~Plane()
 {
 
 }
 
-bool plane::Init()
+bool Plane::Init()
 {
 	m_pMeshBuffer = RenderMng::GetInstance().GetMeshBuffer(MESH_plane);
 	m_VertexShader = RenderMng::GetInstance().GetVertexShader("Assets/Shader/Sprite3D_Defalt_VS.cso");
@@ -22,11 +22,11 @@ bool plane::Init()
 	return true;
 }
 
-void plane::Draw()
+void Plane::Draw()
 {
 	CameraBase* Camm = CameraManager::GetInstance().GetMainCamera();
 	// トランスフォームを取得
-	Transform& tf = this->GetGameObject().GetTransform();
+	Transform* tf = this->GetGameObject().GetTransform();
 
 	float afVtxInfos[] = {
 		m_uvOffSet.x,
@@ -41,7 +41,7 @@ void plane::Draw()
 
 	// ワールド行列の取り出し
 	DirectX::XMFLOAT4X4 mat[3];
-	mat[0] = tf.GetWorldMatrix();
+	mat[0] = tf->GetWorldMatrix();
 
 	// カメラのデータを取り出すループ
 	//CCameraManager& camManager = CameraManager::GetInstance();

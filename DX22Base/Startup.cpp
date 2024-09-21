@@ -6,9 +6,10 @@
 #include <stdio.h>
 #include <crtdbg.h>
 #include "Window.h"
+#include "DebugRestriction.hxx"
+#include "Time.hxx"
 
 // timeGetTime周りの使用
-#pragma comment(lib, "winmm.lib")
 
 //--- プロトタイプ宣言
 //LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
@@ -21,6 +22,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	window.SetHInstance(hInstance);
 	window.SetNCmdShow(nCmdShow);
 
+	TimerInit();
 
 	// 初期化処理
 	if (!Supervision::Initialize())
@@ -34,10 +36,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	WNDCLASSEX wcex = window.GetWcex();
 	MSG message = window.GetMessage();
 
-	//--- FPS制御
-	timeBeginPeriod(1);
-	DWORD countStartTime = timeGetTime();
-	DWORD preExecTime = countStartTime;
+	TimerUpdate();
 
 	//--- ウィンドウの管理
 	while (1)
@@ -56,13 +55,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		}
 		else
 		{
-			DWORD nowTime = timeGetTime();
-			float diff = static_cast<float>(nowTime - preExecTime);
-			//if (diff >= 1000.0f / 60)
+			
+			DebugString_(std::to_string(GetFPS()) + "\n")
 			{
 				Supervision::Updater();
-				Supervision::Drawing();
-				preExecTime = nowTime;
+				TimerUpdate();
 			}
 		}
 	}

@@ -9,6 +9,7 @@ Render::Render()
 	, m_pTexture(nullptr)
 	, m_PixelShader(nullptr)
 	, m_VertexShader(nullptr)
+	, m_Layer(LAYER_TYPE::MIDDLE)
 {
 
 }
@@ -44,7 +45,12 @@ void Render::SetVertexShader(const std::string& Path)
 	m_VertexShader = RenderMng::GetInstance().GetVertexShader(Path);
 }
 
+void Render::SetLayer(LAYER_TYPE layer)
+{
+	m_Layer = layer;
+}
+
 void Render::Update()
 {
-	RenderMng::GetInstance().AddQueue(this);
+	RenderMng::GetInstance().AddQueue(this,m_Layer);
 }

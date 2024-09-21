@@ -20,7 +20,7 @@ GameObject::~GameObject()
 
 bool GameObject::IsNull() const
 {
-	if (m_pInstance)
+	if (!m_pInstance)
 		return true;
 	return false;
 }
@@ -94,8 +94,8 @@ SceneBase* GameObject::GetScene()
 	return m_pInstance->m_pScene;
 }
 
-Transform& GameObject::GetTransform()
+Transform* GameObject::GetTransform()
 {
 	NullptrCheck_void_(m_pInstance)
-	return m_pInstance->m_Transform;
+	return &m_pInstance->m_Transform;
 }

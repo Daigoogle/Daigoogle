@@ -10,12 +10,24 @@ Transform::Transform()
 	, m_localScale()
 	, m_Parent()
 	, m_HaveParent(false)
+	, m_IsLook(false)
 {
 	m_localScale = m_localScale + 1.0f;
 }
 Transform::~Transform()
 {
 	m_Parent = nullptr;
+}
+
+void Transform::Update()
+{
+	if (m_IsLook)// Billboard
+	{
+		fVec3 LookVec = GetWorldPosition() - m_LookPoint->GetWorldPosition() ;
+		fVec3 Nom = Vec::Nomalize(LookVec);
+		fVec3 LookRot = {atan2f(Nom.y,sqrtf(Nom.x * Nom.x + Nom.z * Nom.z)) * -57.2957795f,atan2f(Nom.x,Nom.z) * 57.2957795f,0.0f };
+		SetLocalRotation(LookRot);
+	}
 }
 
 void  Transform::SetLocalPosition(fVec3 Get)
@@ -98,7 +110,13 @@ void Transform::SetParent(Transform* tf)
 }
 void Transform::RemoveParent()
 {
-	m_Parent = nullptr;;
+	m_Parent = nullptr;
+}
+
+void Transform::LookPoint(Transform* Point)
+{
+	m_IsLook = true;
+	m_LookPoint = Point;
 }
 
 DirectX::XMFLOAT4X4 Transform::GetWorldMatrix(void)
@@ -142,6 +160,9 @@ void Transform::ParentCheck()
 		m_HaveParent = false;
 	}
 }
+
+
+
 
 
 

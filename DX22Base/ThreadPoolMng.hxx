@@ -22,6 +22,7 @@ class ThreadPoolMng :public Singleton<ThreadPoolMng>
 	friend class Singleton<ThreadPoolMng>;
 public:
 	bool Init() override;
+	void Update() override;
 
 	void AddPool(std::function<void()>);
 	std::function<void()> GetPoolFead();

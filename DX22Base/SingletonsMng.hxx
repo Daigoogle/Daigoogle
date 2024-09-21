@@ -56,8 +56,6 @@ public:
 	static bool Initialize();
 	/// @brief 更新処理を行う
 	static void Updater();
-	/// @brief 描画処理を行う
-	static void Drawing();
 	/// @brief 終了処理を行う
 	static void Finalize();
 
@@ -97,7 +95,7 @@ public:
 		return *instance;
 	}
 
-	/// @brief 関数ポインタ
+	/// @brief 静的でコンストな関数ポインタの参照
 	static const getInst &GetInstance;
 private:
 	static getInst _GetInstfuncP;

@@ -10,7 +10,6 @@ public:
 	~CameraDebug();
 
 protected:
-	bool Init()override;
 	void Update()override;
 
 private:

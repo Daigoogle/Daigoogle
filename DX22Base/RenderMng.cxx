@@ -7,6 +7,7 @@
 
 RenderMng::RenderMng()
 	: Singleton(UPDATE_ORDER::LAST_UPDATE)
+	, m_Swap(true)
 {
 
 }
@@ -96,37 +97,61 @@ bool RenderMng::Init()
 
 void RenderMng::Update()
 {
+	std::lock_guard<std::mutex> lock(m_Mutex);
+	m_Swap = false;
+
+	static bool isDraw = true;
+	if (isDraw)	{
+		DirectX11SetUp::GetInstance().BeginDraw();
+		isDraw = false;
+	}
+
 	auto func = [this]() {
 		std::lock_guard<std::mutex> lock(m_Mutex);
-		std::queue<Render*> temp;
+
+		std::array<std::queue<Render*>, 3> temp;
 		temp.swap(m_RenderQueue);
+		m_Swap = true;
 
 		DirectX11SetUp& Dx11 = DirectX11SetUp::GetInstance();
 
-		Dx11.BeginDraw();
-
 		RenderTarget* pRT = Dx11.GetDefaultRTV();//デフォルトで使用しているRenderTargetViewの取得
 		DepthStencil* pDS = Dx11.GetDefaultDSV();//DeapthStencilViewの取得
+		Dx11.SetRenderTargets(1, &pRT, nullptr);
+		while (!temp[0].empty()) {
+			Render* render = temp[0].front();
+			temp[0].pop();
+			//ThreadPoolMng::GetInstance().AddPool([render,slock]() {render->Draw();});
+			render->Draw();
+		}
 
 		Dx11.SetRenderTargets(1, &pRT, pDS);
+		
+		while (!temp[1].empty()) {
+			Render* render = temp[1].front();
+			temp[1].pop();
+			//ThreadPoolMng::GetInstance().AddPool([render,slock]() {render->Draw();});
+			render->Draw();
+		}
 
-		while (!temp.empty()) {
-			Render* render = temp.front();
-			temp.pop();
-			//ThreadPoolMng::GetInstance().AddPool([render]() {render->Draw();});
+		Dx11.SetRenderTargets(1, &pRT, nullptr);
+		while (!temp[2].empty()) {
+			Render* render = temp[2].front();
+			temp[2].pop();
+			//ThreadPoolMng::GetInstance().AddPool([render,slock]() {render->Draw();});
 			render->Draw();
 		}
 
 		Dx11.EndDraw();
+		Dx11.BeginDraw();
 	};
-
 	ThreadPoolMng::GetInstance().AddPool(func);
 }
 
-void RenderMng::AddQueue(Render* render)
+void RenderMng::AddQueue(Render* render, LAYER_TYPE layer)
 {
-	std::lock_guard<std::mutex> lock(m_Mutex);
-	m_RenderQueue.push(render);
+	if(m_Swap)
+		m_RenderQueue[layer].push(render);
 }
 
 MeshBuffer* RenderMng::GetMeshBuffer(MeshType type)
@@ -134,11 +159,11 @@ MeshBuffer* RenderMng::GetMeshBuffer(MeshType type)
 	return NullptrCheck(m_MeshBuffer[type].get());
 }
 
-Model* RenderMng::GetModel(const std::string& ModelPath)
+MODEL* RenderMng::GetModel(const std::string& ModelPath)
 {
 	if (!m_Model.count(ModelPath)) {
-		m_Model[ModelPath] = std::make_unique<Model>();
-		FalseCheck(m_Model[ModelPath]->Load(ModelPath.c_str(), 1.0f, Model::XFlip));
+		m_Model[ModelPath] = std::make_unique<MODEL>();
+		FalseCheck(m_Model[ModelPath]->Load(ModelPath.c_str()));
 	}
 	return NullptrCheck(m_Model[ModelPath].get());
 }

@@ -9,7 +9,10 @@
 #define _____TimeMng_HXX_____
 
 // =-=-= インクルード部 =-=-=
-
+void TimerInit();
+float DeltaSeconds();
+float GetFPS();
+void TimerUpdate();
 
 
 #endif // !_____TimeMng_HXX_____

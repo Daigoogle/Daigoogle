@@ -7,9 +7,7 @@
 ThreadPool::ThreadPool()
 	: m_IsEnd(false)
 	, m_EndCompleat(false)
-{
-
-}
+{}
 
 ThreadPool::~ThreadPool()
 {
@@ -19,8 +17,7 @@ ThreadPool::~ThreadPool()
 
 void ThreadPool::Start()
 {
-	auto func = [this]() {this->PoolLoop(); };
-	m_Thread = std::make_unique<std::thread>(func);
+	m_Thread = std::make_unique<std::thread>([this]() {this->PoolLoop(); });
 }
 
 void ThreadPool::PoolLoop()
@@ -28,8 +25,7 @@ void ThreadPool::PoolLoop()
 	std::function<void()> func;
 	while (true) {
 		func = ThreadPoolMng::GetInstance().GetPoolFead();
-		if (func)
-			func();
+		if (func)func();
 		if (m_IsEnd)break;
 	}
 	m_EndCompleat = true;

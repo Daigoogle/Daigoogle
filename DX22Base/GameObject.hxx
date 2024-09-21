@@ -78,7 +78,7 @@ public:
 	SceneBase* GetScene();
 	/// @brief Transform‚ÌŽæ“¾
 	/// @return Transform
-	Transform& GetTransform();
+	Transform* GetTransform();
 private:
 	GameObjectInst* m_pInstance;// ŽÀ‘Ì
 };

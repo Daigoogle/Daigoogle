@@ -19,4 +19,9 @@ HRESULT _HResultCheckFunc(HRESULT hr)
 	return hr;
 }
 
+void _DebugStringOutput(const std::string& str)
+{
+	OutputDebugString(str.c_str());
+}
+
 #endif // _DEBUG

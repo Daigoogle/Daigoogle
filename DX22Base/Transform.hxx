@@ -10,7 +10,6 @@
 #define _____TRANSFORM_H_____
 
 #include "Vectors.hxx"
-//#include "Component.hxx"
 
 /// @brief class Transform
 /// @brief public : Component
@@ -20,22 +19,26 @@ public:
 	Transform();
 	~Transform();
 
-	void  SetLocalPosition(fVec3 Get);
+	void Update();
+
 	fVec3 GetLocalPosition();
-	void  SetLocalRotation(fVec3 Get);
 	fVec3 GetLocalRotation();
-	void  SetLocalScale(fVec3 Get);
 	fVec3 GetLocalScale();
-	
-	void  SetWorldPosition(fVec3 Get);
 	fVec3 GetWorldPosition();
-	void  SetWorldRotation(fVec3 Get);
 	fVec3 GetWorldRotation();
-	void  SetWorldScale(fVec3 Get);
 	fVec3 GetWorldScale();
+
+	void  SetLocalPosition(fVec3 Get);
+	void  SetLocalRotation(fVec3 Get);
+	void  SetLocalScale(fVec3 Get);
+	void  SetWorldPosition(fVec3 Get);
+	void  SetWorldRotation(fVec3 Get);
+	void  SetWorldScale(fVec3 Get);
 
 	void SetParent(Transform* tf);
 	void RemoveParent();
+
+	void LookPoint(Transform* point);
 
 	fVec4x4 GetWorldMatrix(void);
 
@@ -48,6 +51,9 @@ private:
 
 	bool m_HaveParent;
 	Transform* m_Parent;
+
+	bool m_IsLook;
+	Transform* m_LookPoint;
 };
 
 namespace tf

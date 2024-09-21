@@ -75,17 +75,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -189,6 +193,7 @@
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="CameraPlayer.cpp" />
     <ClCompile Include="Component.cxx" />
+    <ClCompile Include="CreateTexture.cpp" />
     <ClCompile Include="Cube.cxx" />
     <ClCompile Include="DebugRestriction.cxx" />
     <ClCompile Include="DirectX11SetUp.cpp" />
@@ -201,9 +206,10 @@
     <ClCompile Include="ItemUI.cpp" />
     <ClCompile Include="MeshBuffer.cpp" />
     <ClCompile Include="Geometory.cpp" />
-    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ModelData.cpp" />
+    <ClCompile Include="Model.cxx" />
     <ClCompile Include="MoveEmitter.cpp" />
-    <ClCompile Include="plane.cxx" />
+    <ClCompile Include="Plane.cxx" />
     <ClCompile Include="Polyline.cpp" />
     <ClCompile Include="PutLog.cpp" />
     <ClCompile Include="Render.cxx" />
@@ -227,7 +233,6 @@
     <ClCompile Include="Vectors.cxx" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="_geometory.cpp" />
-    <ClCompile Include="_model.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnyUpdateComp.hxx" />
@@ -236,6 +241,7 @@
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="CameraPlayer.h" />
     <ClInclude Include="Component.hxx" />
+    <ClInclude Include="CreateTexture.h" />
     <ClInclude Include="Cube.hxx" />
     <ClInclude Include="DebugRestriction.hxx" />
     <ClInclude Include="DefaultSetting.hxx" />
@@ -250,9 +256,10 @@
     <ClInclude Include="ItemUI.h" />
     <ClInclude Include="MeshBuffer.h" />
     <ClInclude Include="Geometory.h" />
-    <ClInclude Include="Model.h" />
+    <ClInclude Include="ModelData.h" />
+    <ClInclude Include="Model.hxx" />
     <ClInclude Include="MoveEmitter.h" />
-    <ClInclude Include="plane.hxx" />
+    <ClInclude Include="Plane.hxx" />
     <ClInclude Include="Polyline.h" />
     <ClInclude Include="PutLog.h" />
     <ClInclude Include="Render.hxx" />
@@ -276,6 +283,12 @@
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <FxCompile Include="common.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
     <FxCompile Include="DefaltModel_PS.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
@@ -310,6 +323,30 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="unlitTexturePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="unlitTextureVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="vertexLightingPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="vertexLightingVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
     </FxCompile>
     <FxCompile Include="VS_Model.hlsl">

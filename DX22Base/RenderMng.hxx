@@ -14,7 +14,7 @@
 #include "Vectors.hxx"
 #include "SingletonsMng.hxx"
 #include "MeshBuffer.h"
-#include "Model.h"
+#include "ModelData.h"
 #include "Shader.h"
 
 class Render;
@@ -31,6 +31,13 @@ enum MeshType
 	MESH_Cube,
 };
 
+enum LAYER_TYPE
+{
+	FRONT = 0,
+	MIDDLE,
+	LAST,
+};
+
 class RenderMng: public Singleton<RenderMng>
 {
 	friend class Singleton<RenderMng>;
@@ -40,10 +47,10 @@ public:
 	bool Init() override;
 	void Update() override;
 
-	void AddQueue(Render* render);
+	void AddQueue(Render* render, LAYER_TYPE layer);
 
 	MeshBuffer* GetMeshBuffer(MeshType type);
-	Model* GetModel(const std::string& Path);
+	MODEL* GetModel(const std::string& Path);
 	Texture* GetTexture(const std::string& Path);
 	VertexShader* GetVertexShader(const std::string& Path);
 	PixelShader* GetPixelShader(const std::string& Path);
@@ -51,13 +58,14 @@ private:
 	RenderMng();
 	~RenderMng();
 
-	std::unordered_map<std::string, std::unique_ptr<Model>> m_Model;
+	std::unordered_map<std::string, std::unique_ptr<MODEL>> m_Model;
 	std::unordered_map<std::string, std::unique_ptr<Texture>> m_Texture;
 	std::unordered_map<std::string, std::unique_ptr<VertexShader>> m_VertexShader;
 	std::unordered_map<std::string, std::unique_ptr<PixelShader>> m_PixelShader;
 	std::array<std::unique_ptr<MeshBuffer>, 2> m_MeshBuffer;
 
-	std::queue<Render*> m_RenderQueue;
+	std::array<std::queue<Render*>,3> m_RenderQueue;
+	bool m_Swap;
 
 	std::mutex m_Mutex;
 };

@@ -16,14 +16,9 @@ CameraPlayer::~CameraPlayer()
 
 }
 
-bool CameraPlayer::Init()
-{
-	return true;
-}
-
 void CameraPlayer::Update()
 {
-	m_look = Vec::ToXMFLOAT3(this->GetGameObject().GetTransform().GetWorldPosition());//注視点をプレイヤーの位置とする
+	m_look = Vec::ToXMFLOAT3(this->GetGameObject().GetTransform()->GetWorldPosition());//注視点をプレイヤーの位置とする
 	m_look.y += 0.4f;	//位置調整
 
 	const float Speed = 0.1f;
@@ -49,8 +44,10 @@ void CameraPlayer::Update()
 		if (InputDevice::IsPress(KeyCodes::Left)) { m_radXZ += Speed; }
 	}
 
+	fVec3 m_pos;
 	//注視点に回り込む計算
 	m_pos.x = (cosf(m_radY) * sinf(m_radXZ) * m_dist) + m_look.x;
 	m_pos.y = (sinf(m_radY) * m_dist) + m_look.y;
 	m_pos.z = (cosf(m_radY) * cosf(m_radXZ) * m_dist) + m_look.z;
+	m_Transform->SetWorldPosition(m_pos);
 }

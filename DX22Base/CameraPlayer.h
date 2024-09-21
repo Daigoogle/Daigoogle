@@ -10,7 +10,6 @@ public:
 	~CameraPlayer();
 
 protected:
-	bool Init()override;
 	void Update()override;
 
 private:

@@ -1,6 +1,7 @@
 #include "SingletonsMng.hxx"
 
 // =-=-= インクルード部 =-=-=
+#include "DebugRestriction.hxx"
 #include "Window.h"
 #include "DirectX11SetUp.h"
 #include "InputDeviceManager.h"
@@ -8,6 +9,7 @@
 #include "GameObjectMng.hxx"
 #include "RenderMng.hxx"
 #include "ThreadPoolMng.hxx"
+#include "CameraManager.h"
 
 #include "testScene.hxx"
 
@@ -18,23 +20,17 @@ bool Supervision::Initialize()
 	bool Sucsses = true;
 
 	// 初期化処理はこの中へ
-	Sucsses &= Window::GetInstance().Init();
-	Sucsses &= DirectX11SetUp::GetInstance().Init();
-	Sucsses &= InputDeviceManager::GetInstance().Init();
-	Sucsses &= GameObjectMng::GetInstance().Init();
-	Sucsses &= SceneMng::GetInstance().Init();
-	Sucsses &= RenderMng::GetInstance().Init();
+	Sucsses &= FalseCheck(Window::GetInstance().Init()				);
+	Sucsses &= FalseCheck(DirectX11SetUp::GetInstance().Init()		);
+	Sucsses &= FalseCheck(InputDeviceManager::GetInstance().Init()	);
+	Sucsses &= FalseCheck(GameObjectMng::GetInstance().Init()		);
+	Sucsses &= FalseCheck(SceneMng::GetInstance().Init()			);
+	Sucsses &= FalseCheck(CameraManager::GetInstance().Init()		);
+	Sucsses &= FalseCheck(RenderMng::GetInstance().Init()			);
 
 	SceneMng::GetInstance().ChangeScene<testScene>();
-
-	Sucsses &= ThreadPoolMng::GetInstance().Init();
 
 	if(Sucsses)
 		return true;
 	return false;
-}
-
-/// @brief 描画処理を行う
-void Supervision::Drawing()
-{
 }

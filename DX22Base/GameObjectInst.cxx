@@ -35,6 +35,7 @@ void GameObjectInst::Update()
 		return;
 	for (auto& elem : m_Components)
 		elem->Update();// XV
+	m_Transform.Update();
 }
 
 const bool GameObjectInst::IsActive()

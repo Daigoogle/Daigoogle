@@ -22,12 +22,14 @@
 #define FalseCheck(b) _falseCheckFunc(b)
 #define HResultCheck(hr) _HResultCheckFunc(hr)
 #define DebugBreakPoint_ DebugBreak();
+#define DebugString_(str) _DebugStringOutput(str);
 #else // Release
 #define NullptrCheck(ptr) ptr
 #define NullptrCheck_void_(ptr) 
 #define FalseCheck(b) b
 #define HResultCheck(hr) hr
 #define DebugBreakPoint_ 
+#define DebugString_(str)
 #endif // _DEBUG
 
 // =-=-= デバッグ限定処理 =-=-=
@@ -49,6 +51,7 @@ Type* _NullptrCheckFunc(Type* ptr)
 
 bool _falseCheckFunc(bool b);
 HRESULT _HResultCheckFunc(HRESULT hr);
+void _DebugStringOutput(const std::string& str);
 
 #endif // _DEBUG
 #endif // !_____DebugRestriction_HXX_____

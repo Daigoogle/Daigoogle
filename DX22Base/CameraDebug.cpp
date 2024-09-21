@@ -2,6 +2,7 @@
 #include "InputDeviceManager.h"
 #include "GameObject.hxx"
 #include "Transform.hxx"
+#include "Time.hxx"
 
 CameraDebug::CameraDebug():
 	m_radXZ(0.0f),
@@ -14,13 +15,9 @@ CameraDebug::~CameraDebug()
 {
 }
 
-bool CameraDebug::Init()
-{
-	return true;
-}
 void CameraDebug::Update()
 {
-	const float Speed = 0.1f;
+	const float Speed = DeltaSeconds();
 
 	//’Ž‹“_‚ð“®‚©‚·
 	if (InputDevice::IsPress(KeyCodes::Up)) { m_look.z += Speed; }
@@ -37,11 +34,13 @@ void CameraDebug::Update()
 	if (InputDevice::IsPress(KeyCodes::Q)) { m_radius += Speed; }
 	if (InputDevice::IsPress(KeyCodes::E)) { m_radius -= Speed; }
 
+	fVec3 m_pos;
 	m_pos.x = (cosf(m_radY) * sinf(m_radXZ) * m_radius )+ m_look.x;
 	m_pos.y = (sinf(m_radY) * m_radius )+ 1.0f;
 	m_pos.z = (cosf(m_radY) * cosf(m_radXZ) * m_radius )+ m_look.z;
+	m_Transform->SetWorldPosition(m_pos);
 
 	m_look = { 0.0f,0.0f,0.0f };
 	
-	this->GetGameObject().GetTransform().SetLocalPosition({m_pos.x,m_pos.y,m_pos.z});
+	this->GetGameObject().GetTransform()->SetLocalPosition({m_pos.x,m_pos.y,m_pos.z});
 }																			

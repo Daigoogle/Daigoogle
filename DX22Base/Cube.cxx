@@ -16,7 +16,7 @@ void Cube::Draw()
 {
 	CameraBase* Camm = CameraManager::GetInstance().GetMainCamera();
 	// トランスフォームを取得
-	Transform& tf = this->GetGameObject().GetTransform();
+	Transform* tf = this->GetGameObject().GetTransform();
 
 	float afVtxInfos[] = {
 		m_uvOffSet.x,
@@ -31,7 +31,7 @@ void Cube::Draw()
 
 	// ワールド行列の取り出し
 	DirectX::XMFLOAT4X4 mat[3];
-	mat[0] = tf.GetWorldMatrix();
+	mat[0] = tf->GetWorldMatrix();
 
 	// カメラのデータを取り出すループ
 	//CCameraManager& camManager = CameraManager::GetInstance();
