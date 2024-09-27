@@ -38,8 +38,8 @@ namespace
 }
 
 
-// ネームスペース「 Easing 」
-namespace Easing
+// ネームスペース「 eas 」
+namespace eas
 {
 	float InSine(float num)
 	{
