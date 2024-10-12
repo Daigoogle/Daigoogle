@@ -141,7 +141,7 @@ protected:
 };
 
 // Ã“Iƒƒ“ƒo‚ğ’è‹`
-template<typename Type> std::once_flag Singleton<Type>::initFlag;
+template <typename Type> std::once_flag Singleton<Type>::initFlag;
 template <typename Type> Type* Singleton<Type>::instance = nullptr;
 template <typename Type> const Singleton<Type>::getInst &Singleton<Type>::GetInstance = Singleton<Type>::_GetInstfuncP;
 template <typename Type> Singleton<Type>::getInst Singleton<Type>::_GetInstfuncP = Singleton<Type>::__CreateInstance;

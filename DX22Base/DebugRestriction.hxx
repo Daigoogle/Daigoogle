@@ -17,6 +17,7 @@
 
 // =-=-= マクロ定義部 =-=-=
 #ifdef _DEBUG
+#define DEBUG_INIT _DebugInit();
 #define NullptrCheck(ptr) _NullptrCheckFunc(ptr)
 #define NullptrCheck_void_(ptr) _NullptrCheckFunc(ptr);
 #define FalseCheck(b) _falseCheckFunc(b)
@@ -49,6 +50,7 @@ Type* _NullptrCheckFunc(Type* ptr)
 	return ptr;
 }
 
+void _DebugInit();
 bool _falseCheckFunc(bool b);
 HRESULT _HResultCheckFunc(HRESULT hr);
 void _DebugStringOutput(const std::string& str);

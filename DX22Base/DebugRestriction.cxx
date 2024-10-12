@@ -1,5 +1,13 @@
 #include "DebugRestriction.hxx"
 #ifdef _DEBUG
+#include <iostream>
+
+void _DebugInit()
+{
+	AllocConsole();
+	freopen("CON", "r", stdin);     // •W€“ü—Í‚ÌŠ„‚è“–‚Ä
+	freopen("CON", "w", stdout);    // •W€o—Í‚ÌŠ„‚è“–‚Ä
+}
 
 bool _falseCheckFunc(bool b)
 {
@@ -21,7 +29,7 @@ HRESULT _HResultCheckFunc(HRESULT hr)
 
 void _DebugStringOutput(const std::string& str)
 {
-	OutputDebugString(str.c_str());
+	std::cout << str.c_str() << std::endl;
 }
 
 #endif // _DEBUG

@@ -1,7 +1,7 @@
 #include "ThreadPoolMng.hxx"
 #include <thread>
 
-//#define _THREADPOOL_
+#define _THREADPOOL_
 
 ThreadPoolMng::ThreadPoolMng()
 	: Singleton(
