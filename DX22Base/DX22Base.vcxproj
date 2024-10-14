@@ -211,7 +211,6 @@
     <ClCompile Include="MoveEmitter.cpp" />
     <ClCompile Include="Plane.cxx" />
     <ClCompile Include="Polyline.cpp" />
-    <ClCompile Include="PutLog.cpp" />
     <ClCompile Include="Render.cxx" />
     <ClCompile Include="RenderMng.cxx" />
     <ClCompile Include="SceneBase.cxx" />
@@ -261,7 +260,6 @@
     <ClInclude Include="MoveEmitter.h" />
     <ClInclude Include="Plane.hxx" />
     <ClInclude Include="Polyline.h" />
-    <ClInclude Include="PutLog.h" />
     <ClInclude Include="Render.hxx" />
     <ClInclude Include="RenderMng.hxx" />
     <ClInclude Include="resource.h" />

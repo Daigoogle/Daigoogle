@@ -18,8 +18,6 @@
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 
-	DEBUG_INIT
-
 	Window& window = Window::GetInstance();
 	window.SetHInstance(hInstance);
 	window.SetNCmdShow(nCmdShow);
@@ -58,7 +56,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		else
 		{
 			
-			DebugString_(std::to_string(GetFPS()))
+			DebugString_(std::to_string(GetFPS()) + "\n")
 			{
 				Supervision::Updater();
 				TimerUpdate();

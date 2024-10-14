@@ -13,10 +13,8 @@ ThreadPoolMng::ThreadPoolMng()
 	)	
 {
 #ifdef _THREADPOOL_
-	for (unsigned i = 0;
-		i < static_cast<unsigned>(std::thread::hardware_concurrency() * 0.2f)
-		//i < 1
-		; i++) {
+	m_ThreadCount = static_cast<uint16>(std::thread::hardware_concurrency() * 0.13f);
+	for (uint16 i = 0;i < m_ThreadCount; i++) {
 		m_ThreadClass.push_back(std::make_unique<ThreadPool>());
 		m_ThreadClass.back()->Start();
 	}                              
@@ -25,7 +23,7 @@ ThreadPoolMng::ThreadPoolMng()
 
 ThreadPoolMng::~ThreadPoolMng()
 {
-
+	DebugString_("スレッド数：" + std::to_string(m_ThreadCount) + "\n")
 }
 
 bool ThreadPoolMng::Init()

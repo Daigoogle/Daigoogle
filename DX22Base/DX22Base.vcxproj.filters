@@ -108,9 +108,6 @@
     <ClCompile Include="InputDeviceManager.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
-    <ClCompile Include="PutLog.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
     <ClCompile Include="CameraManager.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
@@ -237,9 +234,6 @@
     </ClInclude>
     <ClInclude Include="InputDeviceManager.h">
       <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="PutLog.h">
-      <Filter>System</Filter>
     </ClInclude>
     <ClInclude Include="CameraManager.h">
       <Filter>Singleton</Filter>
