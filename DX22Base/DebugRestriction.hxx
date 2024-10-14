@@ -17,25 +17,21 @@
 
 // =-=-= マクロ定義部 =-=-=
 #ifdef _DEBUG
-#define DEBUG_INIT _DebugInit();
+
+// ポインタのＮＵＬＬチェック
 #define NullptrCheck(ptr) _NullptrCheckFunc(ptr)
-#define NullptrCheck_void_(ptr) _NullptrCheckFunc(ptr);
+// ポインタのＮＵＬＬチェック　※セミコロン付き
+#define NullptrCheck_(ptr) _NullptrCheckFunc(ptr);
+// Falseなら停止します
 #define FalseCheck(b) _falseCheckFunc(b)
+// HResultが失敗していたら停止
 #define HResultCheck(hr) _HResultCheckFunc(hr)
+// ここにたどり着いたら停止　※セミコロン付き
 #define DebugBreakPoint_ DebugBreak();
+// デバッグ用文字列の出力　※セミコロン付き
 #define DebugString_(str) _DebugStringOutput(str);
-#else // Release
-#define NullptrCheck(ptr) ptr
-#define NullptrCheck_void_(ptr) 
-#define FalseCheck(b) b
-#define HResultCheck(hr) hr
-#define DebugBreakPoint_ 
-#define DebugString_(str)
-#endif // _DEBUG
 
-// =-=-= デバッグ限定処理 =-=-=
-#ifdef _DEBUG
-
+void _DebugStringOutput(const std::string& str);
 template<typename Type>
 Type* _NullptrCheckFunc(Type* ptr)
 {
@@ -44,16 +40,23 @@ Type* _NullptrCheckFunc(Type* ptr)
 	stri += typeid(Type).name();
 	stri += " の [ nullptr ]が発生しました。参照・依存関係を見直してください。\n";
 	if (!ptr) {
-		OutputDebugString(stri.c_str());
+		_DebugStringOutput(stri.c_str());
 		DebugBreak();
 	}
 	return ptr;
 }
-
-void _DebugInit();
 bool _falseCheckFunc(bool b);
 HRESULT _HResultCheckFunc(HRESULT hr);
-void _DebugStringOutput(const std::string& str);
+
+#else // Release
+
+#define NullptrCheck(ptr) ptr
+#define NullptrCheck_(ptr) 
+#define FalseCheck(b) b
+#define HResultCheck(hr) hr
+#define DebugBreakPoint_ 
+#define DebugString_(str)
 
 #endif // _DEBUG
+
 #endif // !_____DebugRestriction_HXX_____

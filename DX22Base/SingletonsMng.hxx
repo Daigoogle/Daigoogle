@@ -14,9 +14,8 @@
 #include <stack>
 #include <mutex>
 #include <type_traits>
-#ifdef _DEBUG
-#include <Windows.h>
-#endif // _DEBUG
+#include "Vectors.hxx"
+#include "DebugRestriction.hxx"
 
 // =-=-= 定数定義部 =-=-=
 enum class UPDATE_ORDER {
@@ -111,16 +110,10 @@ private:
 	/// @brief インスタンスを破棄する
 	static void destroy()
 	{
-#ifdef _DEBUG
-		OutputDebugString(typeid(Type).name());
-		OutputDebugString(" 終了処理開始   ===== 人人人 \n");
-#endif // _DEBUG
+		DebugString_(typeid(Type).name() + std::string(" 終了処理開始   ===== 人人人 \n"))
 		delete instance;
 		instance = nullptr;
-#ifdef _DEBUG
-		OutputDebugString(typeid(Type).name());
-		OutputDebugString(" 終了処理終わり ===== ＹＹＹ\n");
-#endif // _DEBUG
+		DebugString_(typeid(Type).name() + std::string(" 終了処理終わり ===== ＹＹＹ \n"))
 	}
 
 	static std::once_flag initFlag;	//作ったかのフラグ(排他制御)

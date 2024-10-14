@@ -32,6 +32,8 @@ private:
 	~ThreadPoolMng();
 
 private:
+	uint16 m_ThreadCount;
+
 	std::shared_mutex m_Mutex;
 	std::vector<std::unique_ptr<ThreadPool>> m_ThreadClass;
 	std::queue<std::function<void()>> m_Pool;

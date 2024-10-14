@@ -60,17 +60,17 @@ private:
 private:
 	static uint32 ms_ObjectID;
 
-	std::string m_Name;					// 名前
+	std::string m_Name;					// オブジェクト名
 	unsigned m_Tag;						// タグ
 	bool m_IsActive;					// アクティブかどうか
-	bool m_IsDelete;					// 削除フラグ
-	std::list<std::unique_ptr<Component>> m_Components;	// コンポーネント
-	uint32 m_ObjectID;		// ID
-	std::list<GameObjectInst*> m_childs;// 子オブジェクト
+	bool m_IsDelete;					// このオブジェクトの削除フラグ
+	std::list<std::unique_ptr<Component>> m_Components;	// 追加されたコンポーネント
+	uint32 m_ObjectID;					// オブジェクトID
+	std::list<GameObjectInst*> m_childs;// 子オブジェクト群
 	GameObjectInst* m_pParent;			// 親オブジェクト
-	SceneBase* m_pScene;				// シーン
+	SceneBase* m_pScene;				// 所属シーン
 
-	Transform m_Transform;
+	Transform m_Transform;				// トランスフォーム
 };
 
 #endif // !_____GameObjectInst_HXX_____
