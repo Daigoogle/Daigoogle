@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\HAL\\EmploymentWorks\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\EmploymentWorks\\DX22Base\\DebugRestriction.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DebugRestriction.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\EmploymentWorks\\DX22Base\\Startup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\Startup.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\EmploymentWorks\\DX22Base\\DebugRestriction.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DebugRestriction.hxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\EmploymentWorks\\DX22Base\\DebugRestriction.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|solutionrelative:DX22Base\\DebugRestriction.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D90E9305-071E-4685-A79B-5D1E03D69DD9}|DX22Base\\DX22Base.vcxproj|C:\\HAL\\EmploymentWorks\\DX22Base\\Supervision.cxx||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -478,11 +478,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 21,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Startup.cpp",
               "DocumentMoniker": "C:\\HAL\\EmploymentWorks\\DX22Base\\Startup.cpp",
               "RelativeDocumentMoniker": "DX22Base\\Startup.cpp",
@@ -505,8 +505,7 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-21T06:28:32.393Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -532,8 +531,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-08-26T08:24:04.07Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -637,8 +635,7 @@
               "ViewState": "AgIAAAwAAAAAAAAAAAAewBEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-07T04:46:20.29Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -702,12 +699,11 @@
               "RelativeToolTip": "DX22Base\\RenderMng.hxx",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAEMAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-08-25T06:44:17.377Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-25T06:44:17.377Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "DebugRestriction.hxx",
               "DocumentMoniker": "C:\\HAL\\EmploymentWorks\\DX22Base\\DebugRestriction.hxx",
               "RelativeDocumentMoniker": "DX22Base\\DebugRestriction.hxx",
@@ -715,18 +711,17 @@
               "RelativeToolTip": "DX22Base\\DebugRestriction.hxx",
               "ViewState": "AgIAAAwAAAAAAAAAAADwvxUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-09-05T18:17:38.6Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-05T18:17:38.6Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "DebugRestriction.cxx",
               "DocumentMoniker": "C:\\HAL\\EmploymentWorks\\DX22Base\\DebugRestriction.cxx",
               "RelativeDocumentMoniker": "DX22Base\\DebugRestriction.cxx",
               "ToolTip": "C:\\HAL\\EmploymentWorks\\DX22Base\\DebugRestriction.cxx",
               "RelativeToolTip": "DX22Base\\DebugRestriction.cxx",
-              "ViewState": "AgIAABMAAAAAAAAAAADwvx0AAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-09-05T18:19:26.434Z",
               "EditorCaption": ""
