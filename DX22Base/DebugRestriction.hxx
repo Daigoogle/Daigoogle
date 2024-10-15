@@ -18,9 +18,9 @@
 // =-=-= マクロ定義部 =-=-=
 #ifdef _DEBUG
 
-// ポインタのＮＵＬＬチェック
+// ポインタのNullチェック
 #define NullptrCheck(ptr) _NullptrCheckFunc(ptr)
-// ポインタのＮＵＬＬチェック　※セミコロン付き
+// ポインタのNullチェック　※セミコロン付き
 #define NullptrCheck_(ptr) _NullptrCheckFunc(ptr);
 // Falseなら停止します
 #define FalseCheck(b) _falseCheckFunc(b)

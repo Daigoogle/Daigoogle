@@ -84,12 +84,12 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;C:\HAL\EmploymentWorks\DX22Base\DirectXTex\x64\Debug;C:\HAL\EmploymentWorks\DX22Base\DirectXTex\x64\Release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\DirectXTex\Win32\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\DirectXTex\x64\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
