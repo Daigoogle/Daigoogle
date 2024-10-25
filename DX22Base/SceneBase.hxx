@@ -9,6 +9,7 @@
 #define _____Class_HXX_____
 
 // =-=-= インクルード部 =-=-=
+#include "DebugRestriction.hxx"
 
 class GameObject;
 
@@ -19,12 +20,11 @@ public:
 	virtual ~SceneBase();
 
 	virtual bool Init() = 0;
-	virtual void Update() {};
+	virtual void Update() {}
 
 	GameObject MakeObject();
 
 private:
-
 };
 
 #endif // !_____Class_HXX_____

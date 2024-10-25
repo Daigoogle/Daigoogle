@@ -12,6 +12,7 @@
 #include <vector>
 #include <type_traits>
 #include "SingletonsMng.hxx"
+#include "ThreadPoolMng.hxx"
 #include "SceneBase.hxx"
 
 class SceneMng: public Singleton<SceneMng>
@@ -50,6 +51,8 @@ public:
 		}
 		// ロードしていない場合はロードする
 		m_NextScene = std::make_unique<TypeScene>();
+
+		//ThreadPoolMng::GetInstance().AddPool([m_NextScene]() {m_NextScene.Init()})
 
 		// 本来は並列化！！！
 		m_NextScene->Init();

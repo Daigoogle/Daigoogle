@@ -8,14 +8,13 @@
 #ifndef _____Component_HXX_____
 #define _____Component_HXX_____
 
-class GameObjectInst;
-class GameObject;
+#include "GameObject.hxx"
 
 class Component
 {
 	friend class GameObjectInst;
 public:
-	Component() :m_pGameObjectInst(nullptr) {};
+	Component(){};
 	virtual ~Component() {}
 
 	virtual bool Init() = 0;
@@ -24,7 +23,7 @@ public:
 	GameObject GetGameObject();
 
 private:
-	GameObjectInst* m_pGameObjectInst;
+	GameObject m_GameObject;
 };
 
 #endif // !_____Component_HXX_____

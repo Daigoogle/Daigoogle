@@ -10,6 +10,8 @@
 
 // =-=-= インクルード部 =-=-=
 #include "Defines.h"
+#include <string>
+
 #ifdef DIRECTX11_PRJ
 #include <DirectXMath.h>
 using fVec4x4 = DirectX::XMFLOAT4X4;
@@ -24,6 +26,16 @@ using int16 = short;
 using int32 = long;
 using int64 = long long;
 
+using count = unsigned short;
+using ID = unsigned long;
+using Name = std::string;
+
+class unique_ID {
+	ID m_ID; static ID m_Counter;
+public:
+	inline unique_ID() { m_ID = ++m_Counter; }
+	inline explicit operator ID() { return m_ID; }
+};
 
 //__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__///
 //																	//

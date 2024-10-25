@@ -84,7 +84,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\DirectXTex\Win32\$(Configuration);$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\DirectXTex\x64\$(Configuration);$(ProjectDir)\DirectXTex\Win32\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>

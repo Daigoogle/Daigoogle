@@ -58,7 +58,7 @@ private:
 	/// @brief オブジェクトの更新キュー
 	std::unordered_map<SceneBase* , std::vector<GameObjectInst*>> m_ObjectsQueue;
 	/// @brief 削除するオブジェクトのキュー
-	std::unordered_map<uint32_t,SceneBase*> m_ObjectsDeleteQueue;
+	std::unordered_map<ID,SceneBase*> m_ObjectsDeleteQueue;
 };
 
 #endif // !_____GameObjectMng_HXX_____

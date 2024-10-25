@@ -38,7 +38,7 @@ private:
 	TypeComp* AddComponent()
 	{
 		std::unique_ptr<TypeComp> pComp(new TypeComp);
-		pComp->m_pGameObjectInst = this;
+		pComp->m_GameObject = GameObject(this);
 		m_Components.push_back(std::move(pComp));
 		return static_cast<TypeComp*>(m_Components.back().get());
 	}
@@ -58,14 +58,14 @@ private:
 	void Delete();
 
 private:
-	static uint32 ms_ObjectID;
+	static ID ms_ObjectID;
 
-	std::string m_Name;					// オブジェクト名
+	Name m_Name;					// オブジェクト名
 	unsigned m_Tag;						// タグ
 	bool m_IsActive;					// アクティブかどうか
 	bool m_IsDelete;					// このオブジェクトの削除フラグ
 	std::list<std::unique_ptr<Component>> m_Components;	// 追加されたコンポーネント
-	uint32 m_ObjectID;					// オブジェクトID
+	ID m_ObjectID;					// オブジェクトID
 	std::list<GameObjectInst*> m_childs;// 子オブジェクト群
 	GameObjectInst* m_pParent;			// 親オブジェクト
 	SceneBase* m_pScene;				// 所属シーン
