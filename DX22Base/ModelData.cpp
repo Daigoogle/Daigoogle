@@ -98,17 +98,17 @@ bool MODEL::Load(const std::string& path) {
 		}
 
 		//メモリ確保
-		positionArray = new DirectX::XMFLOAT3[positionNum];
-		normalArray = new DirectX::XMFLOAT3[normalNum];
-		texcoordArray = new DirectX::XMFLOAT2[texcoordNum];
+		positionArray = New(DirectX::XMFLOAT3)[positionNum];
+		normalArray = New(DirectX::XMFLOAT3)[normalNum];
+		texcoordArray = New(DirectX::XMFLOAT2)[texcoordNum];
 
-		modelObj.VertexArray = new VERTEX_3D[vertexNum];
+		modelObj.VertexArray = New(VERTEX_3D)[vertexNum];
 		modelObj.VertexNum = vertexNum;
 
-		modelObj.IndexArray = new unsigned int[indexNum];
+		modelObj.IndexArray = New(unsigned int)[indexNum];
 		modelObj.IndexNum = indexNum;
 
-		modelObj.SubsetArray = new SUBSET[subsetNum];
+		modelObj.SubsetArray = New(SUBSET)[subsetNum];
 		modelObj.SubsetNum = subsetNum;
 
 		//要素読込
@@ -188,7 +188,7 @@ bool MODEL::Load(const std::string& path) {
 
 
 					//メモリ確保
-					materialArray = new MODEL_MATERIAL[materialNum];
+					materialArray = New(MODEL_MATERIAL)[materialNum];
 
 
 					//要素読込
@@ -414,7 +414,7 @@ bool MODEL::Load(const std::string& path) {
 
 	// サブセット設定
 	{
-		SubsetArray = new SUBSET[modelObj.SubsetNum];
+		SubsetArray = New(SUBSET)[modelObj.SubsetNum];
 		SubsetNum = modelObj.SubsetNum;
 
 		for (unsigned int i = 0; i < modelObj.SubsetNum; i++)
@@ -482,7 +482,7 @@ bool MODEL::Load(const std::string& path) {
 //		return;
 //	}
 //
-//	MODEL* model = new MODEL;
+//	MODEL* model = NewMODEL;
 //	LoadModel(FileName, model);
 //
 //	m_ModelPool[FileName] = model;
@@ -520,7 +520,7 @@ bool MODEL::Load(const std::string& path) {
 //		return;
 //	}
 //
-//	m_Model = new MODEL;
+//	m_Model = NewMODEL;
 //	LoadModel(FileName, m_Model);
 //
 //	m_ModelPool[FileName] = m_Model;
@@ -570,7 +570,7 @@ bool MODEL::Load(const std::string& path) {
 //
 //	// サブセット設定
 //	{
-//		Model->SubsetArray = new SUBSET[ modelObj.SubsetNum ];
+//		Model->SubsetArray = NewSUBSET[ modelObj.SubsetNum ];
 //		Model->SubsetNum = modelObj.SubsetNum;
 //
 //		for( unsigned int i = 0; i < modelObj.SubsetNum; i++ )

@@ -10,6 +10,7 @@
 
 // =-=-= インクルード部 =-=-=
 #include "Defines.h"
+#include "Allocator.hxx"
 #include <string>
 
 #ifdef DIRECTX11_PRJ

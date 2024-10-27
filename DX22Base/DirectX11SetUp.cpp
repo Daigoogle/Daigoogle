@@ -235,10 +235,10 @@ HRESULT DirectX11SetUp::CheckAllSeting()
 	}
 
 	//--- レンダーターゲット設定
-	m_pRTV = new RenderTarget();
+	m_pRTV = New(RenderTarget)();
 	if (FAILED(hr = m_pRTV->CreateFromScreen()))
 		return hr;
-	m_pDSV = new DepthStencil();
+	m_pDSV = New(DepthStencil)();
 	if (FAILED(hr = m_pDSV->Create(m_pRTV->GetWidth(), m_pRTV->GetHeight(), false)))
 		return hr;
 	SetRenderTargets(1, &m_pRTV, nullptr);

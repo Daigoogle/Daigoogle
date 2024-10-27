@@ -187,6 +187,7 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Allocator.cxx" />
     <ClCompile Include="AnyUpdateComp.cxx" />
     <ClCompile Include="CameraBase.cpp" />
     <ClCompile Include="CameraDebug.cpp" />
@@ -234,6 +235,7 @@
     <ClCompile Include="_geometory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Allocator.hxx" />
     <ClInclude Include="AnyUpdateComp.hxx" />
     <ClInclude Include="CameraBase.h" />
     <ClInclude Include="CameraDebug.h" />
@@ -242,9 +244,11 @@
     <ClInclude Include="Component.hxx" />
     <ClInclude Include="CreateTexture.h" />
     <ClInclude Include="Cube.hxx" />
+    <ClInclude Include="ddd_sdl.hxx" />
     <ClInclude Include="DebugRestriction.hxx" />
     <ClInclude Include="DefaultSetting.hxx" />
     <ClInclude Include="Defines.h" />
+    <ClInclude Include="Defines.hxx" />
     <ClInclude Include="DirectX11SetUp.h" />
     <ClInclude Include="easing.h" />
     <ClInclude Include="Effect.h" />

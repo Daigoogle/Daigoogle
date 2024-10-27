@@ -7,7 +7,7 @@ ItemUI::ItemUI():
 	m_pTexture(nullptr)
 {
 	//テクスチャを設定	
-	m_pTexture = new Texture();
+	m_pTexture = New(Texture)();
 	if (FAILED(m_pTexture->Create("Assets/Texture/takodane.png")))
 	{
 		MessageBox(NULL, " Assets/Texture :ItemUI", "Error", MB_OK);

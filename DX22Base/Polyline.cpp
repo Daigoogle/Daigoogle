@@ -15,7 +15,7 @@ Polyline::Polyline(int maxVertices)
 	, m_pTexture(nullptr)
 {
 	// 頂点データ作成
-	m_pVertices = new Vertex[maxVertices];
+	m_pVertices = New(Vertex)[maxVertices];
 
 	// 頂点バッファ作成
 	MeshBuffer::Description desc = {};
@@ -24,7 +24,7 @@ Polyline::Polyline(int maxVertices)
 	desc.vtxCount = maxVertices;
 	desc.topology = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLESTRIP;
 	desc.isWrite = true;
-	m_pMesh = new MeshBuffer(desc);
+	m_pMesh = New(MeshBuffer)(desc);
 
 	// シェーダー参照更新
 	++m_shaderRefCount;
@@ -72,9 +72,9 @@ float4 main(PS_IN pin) : SV_TARGET {
 	return tex.Sample(samp, pin.uv) * pin.color;
 })EOT";
 
-	m_pDefVS = new VertexShader();
+	m_pDefVS = New(VertexShader)();
 	m_pDefVS->Compile(VS);
-	m_pDefPS = new PixelShader();
+	m_pDefPS = New(PixelShader)();
 	m_pDefPS->Compile(PS);
 	SetVertexShader(nullptr);
 	SetPixelShader(nullptr);

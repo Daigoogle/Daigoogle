@@ -37,7 +37,7 @@ private:
 	template<typename TypeComp>
 	TypeComp* AddComponent()
 	{
-		std::unique_ptr<TypeComp> pComp(new TypeComp);
+		std::unique_ptr<TypeComp> pComp(New(TypeComp));
 		pComp->m_GameObject = GameObject(this);
 		m_Components.push_back(std::move(pComp));
 		return static_cast<TypeComp*>(m_Components.back().get());

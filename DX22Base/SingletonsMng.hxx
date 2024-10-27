@@ -102,7 +102,7 @@ private:
 	/// @brief インスタンスを生成する
 	static void Create()
 	{
-		instance = new Type;
+		instance = New(Type);
 		_GetInstfuncP = __GetInstance;
 		Supervision::addFinalizer(&Singleton<Type>::destroy);
 	}
