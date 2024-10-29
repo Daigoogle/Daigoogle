@@ -15,7 +15,7 @@ void* operator new[](size_t size, const type_info& type,const std::string& FileN
 
 void* operator new(size_t size);
 void* operator new[](size_t size);
-void operator delete(void* p) noexcept;
+//void operator delete(void* p) noexcept;
 void operator delete(void* p, size_t size) noexcept;
 
 void addMemorySize(const std::string& type, size_t size);

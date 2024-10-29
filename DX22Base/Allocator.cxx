@@ -6,13 +6,15 @@
 #include <string>
 #include <sstream>
 
-#include "Defines.hxx"
+//#include "Defines.hxx"
+#include "ddd_sdl.hxx"
 
 namespace {
 	/// @brief 型毎のデータ管理・ソート用
 	struct putt {
-		std::string type;
-		size_t size;
+		size_t GetSize() { return size; }
+		std::string type = {};
+		size_t size = 0;
 	};
 
 	/// @brief ポインタ毎の情報を記録する構造体
@@ -65,6 +67,7 @@ namespace {
 /// @return ポインタに関連づける情報
 ReakCheck MakeReakCheckParam(size_t size, const type_info& type, const std::string& FileName, int Line)
 {
+	reak.usingMemorySize += size;
 	ReakCheck c;
 
 	std::istringstream sst(FileName);
@@ -128,20 +131,23 @@ void* operator new[](size_t size, const type_info& type, const std::string& File
 
 void* operator new(size_t size)
 {
+	reak.usingMemorySize += size;
 	return malloc(size);
 }
 void* operator new[](size_t size)
 {
+	reak.usingMemorySize += size;
 	return malloc(size);
 }
-void operator delete(void* p) noexcept
-{
-	if (ReakMap && ReakMap->contains(p))
-		ReakMap->erase(p);
-	free(p);
-}
+//void operator delete(void* p) noexcept
+//{
+//	if (ReakMap && ReakMap->contains(p))
+//		ReakMap->erase(p);
+//	free(p);
+//}
 void operator delete(void* p, size_t size) noexcept
 {
+	reak.usingMemorySize -= size;
 	if(ReakMap && ReakMap->contains(p))
 		ReakMap->erase(p);
 	free(p);
@@ -169,11 +175,11 @@ void deleteMemorySize(const std::string& type, size_t size)
 void ShowUsingMemorySize()
 {	
 	// ベクター配列に格納
-	std::vector<putt> v;
+	ddd::ExVector<putt> v;
 	for (auto& elem : reak.memMap)
 		v.push_back({ elem.first, elem.second });
 
-	SORT_STL(v, < ,.size);
+	v.Sort(&putt::GetSize);
 
 	// 表示
 	std::cout << std::endl << "メモリ使用量：" << reak.usingMemorySize << std::endl << "内訳{" << std::endl;
