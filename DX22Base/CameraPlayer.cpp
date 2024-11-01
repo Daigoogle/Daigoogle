@@ -25,7 +25,7 @@ void CameraPlayer::Update()
 
 	if (m_Frame < 161)
 	{
-		float eas = Easing::InOutQuint(m_Frame / 160.0f);
+		float eas = eas::InOutQuint(m_Frame / 160.0f);
 		m_radXZ = -3.5f + eas * 3.5f;
 		m_radY = eas * 0.3f + 0.1f;
 		m_dist = eas * 4 + 1;
