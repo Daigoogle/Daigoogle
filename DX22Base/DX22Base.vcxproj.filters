@@ -190,9 +190,6 @@
     <ClCompile Include="CreateTexture.cpp">
       <Filter>System</Filter>
     </ClCompile>
-    <ClCompile Include="Allocator.cxx">
-      <Filter>__New</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -303,9 +300,6 @@
     <ClInclude Include="testScene.hxx">
       <Filter>_Scene</Filter>
     </ClInclude>
-    <ClInclude Include="AnyUpdateComp.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
     <ClInclude Include="Time.hxx">
       <Filter>__New</Filter>
     </ClInclude>
@@ -318,13 +312,13 @@
     <ClInclude Include="CreateTexture.h">
       <Filter>System</Filter>
     </ClInclude>
-    <ClInclude Include="Allocator.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
-    <ClInclude Include="ddd_sdl.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
     <ClInclude Include="Defines.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="AnyUpdateComp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ExVector.hxx">
       <Filter>__New</Filter>
     </ClInclude>
   </ItemGroup>
