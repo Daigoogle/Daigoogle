@@ -21,7 +21,9 @@ HRESULT _HResultCheckFunc(HRESULT hr)
 	return hr;
 }
 
-class CNS_None { public:	~CNS_None() { rewind(stdin); (void)getchar(); } };
+class CNS_None { public:	~CNS_None() { 
+	//rewind(stdin); (void)getchar(); 
+} };
 
 void _DebugStringOutput(const std::string& str)
 {

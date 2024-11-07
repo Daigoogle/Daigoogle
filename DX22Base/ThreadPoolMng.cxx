@@ -1,6 +1,16 @@
 #include "ThreadPoolMng.hxx"
 #include <thread>
 
+bool ThreadContinue = false; 
+void poolloop()
+{
+	std::function<void()> func;
+	while (ThreadContinue) {
+		func = ThreadPoolMng::GetInstance().GetPoolFead();
+		if (func)func();
+	}
+}
+
 #define _THREADPOOL_
 
 ThreadPoolMng::ThreadPoolMng()
@@ -13,16 +23,19 @@ ThreadPoolMng::ThreadPoolMng()
 	)	
 {
 #ifdef _THREADPOOL_
+	ThreadContinue = true;
 	m_ThreadCount = static_cast<uint16>(std::thread::hardware_concurrency() * 0.13f);
 	for (uint16 i = 0;i < m_ThreadCount; i++) {
-		m_ThreadClass.push_back(std::make_unique<ThreadPool>());
-		m_ThreadClass.back()->Start();
+		m_Thread.push_back(std::make_unique<std::thread>(poolloop));
 	}                              
 #endif // _THREADPOOL_
 }
 
 ThreadPoolMng::~ThreadPoolMng()
 {
+	ThreadContinue = false;
+	for (auto& elem : m_Thread)
+		elem->join();
 	DebugString_("スレッド数：" + std::to_string(m_ThreadCount) + "\n")
 }
 

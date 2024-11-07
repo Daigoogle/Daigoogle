@@ -30,7 +30,10 @@
 #define DebugBreakPoint_ DebugBreak();
 // デバッグ用文字列の出力　※セミコロン付き
 #define DebugString_(str) _DebugStringOutput(str);
+// デバッグ用文字列の出力 cout版 ※セミコロン付き
+#define DebugCOUT_(str) std::cout << str;
 
+// ---------- 関数を直接参照しないでください！ ----------
 void _DebugStringOutput(const std::string& str);
 template<typename Type>
 Type* _NullptrCheckFunc(Type* ptr)
@@ -56,6 +59,7 @@ HRESULT _HResultCheckFunc(HRESULT hr);
 #define HResultCheck(hr) hr
 #define DebugBreakPoint_ 
 #define DebugString_(str)
+#define DebugCOUT_(str)
 
 #endif // _DEBUG
 

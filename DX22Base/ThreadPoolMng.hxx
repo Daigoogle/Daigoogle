@@ -15,8 +15,6 @@
 #include <functional>
 #include <queue>
 
-#include "ThreadPool.hxx"
-
 class ThreadPoolMng :public Singleton<ThreadPoolMng>
 {
 	friend class Singleton<ThreadPoolMng>;
@@ -35,7 +33,7 @@ private:
 	uint16 m_ThreadCount;
 
 	std::shared_mutex m_Mutex;
-	std::vector<std::unique_ptr<ThreadPool>> m_ThreadClass;
+	std::vector<std::unique_ptr<std::thread>> m_Thread;
 	std::queue<std::function<void()>> m_Pool;
 };
 

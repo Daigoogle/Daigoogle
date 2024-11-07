@@ -245,9 +245,11 @@
     <ClInclude Include="DebugRestriction.hxx" />
     <ClInclude Include="DefaultSetting.hxx" />
     <ClInclude Include="Defines.h" />
+    <ClInclude Include="Defines.hxx" />
     <ClInclude Include="DirectX11SetUp.h" />
     <ClInclude Include="easing.h" />
     <ClInclude Include="Effect.h" />
+    <ClInclude Include="ExVector.hxx" />
     <ClInclude Include="GameObject.hxx" />
     <ClInclude Include="GameObjectInst.hxx" />
     <ClInclude Include="GameObjectMng.hxx" />

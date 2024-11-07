@@ -88,7 +88,7 @@ namespace eas
 }; 
 
 /// @brief イージングを行う関数
-/// @tparam Type イージングさせたい型。 - 演算子をオーバーロード済なら構造体も可
+/// @tparam Type イージングさせたい型。 - + * 演算子をオーバーロード済なら構造体も可
 /// @param alpha 0~1のイージング基準値を渡す
 /// @param Start イージングの開始値
 /// @param End イージングの終了値
@@ -99,7 +99,7 @@ Type Easing(float alpha, Type Start, Type End, Ease EaseType)
 {
 	Type result = End - Start;
 
-	switch (EaseType)
+	switch (EaseType)// イージングの種類毎に処理
 	{
 	case Ease::InSine:			alpha = eas::InSine(alpha);			break;
 	case Ease::OutSine:			alpha = eas::OutSine(alpha);		break;

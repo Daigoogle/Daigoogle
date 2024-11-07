@@ -78,7 +78,7 @@ void GameObjectMng::DeleteSceneObjects(SceneBase* pScene)
 
 GameObject GameObjectMng::MakeObject(SceneBase* pScene)
 {
-	GameObjectInst* pInst = new GameObjectInst;// インスタンスの生成
+	GameObjectInst* pInst = New(GameObjectInst);// インスタンスの生成
 	pInst->m_pScene = pScene;		// シーンの設定
 	GameObject obj(pInst);	// インスタンスを設定
 	m_ObjectsLoadQueue[pScene].push(pInst);// キューに追加

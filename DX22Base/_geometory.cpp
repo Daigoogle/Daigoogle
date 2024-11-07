@@ -59,7 +59,7 @@ void Geometory::MakeBox()
 	desc.idxCount = 36;
 	desc.idxSize = sizeof(int);//4;
 	desc.topology = D3D_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
-	m_pBox = new MeshBuffer(desc);
+	m_pBox = New(MeshBuffer)(desc);
 }
 
 void Geometory::MakeCylinder()
@@ -110,7 +110,7 @@ void Geometory::MakeCylinder()
 	desc.idxCount = _countof(idx);
 	desc.idxSize = sizeof(int);
 	desc.topology = D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST;
-	m_pCylinder = new MeshBuffer(desc);
+	m_pCylinder = New(MeshBuffer)(desc);
 }
 
 void Geometory::MakeSphere()

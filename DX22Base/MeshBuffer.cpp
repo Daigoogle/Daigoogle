@@ -12,11 +12,11 @@ MeshBuffer::MeshBuffer(const Description& desc)
 	m_desc = desc;
 
 	rsize_t vtxMemSize = desc.vtxSize * desc.vtxCount;
-	void* pVtx = new char[vtxMemSize];
+	void* pVtx = New(char)[vtxMemSize];
 	memcpy_s(pVtx, vtxMemSize, desc.pVtx, vtxMemSize);
 	m_desc.pVtx = pVtx;
 	rsize_t idxMemSize = desc.idxSize * desc.idxCount;
-	void* pIdx = new char[idxMemSize];
+	void* pIdx = New(char)[idxMemSize];
 	memcpy_s(pIdx, idxMemSize, desc.pIdx, idxMemSize);
 	m_desc.pIdx = pIdx;
 

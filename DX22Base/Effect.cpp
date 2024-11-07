@@ -65,7 +65,7 @@ bool Particle::IsAlive()
 Emitter::Emitter(const char* textureFile, Description desc)
 	: m_defDesc(desc), m_time(0.0f), m_life(0.0f)
 {
-	m_pTexture = new Texture();
+	m_pTexture = New(Texture)();
 	if (FAILED(m_pTexture->Create(textureFile)))
 	{
 		MessageBox(NULL, textureFile, "Effect Error", MB_OK);

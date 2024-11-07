@@ -23,6 +23,10 @@ bool testScene::Init()
 {
 	GameObject obj = MakeObject();
 	Plane* cube = obj.AddComponent<Plane>();
+	//obj.AddComponent<AnyUpdateComp>()->SetFunc([obj]()
+	//{
+	//	ShowUsingMemorySize();
+	//});
 	cube->SetTexture("Assets/Texture/Init_FROM.png");
 	obj.GetTransform()->SetWorldScale({ 0.3f, 0.3f, 0.3f });
 	obj.GetTransform()->SetWorldPosition({0.5f,0.5f, 0.0f});
@@ -57,6 +61,6 @@ bool testScene::Init()
 	//Mdl.GetTransform()->SetWorldScale({10.0f,10.0f ,10.0f });
 	//mold->SetModel("Assets/Model/GM31/sky.obj");
 	//mold->SetLayer((LAYER_TYPE)1);
-	
+
 	return true;
 }

@@ -300,9 +300,6 @@
     <ClInclude Include="testScene.hxx">
       <Filter>_Scene</Filter>
     </ClInclude>
-    <ClInclude Include="AnyUpdateComp.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
     <ClInclude Include="Time.hxx">
       <Filter>__New</Filter>
     </ClInclude>
@@ -314,6 +311,15 @@
     </ClInclude>
     <ClInclude Include="CreateTexture.h">
       <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="AnyUpdateComp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ExVector.hxx">
+      <Filter>__New</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
