@@ -1,37 +1,34 @@
-#include "ThreadPoolMng.hxx"
+#include "ThreadPool.hxx"
 #include <thread>
 
-bool ThreadContinue = false; 
-void poolloop()
-{
-	std::function<void()> func;
-	while (ThreadContinue) {
-		func = ThreadPoolMng::GetInstance().GetPoolFead();
-		if (func)func();
+namespace{
+	bool ThreadContinue = false;
+	void poolloop(){
+		std::function<void()> func;
+		while (ThreadContinue) {
+			func = ThreadPool::GetInstance().GetPoolFead();
+			if (func)func();
+		}
 	}
 }
 
 #define _THREADPOOL_
 
-ThreadPoolMng::ThreadPoolMng()
-	: Singleton(
+ThreadPool::ThreadPool()
 #ifdef _THREADPOOL_
-		UPDATE_ORDER::NO_UPDATE
-#else
-		UPDATE_ORDER::LAST_UPDATE
-#endif // _THREADPOOL_
-	)	
+	: Singleton(UPDATE_ORDER::NO_UPDATE)
 {
-#ifdef _THREADPOOL_
 	ThreadContinue = true;
 	m_ThreadCount = static_cast<uint16>(std::thread::hardware_concurrency() * 0.13f);
-	for (uint16 i = 0;i < m_ThreadCount; i++) {
+	for (uint16 i = 0; i < m_ThreadCount; i++) {
 		m_Thread.push_back(std::make_unique<std::thread>(poolloop));
-	}                              
-#endif // _THREADPOOL_
+	}
 }
+#else
+	: Singleton(UPDATE_ORDER::LAST_UPDATE){}
+#endif // _THREADPOOL_  
 
-ThreadPoolMng::~ThreadPoolMng()
+ThreadPool::~ThreadPool()
 {
 	ThreadContinue = false;
 	for (auto& elem : m_Thread)
@@ -39,12 +36,12 @@ ThreadPoolMng::~ThreadPoolMng()
 	DebugString_("スレッド数：" + std::to_string(m_ThreadCount) + "\n")
 }
 
-bool ThreadPoolMng::Init()
+bool ThreadPool::Init()
 {
 	return true;
 }
 
-void ThreadPoolMng::Update()
+void ThreadPool::Update()
 {
 #ifndef _THREADPOOL_
 	while (!m_Pool.empty())
@@ -55,14 +52,14 @@ void ThreadPoolMng::Update()
 #endif // _THREADPOOL_
 }
 
-void ThreadPoolMng::AddPool(std::function<void()> _func)
+void ThreadPool::AddPool(std::function<void()> _func)
 {
 	m_Pool.push(_func);
 }
 
 /// @brief 
 /// @return
-std::function<void()> ThreadPoolMng::GetPoolFead()
+std::function<void()> ThreadPool::GetPoolFead()
 {
 	std::unique_lock<std::shared_mutex> lock(m_Mutex);
 	if(m_Pool.empty())

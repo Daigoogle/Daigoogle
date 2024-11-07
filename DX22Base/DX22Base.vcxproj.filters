@@ -151,9 +151,6 @@
     <ClCompile Include="SingletonsMng.cxx">
       <Filter>__New</Filter>
     </ClCompile>
-    <ClCompile Include="ThreadPoolMng.cxx">
-      <Filter>__New</Filter>
-    </ClCompile>
     <ClCompile Include="ThreadPool.cxx">
       <Filter>__New</Filter>
     </ClCompile>
@@ -189,6 +186,9 @@
     </ClCompile>
     <ClCompile Include="CreateTexture.cpp">
       <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Allocator.cxx">
+      <Filter>__New</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -276,9 +276,6 @@
     <ClInclude Include="SingletonsMng.hxx">
       <Filter>__New</Filter>
     </ClInclude>
-    <ClInclude Include="ThreadPoolMng.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
     <ClInclude Include="ThreadPool.hxx">
       <Filter>__New</Filter>
     </ClInclude>
@@ -319,6 +316,9 @@
       <Filter>__New</Filter>
     </ClInclude>
     <ClInclude Include="ExVector.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocator.hxx">
       <Filter>__New</Filter>
     </ClInclude>
   </ItemGroup>

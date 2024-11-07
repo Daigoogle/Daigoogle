@@ -4,7 +4,6 @@
 //	----------インクルード部----------
 #include <d3d11.h>
 #include "SingletonsMng.hxx"
-#include "Vectors.hxx"
 #include "Texture.h"
 
 #pragma comment(lib, "d3d11.lib")

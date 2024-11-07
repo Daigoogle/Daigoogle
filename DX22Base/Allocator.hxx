@@ -1,6 +1,7 @@
 #ifndef _____ALLOCATOR_HXX_____
 #define _____ALLOCATOR_HXX_____
 
+#include "DebugRestriction.hxx"
 #include <string>
 #include <typeinfo>
 

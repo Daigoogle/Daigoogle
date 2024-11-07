@@ -3,6 +3,7 @@
 std::array<std::deque<_SingletonBase*>, static_cast<int>(UPDATE_ORDER::LAST_UPDATE) + 1> Supervision::m_Updaters;//更新処理
 std::stack<void(*)()> Supervision::m_finalizers;//終了処理
 
+
 namespace 
 {
 	std::mutex gMutex;// 排他制御用

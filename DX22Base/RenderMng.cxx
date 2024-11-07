@@ -1,6 +1,6 @@
 #include "RenderMng.hxx"
 #include "Render.hxx"
-#include "ThreadPoolMng.hxx"
+#include "ThreadPool.hxx"
 #include "DirectX11SetUp.h"
 #include "DebugRestriction.hxx"
 
@@ -145,7 +145,7 @@ void RenderMng::Update()
 		Dx11.EndDraw();
 		Dx11.BeginDraw();
 	};
-	ThreadPoolMng::GetInstance().AddPool(func);
+	ThreadPool::GetInstance().AddPool(func);
 }
 
 void RenderMng::AddQueue(Render* render, LAYER_TYPE layer)

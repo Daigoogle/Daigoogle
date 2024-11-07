@@ -8,7 +8,7 @@
 #include "SceneMng.hxx"
 #include "GameObjectMng.hxx"
 #include "RenderMng.hxx"
-#include "ThreadPoolMng.hxx"
+#include "ThreadPool.hxx"
 #include "CameraManager.h"
 
 #include "testScene.hxx"

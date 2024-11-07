@@ -9,8 +9,6 @@
 #ifndef _____TRANSFORM_H_____
 #define _____TRANSFORM_H_____
 
-#include "Vectors.hxx"
-
 /// @brief class Transform
 /// @brief public : Component
 class Transform

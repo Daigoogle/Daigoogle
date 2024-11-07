@@ -1,18 +1,11 @@
 #define _CRTDBG_MAP_ALLOC
 
 #include <windows.h>
-#include "Defines.h"
 #include "SingletonsMng.hxx"
-#include <stdio.h>
 #include <crtdbg.h>
 #include "Window.h"
 #include "DebugRestriction.hxx"
 #include "Time.hxx"
-
-// timeGetTime周りの使用
-
-//--- プロトタイプ宣言
-//LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 
 // エントリポイント
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
@@ -55,12 +48,9 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 		}
 		else
 		{
-			
 			DebugString_(std::to_string(GetFPS()) + "\n")
-			{
-				Supervision::Updater();
-				TimerUpdate();
-			}
+			Supervision::Updater();
+			TimerUpdate();
 		}
 	}
 

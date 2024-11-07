@@ -13,9 +13,8 @@
 #include <deque>
 #include <stack>
 #include <mutex>
+#include <functional>
 #include <type_traits>
-#include "Vectors.hxx"
-#include "DebugRestriction.hxx"
 
 // =-=-= 定数定義部 =-=-=
 enum class UPDATE_ORDER {
@@ -76,8 +75,8 @@ private:
 template<typename Type>
 class Singleton :public _SingletonBase
 {
-	using getInst = Type& (*)();
 public:
+	using getInst = Type & (*)();
 	/// @brief インスタンスを取得する ※非推奨
 	/// @return インスタンス
 	static inline Type& __CreateInstance()
@@ -95,9 +94,9 @@ public:
 	}
 
 	/// @brief 静的でコンストな関数ポインタの参照
-	static const getInst &GetInstance;
+	static const std::function<Type&(void)>& GetInstance;
 private:
-	static getInst _GetInstfuncP;
+	static std::function<Type&(void)> _GetInstfuncP;
 
 	/// @brief インスタンスを生成する
 	static void Create()
@@ -132,11 +131,10 @@ protected:
 	Singleton(const Singleton&) = delete;
 	Singleton& operator=(const Singleton&) = delete;
 };
-
 // 静的メンバを定義
 template <typename Type> std::once_flag Singleton<Type>::initFlag;
 template <typename Type> Type* Singleton<Type>::instance = nullptr;
-template <typename Type> const Singleton<Type>::getInst &Singleton<Type>::GetInstance = Singleton<Type>::_GetInstfuncP;
-template <typename Type> Singleton<Type>::getInst Singleton<Type>::_GetInstfuncP = Singleton<Type>::__CreateInstance;
+template <typename Type> const std::function<Type& (void)>& Singleton<Type>::GetInstance = Singleton<Type>::_GetInstfuncP;
+template <typename Type> std::function<Type& (void)> Singleton<Type>::_GetInstfuncP = Singleton<Type>::__CreateInstance;
 
 #endif // !_____SingletonsMng_HXX_____

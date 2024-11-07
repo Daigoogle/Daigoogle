@@ -12,7 +12,7 @@
 #include <vector>
 #include <type_traits>
 #include "SingletonsMng.hxx"
-#include "ThreadPoolMng.hxx"
+#include "ThreadPool.hxx"
 #include "SceneBase.hxx"
 
 class SceneMng: public Singleton<SceneMng>

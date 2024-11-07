@@ -4,6 +4,7 @@
 
 #pragma comment(lib, "winmm.lib")
 
+// =-=-= グローバル変数・定数定義部 =-=-=
 namespace {
 	DWORD countStartTime;
 	DWORD preExecTime;

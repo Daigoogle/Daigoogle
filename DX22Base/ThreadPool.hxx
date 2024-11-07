@@ -15,9 +15,9 @@
 #include <functional>
 #include <queue>
 
-class ThreadPoolMng :public Singleton<ThreadPoolMng>
+class ThreadPool :public Singleton<ThreadPool>
 {
-	friend class Singleton<ThreadPoolMng>;
+	friend class Singleton<ThreadPool>;
 public:
 	bool Init() override;
 	void Update() override;
@@ -26,8 +26,8 @@ public:
 	std::function<void()> GetPoolFead();
 
 private:
-	ThreadPoolMng();
-	~ThreadPoolMng();
+	ThreadPool();
+	~ThreadPool();
 
 private:
 	uint16 m_ThreadCount;

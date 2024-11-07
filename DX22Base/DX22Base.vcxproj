@@ -101,6 +101,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -123,6 +124,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -145,6 +147,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -174,6 +177,7 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -187,6 +191,7 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Allocator.cxx" />
     <ClCompile Include="AnyUpdateComp.cxx" />
     <ClCompile Include="CameraBase.cpp" />
     <ClCompile Include="CameraDebug.cpp" />
@@ -226,7 +231,6 @@
     <ClCompile Include="testScene.cxx" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="ThreadPool.cxx" />
-    <ClCompile Include="ThreadPoolMng.cxx" />
     <ClCompile Include="Time.cxx" />
     <ClCompile Include="Transform.cxx" />
     <ClCompile Include="Vectors.cxx" />
@@ -234,6 +238,7 @@
     <ClCompile Include="_geometory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Allocator.hxx" />
     <ClInclude Include="AnyUpdateComp.hxx" />
     <ClInclude Include="CameraBase.h" />
     <ClInclude Include="CameraDebug.h" />
@@ -276,7 +281,6 @@
     <ClInclude Include="testScene.hxx" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="ThreadPool.hxx" />
-    <ClInclude Include="ThreadPoolMng.hxx" />
     <ClInclude Include="Time.hxx" />
     <ClInclude Include="Transform.hxx" />
     <ClInclude Include="Vectors.hxx" />
