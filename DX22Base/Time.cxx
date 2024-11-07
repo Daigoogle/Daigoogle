@@ -32,7 +32,7 @@ void TimerUpdate()
 {
 	DWORD nowTime = timeGetTime();
 	fpsQueue.push_back(static_cast<float>(nowTime - preExecTime) * 0.001f);
-	if(fpsQueue.size() > 10)
+	if(fpsQueue.size() > 100)
 		fpsQueue.pop_front();
 
 	preExecTime = nowTime;

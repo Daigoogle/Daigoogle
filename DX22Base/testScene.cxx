@@ -23,10 +23,10 @@ bool testScene::Init()
 {
 	GameObject obj = MakeObject();
 	Plane* cube = obj.AddComponent<Plane>();
-	obj.AddComponent<AnyUpdateComp>()->SetFunc([obj]()
-	{
-		ShowUsingMemorySize();
-	});
+	//obj.AddComponent<AnyUpdateComp>()->SetFunc([obj]()
+	//{
+	//	ShowUsingMemorySize();
+	//});
 	cube->SetTexture("Assets/Texture/Init_FROM.png");
 	obj.GetTransform()->SetWorldScale({ 0.3f, 0.3f, 0.3f });
 	obj.GetTransform()->SetWorldPosition({0.5f,0.5f, 0.0f});
