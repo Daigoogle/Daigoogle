@@ -32,6 +32,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -39,12 +40,14 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -52,6 +55,7 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -97,11 +101,12 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -120,11 +125,12 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -143,11 +149,12 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -173,11 +180,12 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -214,6 +222,8 @@
     <ClCompile Include="ModelData.cpp" />
     <ClCompile Include="Model.cxx" />
     <ClCompile Include="MoveEmitter.cpp" />
+    <ClCompile Include="ParsCmp.cxx" />
+    <ClCompile Include="ParticleCmp.cxx" />
     <ClCompile Include="Plane.cxx" />
     <ClCompile Include="Polyline.cpp" />
     <ClCompile Include="Render.cxx" />
@@ -234,6 +244,8 @@
     <ClCompile Include="Time.cxx" />
     <ClCompile Include="Transform.cxx" />
     <ClCompile Include="Vectors.cxx" />
+    <ClCompile Include="WaveCubeCmp.cxx" />
+    <ClCompile Include="WavesCamera.cxx" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="_geometory.cpp" />
   </ItemGroup>
@@ -265,6 +277,8 @@
     <ClInclude Include="ModelData.h" />
     <ClInclude Include="Model.hxx" />
     <ClInclude Include="MoveEmitter.h" />
+    <ClInclude Include="ParsCmp.hxx" />
+    <ClInclude Include="ParticleCmp.hxx" />
     <ClInclude Include="Plane.hxx" />
     <ClInclude Include="Polyline.h" />
     <ClInclude Include="Render.hxx" />
@@ -284,6 +298,8 @@
     <ClInclude Include="Time.hxx" />
     <ClInclude Include="Transform.hxx" />
     <ClInclude Include="Vectors.hxx" />
+    <ClInclude Include="WaveCubeCmp.hxx" />
+    <ClInclude Include="WavesCamera.hxx" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>

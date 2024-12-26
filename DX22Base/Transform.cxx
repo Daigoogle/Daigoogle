@@ -8,9 +8,10 @@ Transform::Transform()
 	: m_localPosition()
 	, m_localRotation()
 	, m_localScale()
-	, m_Parent()
+	, m_Parent(nullptr)
 	, m_HaveParent(false)
 	, m_IsLook(false)
+	, m_LookPoint(nullptr)
 {
 	m_localScale = m_localScale + 1.0f;
 }
@@ -247,4 +248,26 @@ fVec3 tf::ScaleWorldToLocal(fVec3 worldScale,  Transform* pParentTransform)
 {
 	fVec3 parentScale = pParentTransform->GetLocalScale();
 	return worldScale / parentScale;
+}
+
+// ベクトルから回転を求める
+fVec3 tf::VectorToRotation(fVec3 vec)
+{
+	vec = Vec::Nomalize(vec);
+	fVec3 rot;
+	rot.x = atan2f(vec.y, sqrtf(vec.x * vec.x + vec.z * vec.z)) * -57.2957795f;
+	rot.y = atan2f(vec.x, vec.z) * 57.2957795f;
+	rot.z = 0.0f;
+	return rot;
+}
+
+// 回転から正規化されたベクトルを求める
+fVec3 tf::RotationToVector(fVec3 rot)
+{
+	fVec3 vec;
+	vec.x = cosf(rot.x * c_fPi_180) * sinf(rot.y * c_fPi_180);
+	vec.y = sinf(rot.x * c_fPi_180);
+	vec.z = cosf(rot.x * c_fPi_180) * cosf(rot.y * c_fPi_180);
+	vec = Vec::Nomalize(vec);
+	return vec;
 }

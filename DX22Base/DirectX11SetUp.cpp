@@ -46,7 +46,7 @@ bool DirectX11SetUp::Init()
 
 void DirectX11SetUp::BeginDraw()
 {
-	float color[4] = { 0.8f, 0.9f, 1.0f, 1.0f };
+	float color[4] = { 0.85f, 0.84f, 0.84f, 1.0f };
 	m_pRTV->Clear(color);
 	m_pDSV->Clear();
 }

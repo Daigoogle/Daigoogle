@@ -6,8 +6,11 @@
 #include "Plane.hxx"
 #include "Cube.hxx"
 #include "CameraDebug.h"
+#include "WavesCamera.hxx"
 #include "AnyUpdateComp.hxx"
 #include "Model.hxx"
+#include "WaveCubeCmp.hxx"
+#include "ParticleCmp.hxx"
 
 testScene::testScene()
 {
@@ -21,46 +24,48 @@ testScene::~testScene()
 
 bool testScene::Init()
 {
-	GameObject obj = MakeObject();
-	Plane* cube = obj.AddComponent<Plane>();
+	GameObject obj;// = MakeObject();
+	//Plane* cube = obj.AddComponent<Plane>();
 	//obj.AddComponent<AnyUpdateComp>()->SetFunc([obj]()
 	//{
 	//	ShowUsingMemorySize();
 	//});
-	cube->SetTexture("Assets/Texture/Init_FROM.png");
-	obj.GetTransform()->SetWorldScale({ 0.3f, 0.3f, 0.3f });
-	obj.GetTransform()->SetWorldPosition({0.5f,0.5f, 0.0f});
-	cube->SetLayer((LAYER_TYPE)2);
+	//cube->SetTexture("Assets/Texture/Init_FROM.png");
+	//obj.GetTransform()->SetWorldScale({ 0.3f, 0.3f, 0.3f });
+	//obj.GetTransform()->SetWorldPosition({0.5f,0.5f, 0.0f});
+	//cube->SetLayer((LAYER_TYPE)2);
 
 	GameObject Camra = MakeObject();
-	Camra.AddComponent<CameraDebug>()->SetMainCamera();
+	Transform* CTF = Camra.GetTransform();
+	CTF->SetWorldPosition({0.0f,0.0f,0.0f});
+	CTF->SetWorldRotation({0.0f,30.0f,90.0f});
 
-	obj.GetTransform()->LookPoint(Camra.GetTransform());
+	Camra.AddComponent<WavesCamera>()->SetMainCamera();
+	//Camra.AddComponent<CameraDebug>()->SetMainCamera();
 
-	GameObject obj1[2];
-	for(int y = 0; y < 1000;y++)
+	//obj.GetTransform()->LookPoint(Camra.GetTransform());
+
+	for (int y = 0; y < 66; y++)
 	{
-		obj1[y%2] = MakeObject();
-		Cube* cube = obj1[y % 2].AddComponent<Cube>();
-		AnyUpdateComp* any = obj1[y % 2].AddComponent<AnyUpdateComp>();
-		any->SetFunc([any]()
+		for (int x = 0; x < 66; x++)
 		{
-			Transform* tf = any->GetGameObject().GetTransform();
-			fVec3 R = tf->GetLocalRotation();
-			tf->SetLocalRotation({ 0.0f,R.y + 0.0001f,0.0f });
-		});
-		cube->SetTexture("Assets/Texture/Kimchee_01_Base_Color.png");
-		obj1[y%2].GetTransform()->SetWorldScale({ 0.1f, 0.1f, 0.1f });
-		obj1[y%2].GetTransform()->SetWorldPosition({ cosf(y * 0.1f) * y * 0.02f, 0.0f, sinf(y * 0.1f) * y * 0.02f });
-		if(y > 0)
-			obj1[y % 2].GetTransform()->SetParent(obj1[y % 2 ^ 1].GetTransform());
+			obj = MakeObject();
+			Cube* cube = obj.AddComponent<Cube>();
+			cube->SetTexture("Assets/Texture/Alpha.png");
+			Transform* tf = obj.GetTransform();
+			tf->SetWorldScale({ 0.1f, 0.1f, 0.1f });
+			tf->SetWorldPosition({ (x - 30) * 0.17f, 0.0f, (y - 30) * 0.17f });
+			obj.AddComponent<WaveCubeCmp>();
+		}
 	}
 
-	//GameObject Mdl = MakeObject();
-	//Model* mold = Mdl.AddComponent<Model>();
-	//Mdl.GetTransform()->SetWorldScale({10.0f,10.0f ,10.0f });
-	//mold->SetModel("Assets/Model/GM31/sky.obj");
-	//mold->SetLayer((LAYER_TYPE)1);
+	obj = MakeObject();
+	obj.AddComponent<ParticleCmp>();
+	obj.AddComponent<Plane>()->SetTexture("Assets/Texture/title.png");
+	Transform* tf = obj.GetTransform();
+	tf->LookPoint(CTF);
+	tf->SetWorldScale({6.0f,4.0f,5.0f});
+	tf->SetWorldPosition({ 0.0f,0.5f,0.0f });
 
 	return true;
 }

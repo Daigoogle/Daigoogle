@@ -73,6 +73,7 @@ protected:
 
 	void InitSetting();
 
+	Transform* m_Transform;
 	LAYER_TYPE m_Layer;
 
 	MeshBuffer* m_pMeshBuffer;
@@ -81,9 +82,13 @@ protected:
 	PixelShader* m_PixelShader;
 	VertexShader* m_VertexShader;
 
-	fVec2 m_uvOffSet;
-	fVec2 m_uvScale;
-	fVec4 m_Color;
+	fVec2* m_uvOffSet;
+	fVec2* m_uvScale;
+	fVec4* m_Color;
+
+	inline constexpr fVec2 DefaultUVOffset() { return { 0.0f,0.0f }; }
+	inline constexpr fVec2 DefaultUVScale() { return { 1.0f,1.0f }; }
+	inline constexpr fVec4 DefaultColor() { return { 1.0f,1.0f,1.0f,1.0f }; }
 
 	std::vector<std::shared_ptr<char[]>>	m_vtxShaderWriteDatas;
 	std::vector<std::shared_ptr<char[]>>	m_pixelShaderWriteDatas;

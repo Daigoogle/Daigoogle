@@ -667,7 +667,7 @@ nVec4 operator/(const nVec4& Left, const int Right)
 	return ans;
 }
 
-float Vec::length(fVec3 Vector)
+float Vec::length(const fVec3& Vector)
 {
 	return powf(Vector.x * Vector.x + Vector.y * Vector.y + Vector.z * Vector.z, 0.5f);
 }
@@ -677,7 +677,7 @@ fVec3 Vec::Nomalize(fVec3 Vector)
 }
 
 #ifdef DIRECTX11_PRJ
-DirectX::XMFLOAT3 Vec::ToXMFLOAT3(fVec3 Vector)
+DirectX::XMFLOAT3 Vec::ToXMFLOAT3(const fVec3& Vector)
 {
 	return { Vector.x, Vector.y, Vector.z };
 }

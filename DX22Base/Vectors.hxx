@@ -31,6 +31,11 @@ using count = unsigned short;
 using ID = unsigned long;
 using Name = std::string;
 
+/**
+	@brief		ユニークIDを作成・保持するクラス
+	@details	生成時固有のIDを保持する
+	@author		伊藤大悟
+*/
 class unique_ID {
 	ID m_ID; static ID m_Counter;
 public:
@@ -235,7 +240,7 @@ namespace Vec {
 	/// @brief ベクトルの長さを求める
 	/// @param Vector 求めるベクトル
 	/// @return ベクトルの長さ
-	float length(fVec3 Vector);
+	float length(const fVec3& Vector);
 
 	/// @brief ベクトルを正規化する
 	/// @param Vector 正規化するベクトル
@@ -243,7 +248,7 @@ namespace Vec {
 	fVec3 Nomalize(fVec3 Vector);
 
 #ifdef DIRECTX11_PRJ
-	DirectX::XMFLOAT3 ToXMFLOAT3(fVec3 Vector);
+	DirectX::XMFLOAT3 ToXMFLOAT3(const fVec3& Vector);
 #endif // DIRECTX11_PRJ
 }
 

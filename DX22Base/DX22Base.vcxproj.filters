@@ -190,6 +190,18 @@
     <ClCompile Include="Allocator.cxx">
       <Filter>__New</Filter>
     </ClCompile>
+    <ClCompile Include="WaveCubeCmp.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="WavesCamera.cxx">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleCmp.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="ParsCmp.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h" />
@@ -319,6 +331,18 @@
       <Filter>__New</Filter>
     </ClInclude>
     <ClInclude Include="Allocator.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveCubeCmp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="WavesCamera.hxx">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleCmp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ParsCmp.hxx">
       <Filter>__New</Filter>
     </ClInclude>
   </ItemGroup>

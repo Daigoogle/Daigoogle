@@ -19,16 +19,15 @@ bool Plane::Init()
 	m_VertexShader = RenderMng::GetInstance().GetVertexShader("Assets/Shader/Sprite3D_Defalt_VS.cso");
 	m_PixelShader = RenderMng::GetInstance().GetPixelShader("Assets/Shader/Sprite3D_Defalt_PS.cso");
 	Render::InitSetting();
+	m_Transform = GetGameObject().GetTransform();
 	return true;
 }
 
 void Plane::Draw()
 {
 	CameraBase* Camm = CameraManager::GetInstance().GetMainCamera();
-	// トランスフォームを取得
-	Transform* tf = this->GetGameObject().GetTransform();
 
-	float afVtxInfos[] = {
+	float afVtxInfos[8];/* = {
 		m_uvOffSet.x,
 		m_uvOffSet.y,
 		m_uvScale.x,
@@ -37,11 +36,45 @@ void Plane::Draw()
 		m_Color.y,
 		m_Color.z,
 		m_Color.w
-	};
+	};*/
+	if (m_uvOffSet)
+	{
+		afVtxInfos[0] = m_uvOffSet->x;
+		afVtxInfos[1] = m_uvOffSet->y;
+	}
+	else
+	{
+		afVtxInfos[0] = 0.0f;
+		afVtxInfos[1] = 0.0f;
+	}
+	if (m_uvScale)
+	{
+		afVtxInfos[2] = m_uvScale->x;
+		afVtxInfos[3] = m_uvScale->y;
+	}
+	else
+	{
+		afVtxInfos[2] = 1.0f;
+		afVtxInfos[3] = 1.0f;
+	}
+	if (m_Color)
+	{
+		afVtxInfos[4] = m_Color->x;
+		afVtxInfos[5] = m_Color->y;
+		afVtxInfos[6] = m_Color->z;
+		afVtxInfos[7] = m_Color->w;
+	}
+	else
+	{
+		afVtxInfos[4] = 1.0f;
+		afVtxInfos[5] = 1.0f;
+		afVtxInfos[6] = 1.0f;
+		afVtxInfos[7] = 1.0f;
+	}
 
 	// ワールド行列の取り出し
 	DirectX::XMFLOAT4X4 mat[3];
-	mat[0] = tf->GetWorldMatrix();
+	mat[0] = m_Transform->GetWorldMatrix();
 
 	// カメラのデータを取り出すループ
 	//CCameraManager& camManager = CameraManager::GetInstance();
@@ -54,10 +87,9 @@ void Plane::Draw()
 	m_VertexShader->WriteBuffer(0, mat);
 	m_VertexShader->WriteBuffer(1, afVtxInfos);
 	int nNoInfo = 2;
-	for (int nCntInfo = 0; nCntInfo < m_vtxShaderWriteDatas.size(); nCntInfo++)
+	for (int nCntInfo = 0; nCntInfo < m_vtxShaderWriteDatas.size(); nCntInfo++, nNoInfo++)
 	{
 		m_VertexShader->WriteBuffer(nNoInfo, m_vtxShaderWriteDatas[nCntInfo].get());
-		nNoInfo++;
 	}
 	m_VertexShader->Bind();
 

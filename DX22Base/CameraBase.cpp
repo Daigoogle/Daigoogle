@@ -5,7 +5,7 @@
 CameraBase::CameraBase():
 	m_look(0.0f,0.0f,0.0f),
 	m_up(0.0f,1.0f,0.0f),
-	m_fovy(1.0472f),
+	m_fovy(1.472f),
 	m_aspect(16.0f/9.0f),
 	m_near(0.3f),
 	m_far(1000.0f)
@@ -20,6 +20,8 @@ CameraBase::~CameraBase()
 bool CameraBase::Init()
 {
 	m_Transform = GetGameObject().GetTransform();
+
+	m_look = Vec::ToXMFLOAT3(tf::RotationToVector(m_Transform->GetWorldRotation()) + m_Transform->GetWorldPosition());
 	return true;
 }
 

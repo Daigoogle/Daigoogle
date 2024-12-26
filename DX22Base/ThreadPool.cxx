@@ -12,8 +12,6 @@ namespace{
 	}
 }
 
-#define _THREADPOOL_
-
 ThreadPool::ThreadPool()
 #ifdef _THREADPOOL_
 	: Singleton(UPDATE_ORDER::NO_UPDATE)

@@ -76,7 +76,6 @@ template<typename Type>
 class Singleton :public _SingletonBase
 {
 public:
-	using getInst = Type & (*)();
 	/// @brief インスタンスを取得する ※非推奨
 	/// @return インスタンス
 	static inline Type& __CreateInstance()

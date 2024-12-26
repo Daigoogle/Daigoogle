@@ -13,10 +13,6 @@
 #ifdef _DEBUG
 #include <windows.h>
 #include <string>
-#endif // _DEBUG
-
-// =-=-= マクロ定義部 =-=-=
-#ifdef _DEBUG
 
 // ポインタのNullチェック
 #define NullptrCheck(ptr) _NullptrCheckFunc(ptr)
@@ -53,13 +49,25 @@ HRESULT _HResultCheckFunc(HRESULT hr);
 
 #else // Release
 
+#ifdef _SHIPPING
+
+#define DebugString_(str)
+#define DebugCOUT_(str)
+
+#else // _SHIPPING
+
 #define NullptrCheck(ptr) ptr
 #define NullptrCheck_(ptr) 
 #define FalseCheck(b) b
 #define HResultCheck(hr) hr
 #define DebugBreakPoint_ 
-#define DebugString_(str)
-#define DebugCOUT_(str)
+
+// デバッグ用文字列の出力　※セミコロン付き
+#define DebugString_(str);// _DebugStringOutput(str);
+// デバッグ用文字列の出力 cout版 ※セミコロン付き
+#define DebugCOUT_(str);// std::cout << str;
+
+#endif // _SHIPPING
 
 #endif // _DEBUG
 
