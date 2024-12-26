@@ -4,7 +4,14 @@ using namespace tf;
 
 const static float c_fPi_180 = 3.1415926535f / 180.0f;
 
-Transform::Transform() :m_localPosition(), m_localRotation(), m_localScale(), m_Parent(), m_HaveParent(false)
+Transform::Transform() 
+	: m_localPosition()
+	, m_localRotation()
+	, m_localScale()
+	, m_Parent(nullptr)
+	, m_HaveParent(false)
+	, m_IsLook(false)
+	, m_LookPoint(nullptr)
 {
 	m_localScale = m_localScale + 1.0f;
 }
@@ -13,14 +20,15 @@ Transform::~Transform()
 	m_Parent = nullptr;
 }
 
-bool Transform::Init()
-{
-}
 void Transform::Update()
 {
-}
-void Transform::UnInit()
-{
+	if (m_IsLook)// Billboard
+	{
+		fVec3 LookVec = GetWorldPosition() - m_LookPoint->GetWorldPosition() ;
+		fVec3 Nom = Vec::Nomalize(LookVec);
+		fVec3 LookRot = {atan2f(Nom.y,sqrtf(Nom.x * Nom.x + Nom.z * Nom.z)) * -57.2957795f,atan2f(Nom.x,Nom.z) * 57.2957795f,0.0f };
+		SetLocalRotation(LookRot);
+	}
 }
 
 void  Transform::SetLocalPosition(fVec3 Get)
@@ -103,7 +111,13 @@ void Transform::SetParent(Transform* tf)
 }
 void Transform::RemoveParent()
 {
-	m_Parent = nullptr;;
+	m_Parent = nullptr;
+}
+
+void Transform::LookPoint(Transform* Point)
+{
+	m_IsLook = true;
+	m_LookPoint = Point;
 }
 
 DirectX::XMFLOAT4X4 Transform::GetWorldMatrix(void)
@@ -147,6 +161,9 @@ void Transform::ParentCheck()
 		m_HaveParent = false;
 	}
 }
+
+
+
 
 
 
@@ -231,4 +248,26 @@ fVec3 tf::ScaleWorldToLocal(fVec3 worldScale,  Transform* pParentTransform)
 {
 	fVec3 parentScale = pParentTransform->GetLocalScale();
 	return worldScale / parentScale;
+}
+
+// ベクトルから回転を求める
+fVec3 tf::VectorToRotation(fVec3 vec)
+{
+	vec = Vec::Nomalize(vec);
+	fVec3 rot;
+	rot.x = atan2f(vec.y, sqrtf(vec.x * vec.x + vec.z * vec.z)) * -57.2957795f;
+	rot.y = atan2f(vec.x, vec.z) * 57.2957795f;
+	rot.z = 0.0f;
+	return rot;
+}
+
+// 回転から正規化されたベクトルを求める
+fVec3 tf::RotationToVector(fVec3 rot)
+{
+	fVec3 vec;
+	vec.x = cosf(rot.x * c_fPi_180) * sinf(rot.y * c_fPi_180);
+	vec.y = sinf(rot.x * c_fPi_180);
+	vec.z = cosf(rot.x * c_fPi_180) * cosf(rot.y * c_fPi_180);
+	vec = Vec::Nomalize(vec);
+	return vec;
 }

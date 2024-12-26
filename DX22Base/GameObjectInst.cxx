@@ -1,7 +1,7 @@
 #include "GameObjectInst.hxx"
 #include "Component.hxx"
 
-uint32_t GameObjectInst::ms_ObjectID = 0;
+uint32 GameObjectInst::ms_ObjectID = 0;
 
 GameObjectInst::GameObjectInst()
 	: m_Name("Nameless")
@@ -14,16 +14,13 @@ GameObjectInst::GameObjectInst()
 
 GameObjectInst::~GameObjectInst()
 {
-	//for (auto& elem:m_Components)
-	//	elem.release();
 	m_Components.clear();
 }
 
 bool GameObjectInst::Init()
 {
 	for (auto& elem : m_Components)
-		if(!elem->Init())// ‰Šú‰»
-			return false;// ‰Šú‰»¸”s
+		FalseCheck(elem->Init());// ‰Šú‰»
 	return true;// ‰Šú‰»¬Œ÷
 }
 
@@ -33,6 +30,7 @@ void GameObjectInst::Update()
 		return;
 	for (auto& elem : m_Components)
 		elem->Update();// XV
+	m_Transform.Update();
 }
 
 const bool GameObjectInst::IsActive()

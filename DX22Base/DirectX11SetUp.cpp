@@ -46,7 +46,7 @@ bool DirectX11SetUp::Init()
 
 void DirectX11SetUp::BeginDraw()
 {
-	float color[4] = { 0.8f, 0.9f, 1.0f, 1.0f };
+	float color[4] = { 0.85f, 0.84f, 0.84f, 1.0f };
 	m_pRTV->Clear(color);
 	m_pDSV->Clear();
 }
@@ -235,10 +235,10 @@ HRESULT DirectX11SetUp::CheckAllSeting()
 	}
 
 	//--- レンダーターゲット設定
-	m_pRTV = new RenderTarget();
+	m_pRTV = New(RenderTarget)();
 	if (FAILED(hr = m_pRTV->CreateFromScreen()))
 		return hr;
-	m_pDSV = new DepthStencil();
+	m_pDSV = New(DepthStencil)();
 	if (FAILED(hr = m_pDSV->Create(m_pRTV->GetWidth(), m_pRTV->GetHeight(), false)))
 		return hr;
 	SetRenderTargets(1, &m_pRTV, nullptr);

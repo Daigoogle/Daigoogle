@@ -9,20 +9,14 @@
 // リソースパス
 #define ASSET(path)	"Assets/"path
 
-//// タイトル
-//#ifdef _DEBUG
-//#define APP_TITLE "AT12B ItoDaigo : Debug"
-//#else
-//#define APP_TITLE "AT12B ItoDaigo"
-//#endif
-//
-//// 画面サイズ
-//#define SCREEN_WIDTH (1280)
-//#define SCREEN_HEIGHT (720)
+//#define _SHIPPING
 
-// グリッドサイズ
-#define DEBUG_GRID_NUM (10) // グリッド中心から端までの線の数
-#define DEBUG_GRID_MARGIN (1.0f) // グリッド配置幅(メートル換算)
+// 追加処理
+#define _THREADPOOL_
+#define _MEMORY_ARROCATOR_
 
+#define DIRECTX11_PRJ
+//#define DIRECTX12_PRJ
+//#define VULKAN_PRJ
 
 #endif // __DEFINES_H__

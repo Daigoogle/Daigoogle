@@ -11,7 +11,7 @@ int TagManager::AddTag(const std::string& tagName)
 		if (m_tags[i] == tagName)
 			return i;
 	m_tags.push_back(tagName);
-	return m_tags.size() - 1;
+	return (int)m_tags.size() - 1;
 }
 
 int TagManager::GetTagNo(const std::string& tagName)

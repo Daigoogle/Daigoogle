@@ -2,8 +2,8 @@
 
 SceneMng::SceneMng()
 	: Singleton(UPDATE_ORDER::SECOND_UPDATE)
-	, m_NowScene(nullptr)
-	, m_NextScene(nullptr)
+	, m_NowScene()
+	, m_NextScene()
 	, m_LoadScenes()
 {
 
@@ -11,7 +11,7 @@ SceneMng::SceneMng()
 
 SceneMng::~SceneMng()
 {
-
+	m_LoadScenes.clear();
 }
 
 bool SceneMng::Init()

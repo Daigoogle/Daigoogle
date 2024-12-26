@@ -9,11 +9,11 @@
 #define _____SceneMng_HXX_____
 
 // =-=-= インクルード部 =-=-=
-#include <deque>
+#include <vector>
 #include <type_traits>
 #include "SingletonsMng.hxx"
-
-class SceneBase;
+#include "ThreadPool.hxx"
+#include "SceneBase.hxx"
 
 class SceneMng: public Singleton<SceneMng>
 {
@@ -27,7 +27,7 @@ public:
 	{
 		// 既にロード済みシーンならば生成しない
 		for (const auto& elem : m_LoadScenes) {
-			if (dynamic_cast<TypeScene>(elem.get())) {
+			if (dynamic_cast<TypeScene*>(elem.get())) {
 				return;
 			}
 		}
@@ -41,14 +41,18 @@ public:
 	void ChangeScene()
 	{
 		// 既にロード済みか調べる
-		for (const auto& elem : m_LoadScenes) {
-			if (dynamic_cast<TypeScene>(elem.get())) {
-				m_NextScene = std::move(elem);
+		for (int i = 0; i < m_LoadScenes.size();i++) {
+			if (dynamic_cast<TypeScene*>(m_LoadScenes[i].get())) {
+				m_NextScene.swap(m_LoadScenes[i]);
+				if (!m_LoadScenes[i].get())
+					m_LoadScenes.erase(m_LoadScenes.begin() + i);
 				return;
 			}
 		}
 		// ロードしていない場合はロードする
 		m_NextScene = std::make_unique<TypeScene>();
+
+		//ThreadPoolMng::GetInstance().AddPool([m_NextScene]() {m_NextScene.Init()})
 
 		// 本来は並列化！！！
 		m_NextScene->Init();
@@ -61,7 +65,7 @@ private:
 	
 	std::unique_ptr<SceneBase> m_NowScene;
 	std::unique_ptr<SceneBase> m_NextScene;
-	std::deque<std::unique_ptr<SceneBase>> m_LoadScenes;
+	std::vector<std::unique_ptr<SceneBase>> m_LoadScenes;
 };
 
 #endif // !_____SceneMng_HXX_____

@@ -12,14 +12,13 @@
 #include <list>
 #include <string>
 #include <memory>
-#include "Object.hxx"
-#include "Transform.hxx"
 #include "GameObjectMng.hxx"
+#include "Transform.hxx"
+#include "DebugRestriction.hxx"
 
 class Component;
-class Object;
 
-class GameObjectInst :public Object
+class GameObjectInst
 {
 	friend class GameObjectMng;
 	friend class GameObject;
@@ -38,10 +37,10 @@ private:
 	template<typename TypeComp>
 	TypeComp* AddComponent()
 	{
-		std::unique_ptr<TypeComp> pComp(new TypeComp);
-		pComp->m_pGameObjectInst = this;
+		std::unique_ptr<TypeComp> pComp(New(TypeComp));
+		pComp->m_GameObject = GameObject(this);
 		m_Components.push_back(std::move(pComp));
-		return pComp.get();
+		return static_cast<TypeComp*>(m_Components.back().get());
 	}
 
 	template<typename TypeComp>
@@ -49,27 +48,29 @@ private:
 	{
 		for (const auto elem : m_Components)
 		{
-			TypeComp* pComp = dynamic_cast<TypeComp*>(elem.get());
-			if (pComp != nullptr)
-				return pComp;
+			if (typeid(TypeComp) == typeid(elem.get()))
+				return elem.get();
 		}
+		DebugBreakPoint_
 		return nullptr;
 	}
 
 	void Delete();
 
 private:
-	static uint32_t ms_ObjectID;
+	static ID ms_ObjectID;
 
-	std::string m_Name;					// 名前
+	Name m_Name;					// オブジェクト名
 	unsigned m_Tag;						// タグ
-	bool m_IsDelete;					// 削除フラグ
-	std::list<std::unique_ptr<Component>> m_Components;	// コンポーネント
-	uint32_t m_ObjectID;		// ID
+	bool m_IsActive;					// アクティブかどうか
+	bool m_IsDelete;					// このオブジェクトの削除フラグ
+	std::list<std::unique_ptr<Component>> m_Components;	// 追加されたコンポーネント
+	ID m_ObjectID;					// オブジェクトID
+	std::list<GameObjectInst*> m_childs;// 子オブジェクト群
+	GameObjectInst* m_pParent;			// 親オブジェクト
+	SceneBase* m_pScene;				// 所属シーン
 
-	bool m_IsFollowParent;				// 親に追従するかどうか
-
-	Transform m_Transform;				// 位置情報
+	Transform m_Transform;				// トランスフォーム
 };
 
 #endif // !_____GameObjectInst_HXX_____

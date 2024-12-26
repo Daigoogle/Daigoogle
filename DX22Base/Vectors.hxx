@@ -9,7 +9,11 @@
 #define _____Vectors_HXX_____
 
 // =-=-= インクルード部 =-=-=
-#if 1
+#include "Defines.h"
+#include "Allocator.hxx"
+#include <string>
+
+#ifdef DIRECTX11_PRJ
 #include <DirectXMath.h>
 using fVec4x4 = DirectX::XMFLOAT4X4;
 using Matrix = DirectX::XMMATRIX;
@@ -23,6 +27,21 @@ using int16 = short;
 using int32 = long;
 using int64 = long long;
 
+using count = unsigned short;
+using ID = unsigned long;
+using Name = std::string;
+
+/**
+	@brief		ユニークIDを作成・保持するクラス
+	@details	生成時固有のIDを保持する
+	@author		伊藤大悟
+*/
+class unique_ID {
+	ID m_ID; static ID m_Counter;
+public:
+	inline unique_ID() { m_ID = ++m_Counter; }
+	inline explicit operator ID() { return m_ID; }
+};
 
 //__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__///
 //																	//
@@ -72,16 +91,6 @@ struct fVec3
 		};
 		float v[_SuffixNum] = { 0.0f,0.0f,0.0f };
 	};
-
-	/// @brief ベクトルの長さを求める
-	/// @param Vector 求めるベクトル
-	/// @return ベクトルの長さ
-	static float length(fVec3 Vector);
-
-	/// @brief ベクトルを正規化する
-	/// @param Vector 正規化するベクトル
-	/// @return 正規化されたベクトル
-	static fVec3 Nomalize(fVec3 Vector);
 };
 bool operator==(const fVec3& Left, const fVec3& Right);
 bool operator!=(const fVec3& Left, const fVec3& Right);
@@ -225,6 +234,23 @@ nVec4 operator+(const nVec4& Left, const int Right);
 nVec4 operator-(const nVec4& Left, const int Right);
 nVec4 operator*(const nVec4& Left, const int Right);
 nVec4 operator/(const nVec4& Left, const int Right);
+
+
+namespace Vec {
+	/// @brief ベクトルの長さを求める
+	/// @param Vector 求めるベクトル
+	/// @return ベクトルの長さ
+	float length(const fVec3& Vector);
+
+	/// @brief ベクトルを正規化する
+	/// @param Vector 正規化するベクトル
+	/// @return 正規化されたベクトル
+	fVec3 Nomalize(fVec3 Vector);
+
+#ifdef DIRECTX11_PRJ
+	DirectX::XMFLOAT3 ToXMFLOAT3(const fVec3& Vector);
+#endif // DIRECTX11_PRJ
+}
 
 
 #endif // !_____Vectors_HXX_____

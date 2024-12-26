@@ -32,6 +32,7 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -39,12 +40,14 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -52,6 +55,7 @@
     <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>MultiByte</CharacterSet>
+    <EnableUnitySupport>true</EnableUnitySupport>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -75,17 +79,21 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
+    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\DirectXTex\x64\$(Configuration);$(ProjectDir)\DirectXTex\Win32\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)\DirectXTex\x64\$(Configuration);$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -93,10 +101,12 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -119,6 +129,8 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -137,10 +149,12 @@
       <SDLCheck>false</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -170,6 +184,8 @@
       <LanguageStandard>stdcpp20</LanguageStandard>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)\Vectors.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
     </ClCompile>
     <Link>
       <SubSystem>NotSet</SubSystem>
@@ -183,28 +199,19 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="AudioManager.cpp" />
-    <ClCompile Include="BaseObject.cpp" />
-    <ClCompile Include="BaseObjectInstance.cpp" />
-    <ClCompile Include="BaseObjectManager.cpp" />
+    <ClCompile Include="Allocator.cxx" />
+    <ClCompile Include="AnyUpdateComp.cxx" />
     <ClCompile Include="CameraBase.cpp" />
     <ClCompile Include="CameraDebug.cpp" />
     <ClCompile Include="CameraManager.cpp" />
     <ClCompile Include="CameraPlayer.cpp" />
-    <ClCompile Include="ColliderBase.cpp" />
-    <ClCompile Include="Component.cpp" />
     <ClCompile Include="Component.cxx" />
+    <ClCompile Include="CreateTexture.cpp" />
     <ClCompile Include="Cube.cxx" />
-    <ClCompile Include="CubeColliderComponent.cpp" />
-    <ClCompile Include="CubeCollisionToDirectComponent.cpp" />
-    <ClCompile Include="CubeCollisionToDirectManager.cpp" />
-    <ClCompile Include="CubeManager.cpp" />
-    <ClCompile Include="CubeComponent.cpp" />
+    <ClCompile Include="DebugRestriction.cxx" />
     <ClCompile Include="DirectX11SetUp.cpp" />
-    <ClCompile Include="DotColliderComponent.cpp" />
     <ClCompile Include="easing.cpp" />
     <ClCompile Include="Effect.cpp" />
-    <ClCompile Include="fade.cpp" />
     <ClCompile Include="GameObject.cxx" />
     <ClCompile Include="GameObjectInst.cxx" />
     <ClCompile Include="GameObjectMng.cxx" />
@@ -212,86 +219,54 @@
     <ClCompile Include="ItemUI.cpp" />
     <ClCompile Include="MeshBuffer.cpp" />
     <ClCompile Include="Geometory.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Model.cpp" />
-    <ClCompile Include="ModelComponent.cpp" />
-    <ClCompile Include="ModelManager.cpp" />
-    <ClCompile Include="ModelRegister.cpp" />
+    <ClCompile Include="ModelData.cpp" />
+    <ClCompile Include="Model.cxx" />
     <ClCompile Include="MoveEmitter.cpp" />
-    <ClCompile Include="NumSprite2D.cpp" />
-    <ClCompile Include="Object.cxx" />
-    <ClCompile Include="plane.cxx" />
-    <ClCompile Include="Player.cpp" />
-    <ClCompile Include="PlayerForce.cpp" />
-    <ClCompile Include="PlayerInfo.cpp" />
-    <ClCompile Include="PolygonColliderComponent.cpp" />
-    <ClCompile Include="ColliderManager.cpp" />
+    <ClCompile Include="ParsCmp.cxx" />
+    <ClCompile Include="ParticleCmp.cxx" />
+    <ClCompile Include="Plane.cxx" />
     <ClCompile Include="Polyline.cpp" />
-    <ClCompile Include="PutLog.cpp" />
     <ClCompile Include="Render.cxx" />
-    <ClCompile Include="RenderMgr.cxx" />
-    <ClCompile Include="Rigidbody.cxx" />
-    <ClCompile Include="SceneBase.cpp" />
+    <ClCompile Include="RenderMng.cxx" />
     <ClCompile Include="SceneBase.cxx" />
-    <ClCompile Include="SceneComponentTest.cpp" />
-    <ClCompile Include="SceneInit.cpp" />
-    <ClCompile Include="SceneManager.cpp" />
     <ClCompile Include="SceneMng.cxx" />
-    <ClCompile Include="SceneResult.cpp" />
-    <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="ScoreManager.cpp" />
     <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="ShaderList.cpp" />
     <ClCompile Include="SingletonsMng.cxx" />
-    <ClCompile Include="SkyBoxComponent.cpp" />
-    <ClCompile Include="SkyBoxManager.cpp" />
     <ClCompile Include="Sound.cpp" />
-    <ClCompile Include="SoundEffectComponent.cpp" />
     <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="Sprite2DManager.cpp" />
-    <ClCompile Include="Sprite2DComponent.cpp" />
-    <ClCompile Include="Sprite3DManager.cpp" />
-    <ClCompile Include="Sprite3DComponent.cpp" />
     <ClCompile Include="Startup.cpp" />
     <ClCompile Include="Supervision.cxx" />
     <ClCompile Include="TagManager.cpp" />
+    <ClCompile Include="testScene.cxx" />
     <ClCompile Include="Texture.cpp" />
-    <ClCompile Include="SceneGame.cpp" />
-    <ClCompile Include="TextureRegister.cpp" />
     <ClCompile Include="ThreadPool.cxx" />
-    <ClCompile Include="ThreadPoolMng.cxx" />
-    <ClCompile Include="TrailEffect.cpp" />
-    <ClCompile Include="TrailEffeect.cpp" />
+    <ClCompile Include="Time.cxx" />
     <ClCompile Include="Transform.cxx" />
     <ClCompile Include="Vectors.cxx" />
+    <ClCompile Include="WaveCubeCmp.cxx" />
+    <ClCompile Include="WavesCamera.cxx" />
     <ClCompile Include="Window.cpp" />
     <ClCompile Include="_geometory.cpp" />
-    <ClCompile Include="_model.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AudioManager.h" />
-    <ClInclude Include="BaseObjectInstance.h" />
-    <ClInclude Include="BaseObjectManager.h" />
+    <ClInclude Include="Allocator.hxx" />
+    <ClInclude Include="AnyUpdateComp.hxx" />
     <ClInclude Include="CameraBase.h" />
     <ClInclude Include="CameraDebug.h" />
     <ClInclude Include="CameraManager.h" />
     <ClInclude Include="CameraPlayer.h" />
-    <ClInclude Include="ColliderBase.h" />
-    <ClInclude Include="Component.h" />
     <ClInclude Include="Component.hxx" />
+    <ClInclude Include="CreateTexture.h" />
     <ClInclude Include="Cube.hxx" />
-    <ClInclude Include="CubeColliderComponent.h" />
-    <ClInclude Include="CubeCollisionToDirectComponent.h" />
-    <ClInclude Include="CubeCollisionToDirectManager.h" />
-    <ClInclude Include="CubeManager.h" />
-    <ClInclude Include="CubeComponent.h" />
+    <ClInclude Include="DebugRestriction.hxx" />
     <ClInclude Include="DefaultSetting.hxx" />
     <ClInclude Include="Defines.h" />
+    <ClInclude Include="Defines.hxx" />
     <ClInclude Include="DirectX11SetUp.h" />
-    <ClInclude Include="DotColliderComponent.h" />
     <ClInclude Include="easing.h" />
     <ClInclude Include="Effect.h" />
-    <ClInclude Include="fade.h" />
+    <ClInclude Include="ExVector.hxx" />
     <ClInclude Include="GameObject.hxx" />
     <ClInclude Include="GameObjectInst.hxx" />
     <ClInclude Include="GameObjectMng.hxx" />
@@ -299,60 +274,41 @@
     <ClInclude Include="ItemUI.h" />
     <ClInclude Include="MeshBuffer.h" />
     <ClInclude Include="Geometory.h" />
-    <ClInclude Include="Main.h" />
-    <ClInclude Include="Model.h" />
-    <ClInclude Include="ModelComponent.h" />
-    <ClInclude Include="ModelManager.h" />
-    <ClInclude Include="ModelRegister.h" />
+    <ClInclude Include="ModelData.h" />
+    <ClInclude Include="Model.hxx" />
     <ClInclude Include="MoveEmitter.h" />
-    <ClInclude Include="NumSprite2D.h" />
-    <ClInclude Include="BaseObject.h" />
-    <ClInclude Include="Object.hxx" />
-    <ClInclude Include="plane.hxx" />
-    <ClInclude Include="Player.h" />
-    <ClInclude Include="PlayerForce.h" />
-    <ClInclude Include="PlayerInfo.h" />
-    <ClInclude Include="PolygonColliderComponent.h" />
-    <ClInclude Include="ColliderManager.h" />
+    <ClInclude Include="ParsCmp.hxx" />
+    <ClInclude Include="ParticleCmp.hxx" />
+    <ClInclude Include="Plane.hxx" />
     <ClInclude Include="Polyline.h" />
-    <ClInclude Include="PutLog.h" />
     <ClInclude Include="Render.hxx" />
-    <ClInclude Include="RenderMgr.hxx" />
+    <ClInclude Include="RenderMng.hxx" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="Rigidbody.hxx" />
-    <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneBase.hxx" />
-    <ClInclude Include="SceneComponentTest.h" />
-    <ClInclude Include="SceneGame.h" />
-    <ClInclude Include="SceneInit.h" />
-    <ClInclude Include="SceneManager.h" />
     <ClInclude Include="SceneMng.hxx" />
-    <ClInclude Include="SceneResult.h" />
-    <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="ScoreManager.h" />
     <ClInclude Include="Shader.h" />
-    <ClInclude Include="ShaderList.h" />
     <ClInclude Include="SingletonsMng.hxx" />
-    <ClInclude Include="SkyBoxComponent.h" />
-    <ClInclude Include="SkyBoxManager.h" />
     <ClInclude Include="Sound.h" />
-    <ClInclude Include="SoundEffectComponent.h" />
     <ClInclude Include="Sprite.h" />
-    <ClInclude Include="Sprite2DManager.h" />
-    <ClInclude Include="Sprite2DComponent.h" />
-    <ClInclude Include="Sprite3DManager.h" />
-    <ClInclude Include="Sprite3DComponent.h" />
     <ClInclude Include="TagManager.h" />
+    <ClInclude Include="testScene.hxx" />
     <ClInclude Include="Texture.h" />
-    <ClInclude Include="TextureRegister.h" />
     <ClInclude Include="ThreadPool.hxx" />
-    <ClInclude Include="ThreadPoolMng.hxx" />
-    <ClInclude Include="TrailEffeect.h" />
+    <ClInclude Include="Time.hxx" />
     <ClInclude Include="Transform.hxx" />
     <ClInclude Include="Vectors.hxx" />
+    <ClInclude Include="WaveCubeCmp.hxx" />
+    <ClInclude Include="WavesCamera.hxx" />
     <ClInclude Include="Window.h" />
   </ItemGroup>
   <ItemGroup>
+    <FxCompile Include="common.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
     <FxCompile Include="DefaltModel_PS.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
@@ -389,6 +345,30 @@
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
     </FxCompile>
+    <FxCompile Include="unlitTexturePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="unlitTextureVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="vertexLightingPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="vertexLightingVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
     <FxCompile Include="VS_Model.hlsl">
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
       <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
@@ -398,11 +378,6 @@
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DX22Base.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ClassDiagram.cd" />
-    <None Include="ColliderJudgement.cu" />
-    <None Include="ColliderJudgement.cuh" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -35,7 +35,7 @@ bool Window::Init()
 	}
 	
 	// ウィンドウの作成
-	RECT rect = { 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT };
+	RECT rect = { 0, 0, (long)SCREEN_WIDTH, (long)SCREEN_HEIGHT };
 	DWORD style = WS_CAPTION | WS_SYSMENU;
 	DWORD exStyle = WS_EX_OVERLAPPEDWINDOW;
 	AdjustWindowRectEx(&rect, style, false, exStyle);

@@ -19,7 +19,6 @@
 class GameObjectInst;
 class GameObject;
 class SceneBase;
-class Object;
 
 class GameObjectMng: public Singleton<GameObjectMng>
 {
@@ -34,7 +33,11 @@ public:
 	/// @brief オブジェクトの作成
 	/// @param pScene 作成するオブジェクトの所属シーン
 	/// @return 作成したオブジェクト
-	GameObject MakeObject(Object* pScene);
+	GameObject MakeObject(SceneBase* pScene);
+
+	/// @brief シーンのオブジェクトの解放
+	/// @param pScene 解放するシーン
+	void DeleteSceneObjects(SceneBase* pScene);
 
 private:
 	/// @brief コンストラクタ
@@ -46,17 +49,16 @@ private:
 	void InitObjects();
 	/// @brief 現シーンのオブジェクトの更新
 	/// @param pScene 現在のシーン
-	//void UpdateObjects(SceneBase* pScene);
+	void UpdateObjects(SceneBase* pScene);
 
-	//void DeleteObject();
+	void DeleteObject();
 
 	/// @brief オブジェクトのロードキュー
-	std::queue<GameObjectInst*> m_ObjectsLoadQueue;
-
+	std::unordered_map<SceneBase* ,std::queue<GameObjectInst*>> m_ObjectsLoadQueue;
 	/// @brief オブジェクトの更新キュー
-	//std::unordered_map<SceneBase* , std::vector<GameObjectInst*>> m_ObjectsQueue;
+	std::unordered_map<SceneBase* , std::vector<GameObjectInst*>> m_ObjectsQueue;
 	/// @brief 削除するオブジェクトのキュー
-	//std::unordered_map<uint32_t,SceneBase*> m_ObjectsDeleteQueue;
+	std::unordered_map<ID,SceneBase*> m_ObjectsDeleteQueue;
 };
 
 #endif // !_____GameObjectMng_HXX_____

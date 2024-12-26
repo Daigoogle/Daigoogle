@@ -11,14 +11,18 @@
 // =-=-= インクルード部 =-=-=
 #include "Render.hxx"
 
-class plane :public Render
+class Plane :public Render
 {
 public:
-	plane();
-	~plane();
+	Plane();
+	~Plane();
 
+	void Draw()override;
+protected:
+	bool Init()override;
 private:
-
+	bool m_IsBillboard;
+	
 };
 
 #endif // !_____plane_HXX_____

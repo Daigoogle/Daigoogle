@@ -18,7 +18,7 @@ class CameraManager final :public Singleton<CameraManager>
 {
 	friend class Singleton<CameraManager>;
 public:
-	void SetCamera(CameraBase*);
+	void SetMainCamera(CameraBase*);
 	CameraBase* GetMainCamera();
 
 private:

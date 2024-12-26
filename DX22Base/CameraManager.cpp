@@ -1,8 +1,6 @@
 #include "CameraManager.h"
 #include "CameraDebug.h"
-#include "BaseObjectManager.h"
-#include "SceneManager.h"
-#include "Transform.h"
+#include "Transform.hxx"
 
 CameraManager::CameraManager()
 	: Singleton(UPDATE_ORDER::NO_UPDATE)
@@ -16,7 +14,7 @@ CameraManager::~CameraManager()
 
 }
 
-void CameraManager::SetCamera(CameraBase* cam)
+void CameraManager::SetMainCamera(CameraBase* cam)
 {
 	m_pMainCamera = cam;
 }

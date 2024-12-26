@@ -11,6 +11,7 @@
 // =-=-= インクルード部 =-=-=
 #include <type_traits>
 #include "GameObjectInst.hxx"
+#include "DebugRestriction.hxx"
 
 class GameObject
 {
@@ -27,8 +28,7 @@ public:
 	template<typename TypeComp, typename = std::enable_if_t<std::is_base_of_v<Component, TypeComp>>>
 	TypeComp* AddComponent()
 	{
-		if (!m_pInstance)
-			return nullptr;
+		NullptrCheck_(m_pInstance)
 		return m_pInstance->AddComponent<TypeComp>();
 	}
 
@@ -38,8 +38,7 @@ public:
 	template<typename TypeComp, typename = std::enable_if_t<std::is_base_of_v<Component, TypeComp>>>
 	TypeComp* GetComponent()
 	{
-		if (!m_pInstance)
-			return nullptr;
+		NullptrCheck_(m_pInstance)
 		return m_pInstance->GetComponent<TypeComp>();
 	}
 
@@ -77,6 +76,9 @@ public:
 	/// @brief シーンの取得
 	/// @return シーン
 	SceneBase* GetScene();
+	/// @brief Transformの取得
+	/// @return Transform
+	Transform* GetTransform();
 private:
 	GameObjectInst* m_pInstance;// 実体
 };

@@ -11,7 +11,6 @@
 // =-=-= インクルード部 =-=-=
 #include <Windows.h>
 #include <Xinput.h>
-#include "Vectors.hxx"
 #include "SingletonsMng.hxx"
 
 #pragma comment(lib, "Xinput.lib")

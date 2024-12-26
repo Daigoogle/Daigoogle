@@ -17,9 +17,6 @@
     <Filter Include="Collider">
       <UniqueIdentifier>{02793ae7-2d84-44fb-83de-c96c9c6eec8c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Cuda">
-      <UniqueIdentifier>{778b611d-7efc-4deb-bab0-60fe008b8198}</UniqueIdentifier>
-    </Filter>
     <Filter Include="DirectX">
       <UniqueIdentifier>{4e65b264-f84d-4758-867f-457aeb6ce2e2}</UniqueIdentifier>
     </Filter>
@@ -44,12 +41,6 @@
     <Filter Include="Camera">
       <UniqueIdentifier>{435a54c3-a78c-44d6-8fbd-c9a83498ce1a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="_PixelShader">
-      <UniqueIdentifier>{00255ad9-be1e-4041-aa0d-74f017b722ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="_VertexShader">
-      <UniqueIdentifier>{b9db16c0-2d29-4533-a29c-9cc0857e6a09}</UniqueIdentifier>
-    </Filter>
     <Filter Include="_Scene">
       <UniqueIdentifier>{4d5e9ef3-dd91-4b94-813f-3468a5bdd959}</UniqueIdentifier>
     </Filter>
@@ -59,11 +50,17 @@
     <Filter Include="__New\Draw">
       <UniqueIdentifier>{b9f9c965-a4a8-4d4f-95bd-14c375468f83}</UniqueIdentifier>
     </Filter>
+    <Filter Include="__Shader">
+      <UniqueIdentifier>{810ae69e-37a7-4800-a6f9-ba7db20bf217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__Shader\_VertexShader">
+      <UniqueIdentifier>{b9db16c0-2d29-4533-a29c-9cc0857e6a09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="__Shader\_PixelShader">
+      <UniqueIdentifier>{00255ad9-be1e-4041-aa0d-74f017b722ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>App</Filter>
-    </ClCompile>
     <ClCompile Include="Shader.cpp">
       <Filter>DirectX</Filter>
     </ClCompile>
@@ -85,20 +82,8 @@
     <ClCompile Include="Startup.cpp">
       <Filter>System</Filter>
     </ClCompile>
-    <ClCompile Include="_model.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
-    <ClCompile Include="Model.cpp">
-      <Filter>DirectX</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
-      <Filter>App</Filter>
-    </ClCompile>
     <ClCompile Include="ItemUI.cpp">
       <Filter>System</Filter>
-    </ClCompile>
-    <ClCompile Include="TrailEffect.cpp">
-      <Filter>App</Filter>
     </ClCompile>
     <ClCompile Include="Polyline.cpp">
       <Filter>App</Filter>
@@ -106,124 +91,25 @@
     <ClCompile Include="MoveEmitter.cpp">
       <Filter>System</Filter>
     </ClCompile>
-    <ClCompile Include="SceneGame.cpp">
-      <Filter>_Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneResult.cpp">
-      <Filter>_Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneTitle.cpp">
-      <Filter>_Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneManager.cpp">
-      <Filter>Singleton</Filter>
-    </ClCompile>
-    <ClCompile Include="CubeCollisionToDirectManager.cpp">
-      <Filter>Singleton</Filter>
-    </ClCompile>
     <ClCompile Include="ScoreManager.cpp">
       <Filter>Singleton</Filter>
-    </ClCompile>
-    <ClCompile Include="ColliderManager.cpp">
-      <Filter>Singleton</Filter>
-    </ClCompile>
-    <ClCompile Include="PolygonColliderComponent.cpp">
-      <Filter>Collider</Filter>
-    </ClCompile>
-    <ClCompile Include="CubeColliderComponent.cpp">
-      <Filter>Collider</Filter>
-    </ClCompile>
-    <ClCompile Include="DotColliderComponent.cpp">
-      <Filter>Collider</Filter>
     </ClCompile>
     <ClCompile Include="DirectX11SetUp.cpp">
       <Filter>DirectX</Filter>
     </ClCompile>
     <ClCompile Include="easing.cpp" />
     <ClCompile Include="Effect.cpp" />
-    <ClCompile Include="TrailEffeect.cpp" />
-    <ClCompile Include="CubeCollisionToDirectComponent.cpp">
-      <Filter>Collider</Filter>
-    </ClCompile>
-    <ClCompile Include="CubeComponent.cpp">
-      <Filter>Draw</Filter>
-    </ClCompile>
-    <ClCompile Include="NumSprite2D.cpp">
-      <Filter>Draw</Filter>
-    </ClCompile>
     <ClCompile Include="CameraBase.cpp">
       <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="ColliderBase.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite2DComponent.cpp">
-      <Filter>Draw</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite3DComponent.cpp">
-      <Filter>Draw</Filter>
     </ClCompile>
     <ClCompile Include="TagManager.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
-    <ClCompile Include="BaseObject.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneBase.cpp">
-      <Filter>Base</Filter>
-    </ClCompile>
     <ClCompile Include="InputDeviceManager.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
-    <ClCompile Include="BaseObjectManager.cpp">
-      <Filter>Singleton</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneComponentTest.cpp">
-      <Filter>_Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="PutLog.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
     <ClCompile Include="CameraManager.cpp">
       <Filter>Singleton</Filter>
-    </ClCompile>
-    <ClCompile Include="PlayerInfo.cpp" />
-    <ClCompile Include="PlayerForce.cpp" />
-    <ClCompile Include="SceneInit.cpp">
-      <Filter>_Scene</Filter>
-    </ClCompile>
-    <ClCompile Include="ModelComponent.cpp">
-      <Filter>Draw</Filter>
-    </ClCompile>
-    <ClCompile Include="BaseObjectInstance.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
-    <ClCompile Include="Component.cpp">
-      <Filter>System</Filter>
-    </ClCompile>
-    <ClCompile Include="fade.cpp">
-      <Filter>Draw</Filter>
-    </ClCompile>
-    <ClCompile Include="ModelRegister.cpp">
-      <Filter>Singleton\Flyweight</Filter>
-    </ClCompile>
-    <ClCompile Include="ShaderList.cpp">
-      <Filter>Singleton\Flyweight</Filter>
-    </ClCompile>
-    <ClCompile Include="TextureRegister.cpp">
-      <Filter>Singleton\Flyweight</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite2DManager.cpp">
-      <Filter>Singleton\DrawMng</Filter>
-    </ClCompile>
-    <ClCompile Include="Sprite3DManager.cpp">
-      <Filter>Singleton\DrawMng</Filter>
-    </ClCompile>
-    <ClCompile Include="ModelManager.cpp">
-      <Filter>Singleton\DrawMng</Filter>
-    </ClCompile>
-    <ClCompile Include="CubeManager.cpp">
-      <Filter>Singleton\DrawMng</Filter>
     </ClCompile>
     <ClCompile Include="CameraPlayer.cpp">
       <Filter>Camera</Filter>
@@ -231,13 +117,7 @@
     <ClCompile Include="CameraDebug.cpp">
       <Filter>Camera</Filter>
     </ClCompile>
-    <ClCompile Include="AudioManager.cpp">
-      <Filter>Singleton</Filter>
-    </ClCompile>
-    <ClCompile Include="SoundEffectComponent.cpp" />
     <ClCompile Include="Sound.cpp" />
-    <ClCompile Include="SkyBoxComponent.cpp" />
-    <ClCompile Include="SkyBoxManager.cpp" />
     <ClCompile Include="Window.cpp">
       <Filter>Singleton</Filter>
     </ClCompile>
@@ -253,7 +133,7 @@
     <ClCompile Include="Render.cxx">
       <Filter>__New</Filter>
     </ClCompile>
-    <ClCompile Include="RenderMgr.cxx">
+    <ClCompile Include="RenderMng.cxx">
       <Filter>__New</Filter>
     </ClCompile>
     <ClCompile Include="SceneBase.cxx">
@@ -271,16 +151,13 @@
     <ClCompile Include="SingletonsMng.cxx">
       <Filter>__New</Filter>
     </ClCompile>
-    <ClCompile Include="ThreadPoolMng.cxx">
-      <Filter>__New</Filter>
-    </ClCompile>
     <ClCompile Include="ThreadPool.cxx">
       <Filter>__New</Filter>
     </ClCompile>
     <ClCompile Include="Cube.cxx">
       <Filter>__New\Draw</Filter>
     </ClCompile>
-    <ClCompile Include="plane.cxx">
+    <ClCompile Include="Plane.cxx">
       <Filter>__New\Draw</Filter>
     </ClCompile>
     <ClCompile Include="Component.cxx">
@@ -289,10 +166,40 @@
     <ClCompile Include="Transform.cxx">
       <Filter>__New</Filter>
     </ClCompile>
-    <ClCompile Include="Object.cxx">
+    <ClCompile Include="DebugRestriction.cxx">
       <Filter>__New</Filter>
     </ClCompile>
-    <ClCompile Include="Rigidbody.cxx">
+    <ClCompile Include="testScene.cxx">
+      <Filter>_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="AnyUpdateComp.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="Time.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelData.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cxx">
+      <Filter>__New\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateTexture.cpp">
+      <Filter>System</Filter>
+    </ClCompile>
+    <ClCompile Include="Allocator.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveCubeCmp.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="WavesCamera.cxx">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleCmp.cxx">
+      <Filter>__New</Filter>
+    </ClCompile>
+    <ClCompile Include="ParsCmp.cxx">
       <Filter>__New</Filter>
     </ClCompile>
   </ItemGroup>
@@ -301,26 +208,8 @@
     <ClInclude Include="Effect.h" />
     <ClInclude Include="easing.h" />
     <ClInclude Include="Defines.h" />
-    <ClInclude Include="Main.h">
-      <Filter>App</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
-      <Filter>App</Filter>
-    </ClInclude>
     <ClInclude Include="Polyline.h">
       <Filter>App</Filter>
-    </ClInclude>
-    <ClInclude Include="TrailEffeect.h">
-      <Filter>App</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeColliderComponent.h">
-      <Filter>Collider</Filter>
-    </ClInclude>
-    <ClInclude Include="DotColliderComponent.h">
-      <Filter>Collider</Filter>
-    </ClInclude>
-    <ClInclude Include="PolygonColliderComponent.h">
-      <Filter>Collider</Filter>
     </ClInclude>
     <ClInclude Include="DirectX11SetUp.h">
       <Filter>DirectX</Filter>
@@ -334,34 +223,13 @@
     <ClInclude Include="Texture.h">
       <Filter>DirectX</Filter>
     </ClInclude>
-    <ClInclude Include="ColliderManager.h">
-      <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeCollisionToDirectManager.h">
-      <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneManager.h">
-      <Filter>Singleton</Filter>
-    </ClInclude>
     <ClInclude Include="ScoreManager.h">
       <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneGame.h">
-      <Filter>_Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneResult.h">
-      <Filter>_Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneTitle.h">
-      <Filter>_Scene</Filter>
     </ClInclude>
     <ClInclude Include="Geometory.h">
       <Filter>System</Filter>
     </ClInclude>
     <ClInclude Include="ItemUI.h">
-      <Filter>System</Filter>
-    </ClInclude>
-    <ClInclude Include="Model.h">
       <Filter>System</Filter>
     </ClInclude>
     <ClInclude Include="MoveEmitter.h">
@@ -370,32 +238,8 @@
     <ClInclude Include="Sprite.h">
       <Filter>System</Filter>
     </ClInclude>
-    <ClInclude Include="CubeCollisionToDirectComponent.h">
-      <Filter>Collider</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeComponent.h">
-      <Filter>Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="NumSprite2D.h">
-      <Filter>Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseObject.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneBase.h">
-      <Filter>Base</Filter>
-    </ClInclude>
     <ClInclude Include="CameraBase.h">
       <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="ColliderBase.h">
-      <Filter>Base</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite2DComponent.h">
-      <Filter>Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite3DComponent.h">
-      <Filter>Draw</Filter>
     </ClInclude>
     <ClInclude Include="TagManager.h">
       <Filter>Singleton</Filter>
@@ -403,55 +247,8 @@
     <ClInclude Include="InputDeviceManager.h">
       <Filter>Singleton</Filter>
     </ClInclude>
-    <ClInclude Include="BaseObjectManager.h">
-      <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneComponentTest.h">
-      <Filter>_Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="PutLog.h">
-      <Filter>System</Filter>
-    </ClInclude>
     <ClInclude Include="CameraManager.h">
       <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="PlayerInfo.h" />
-    <ClInclude Include="PlayerForce.h" />
-    <ClInclude Include="SceneInit.h">
-      <Filter>_Scene</Filter>
-    </ClInclude>
-    <ClInclude Include="ModelComponent.h">
-      <Filter>Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseObjectInstance.h">
-      <Filter>System</Filter>
-    </ClInclude>
-    <ClInclude Include="Component.h">
-      <Filter>System</Filter>
-    </ClInclude>
-    <ClInclude Include="fade.h">
-      <Filter>Draw</Filter>
-    </ClInclude>
-    <ClInclude Include="ModelRegister.h">
-      <Filter>Singleton\Flyweight</Filter>
-    </ClInclude>
-    <ClInclude Include="ShaderList.h">
-      <Filter>Singleton\Flyweight</Filter>
-    </ClInclude>
-    <ClInclude Include="TextureRegister.h">
-      <Filter>Singleton\Flyweight</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite2DManager.h">
-      <Filter>Singleton\DrawMng</Filter>
-    </ClInclude>
-    <ClInclude Include="Sprite3DManager.h">
-      <Filter>Singleton\DrawMng</Filter>
-    </ClInclude>
-    <ClInclude Include="ModelManager.h">
-      <Filter>Singleton\DrawMng</Filter>
-    </ClInclude>
-    <ClInclude Include="CubeManager.h">
-      <Filter>Singleton\DrawMng</Filter>
     </ClInclude>
     <ClInclude Include="CameraPlayer.h">
       <Filter>Camera</Filter>
@@ -459,13 +256,7 @@
     <ClInclude Include="CameraDebug.h">
       <Filter>Camera</Filter>
     </ClInclude>
-    <ClInclude Include="AudioManager.h">
-      <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="SoundEffectComponent.h" />
     <ClInclude Include="Sound.h" />
-    <ClInclude Include="SkyBoxComponent.h" />
-    <ClInclude Include="SkyBoxManager.h" />
     <ClInclude Include="Window.h">
       <Filter>Singleton</Filter>
     </ClInclude>
@@ -482,7 +273,7 @@
     <ClInclude Include="Render.hxx">
       <Filter>__New</Filter>
     </ClInclude>
-    <ClInclude Include="RenderMgr.hxx">
+    <ClInclude Include="RenderMng.hxx">
       <Filter>__New</Filter>
     </ClInclude>
     <ClInclude Include="SceneBase.hxx">
@@ -497,16 +288,13 @@
     <ClInclude Include="SingletonsMng.hxx">
       <Filter>__New</Filter>
     </ClInclude>
-    <ClInclude Include="ThreadPoolMng.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
     <ClInclude Include="ThreadPool.hxx">
       <Filter>__New</Filter>
     </ClInclude>
     <ClInclude Include="Cube.hxx">
       <Filter>__New\Draw</Filter>
     </ClInclude>
-    <ClInclude Include="plane.hxx">
+    <ClInclude Include="Plane.hxx">
       <Filter>__New\Draw</Filter>
     </ClInclude>
     <ClInclude Include="Component.hxx">
@@ -515,10 +303,46 @@
     <ClInclude Include="Transform.hxx">
       <Filter>__New</Filter>
     </ClInclude>
-    <ClInclude Include="Object.hxx">
+    <ClInclude Include="DebugRestriction.hxx">
       <Filter>__New</Filter>
     </ClInclude>
-    <ClInclude Include="Rigidbody.hxx">
+    <ClInclude Include="testScene.hxx">
+      <Filter>_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelData.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.hxx">
+      <Filter>__New\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateTexture.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="AnyUpdateComp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ExVector.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="Allocator.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="WaveCubeCmp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="WavesCamera.hxx">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleCmp.hxx">
+      <Filter>__New</Filter>
+    </ClInclude>
+    <ClInclude Include="ParsCmp.hxx">
       <Filter>__New</Filter>
     </ClInclude>
   </ItemGroup>
@@ -526,31 +350,43 @@
     <FxCompile Include="VS_Model.hlsl">
       <Filter>リソース ファイル\VertexShader</Filter>
     </FxCompile>
-    <FxCompile Include="DefaltModel_VS.hlsl">
-      <Filter>_VertexShader</Filter>
-    </FxCompile>
     <FxCompile Include="DefaltModel_PS.hlsl">
-      <Filter>_PixelShader</Filter>
+      <Filter>__Shader</Filter>
     </FxCompile>
-    <FxCompile Include="SpriteTileMap_PS.hlsl" />
-    <FxCompile Include="Sprite3D_Defalt_VS.hlsl" />
-    <FxCompile Include="Sprite3D_Defalt_PS.hlsl" />
+    <FxCompile Include="DefaltModel_VS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
     <FxCompile Include="HexTiling.hlsl">
-      <Filter>_PixelShader</Filter>
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Sprite3D_Defalt_PS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="Sprite3D_Defalt_VS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="SpriteTileMap_PS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="unlitTexturePS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="unlitTextureVS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="vertexLightingPS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="vertexLightingVS.hlsl">
+      <Filter>__Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="common.hlsl">
+      <Filter>__Shader</Filter>
     </FxCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="DX22Base.rc">
       <Filter>リソース ファイル</Filter>
     </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="ColliderJudgement.cu">
-      <Filter>Cuda</Filter>
-    </None>
-    <None Include="ColliderJudgement.cuh">
-      <Filter>Cuda</Filter>
-    </None>
-    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

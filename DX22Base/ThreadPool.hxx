@@ -1,26 +1,40 @@
-//	ファイル名	：ThreadPool.hxx
+//	ファイル名	：ThreadPoolMng.hxx
 //	  概  要	：
 //	作	成	者	：daigo
-//	 作成日時	：2024/08/25 22:57:02
+//	 作成日時	：2024/08/25 22:56:47
 //_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
 
 // =-=-= インクルードガード部 =-=-=
-#ifndef _____ThreadPool_HXX_____
-#define _____ThreadPool_HXX_____
+#ifndef _____ThreadPoolMng_HXX_____
+#define _____ThreadPoolMng_HXX_____
 
 // =-=-= インクルード部 =-=-=
+#include "SingletonsMng.hxx"
+#include <vector>
+#include <shared_mutex>
+#include <functional>
+#include <queue>
 
-
-class ThreadPool
+class ThreadPool :public Singleton<ThreadPool>
 {
+	friend class Singleton<ThreadPool>;
 public:
+	bool Init() override;
+	void Update() override;
+
+	void AddPool(std::function<void()>);
+	std::function<void()> GetPoolFead();
+
+private:
 	ThreadPool();
 	~ThreadPool();
 
-	void PoolLoop();
 private:
-	bool m_IsEnd;
-	bool m_EndCompleat;
+	uint16 m_ThreadCount;
+
+	std::shared_mutex m_Mutex;
+	std::vector<std::unique_ptr<std::thread>> m_Thread;
+	std::queue<std::function<void()>> m_Pool;
 };
 
-#endif // !_____ThreadPool_HXX_____
+#endif // !_____ThreadPoolMng_HXX_____

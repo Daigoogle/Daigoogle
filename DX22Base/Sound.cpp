@@ -7,6 +7,7 @@
 #include <vector>
 #include <map>
 #include <string>
+#include "Allocator.hxx"
 
 
 #pragma comment(lib, "winmm.lib")
@@ -287,7 +288,7 @@ HRESULT LoadWav(const char *file, SoundData *pData)
 
 	// データ取得
 	pData->bufSize = dataChunk.cksize;
-	pData->pBuffer = new BYTE[pData->bufSize];
+	pData->pBuffer = New(BYTE)[pData->bufSize];
 	size = mmioRead(hMmio, reinterpret_cast<HPSTR>(pData->pBuffer), pData->bufSize);
 	if (size != dataChunk.cksize) {
 		pData->bufSize = 0;
@@ -630,9 +631,9 @@ DWORD ReadMP3Data(HANDLE hFile, DWORD seek, DWORD size, MP3FrameInfo *pFrame, So
 	ACMSTREAMHEADER ash = { 0 };
 	ash.cbStruct = sizeof(ACMSTREAMHEADER);
 	ash.cbSrcLength = size;
-	ash.pbSrc = new BYTE[ash.cbSrcLength];
+	ash.pbSrc = New(BYTE)[ash.cbSrcLength];
 	ash.cbDstLength = waveBlockSize;
-	ash.pbDst = new BYTE[ash.cbDstLength];
+	ash.pbDst = New(BYTE)[ash.cbDstLength];
 
 	// デコード
 	acmStreamPrepareHeader(has, &ash, 0);
@@ -646,7 +647,7 @@ DWORD ReadMP3Data(HANDLE hFile, DWORD seek, DWORD size, MP3FrameInfo *pFrame, So
 	// wavデータコピー
 	if (ash.cbDstLengthUsed > 0) {
 		pData->bufSize = ash.cbDstLengthUsed;
-		pData->pBuffer = new BYTE[pData->bufSize];
+		pData->pBuffer = New(BYTE)[pData->bufSize];
 		pData->format = wavFormat;
 		memcpy_s(pData->pBuffer, pData->bufSize,
 			ash.pbDst, ash.cbDstLengthUsed);

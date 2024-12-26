@@ -10,6 +10,7 @@ Shader::Shader(Kind kind)
 	: m_kind(kind)
 {
 }
+
 Shader::~Shader()
 {
 	std::vector<ID3D11Buffer*>::iterator it = m_pBuffers.begin();
@@ -19,6 +20,7 @@ Shader::~Shader()
 		++it;
 	}
 }
+
 HRESULT Shader::Load(const char* pFileName)
 {
 	HRESULT hr = E_FAIL;
@@ -35,7 +37,7 @@ HRESULT Shader::Load(const char* pFileName)
 
 	// ƒƒ‚ƒŠ‚É“Ç‚Ýž‚Ý
 	fseek(fp, 0, SEEK_SET);
-	char* pData = new char[fileSize];
+	char* pData = New(char)[fileSize];
 	fread(pData, fileSize, 1, fp);
 	fclose(fp);
 
@@ -81,6 +83,19 @@ void Shader::SetTexture(UINT slot, Texture* tex)
 		return; 
 	}
 	ID3D11ShaderResourceView* pTex = tex->GetResource();
+	m_pTextures[slot] = pTex;
+	DirectX11SetUp& Dx11 = DirectX11SetUp::GetInstance();
+	switch (m_kind)
+	{
+	case Vertex:	Dx11.GetContext()->VSSetShaderResources(slot, 1, &pTex); break;
+	case Pixel:		Dx11.GetContext()->PSSetShaderResources(slot, 1, &pTex); break;
+	}
+}
+void Shader::SetTexture(UINT slot, ID3D11ShaderResourceView* tex) {
+	if (!tex || slot >= m_pTextures.size()) {
+		return;
+	}
+	ID3D11ShaderResourceView* pTex = tex;
 	m_pTextures[slot] = pTex;
 	DirectX11SetUp& Dx11 = DirectX11SetUp::GetInstance();
 	switch (m_kind)
@@ -198,7 +213,7 @@ HRESULT VertexShader::MakeShader(void* pData, UINT size)
 	if (FAILED(hr)) { return hr; }
 
 	pReflection->GetDesc(&shaderDesc);
-	pInputDesc = new D3D11_INPUT_ELEMENT_DESC[shaderDesc.InputParameters];
+	pInputDesc = New(D3D11_INPUT_ELEMENT_DESC)[shaderDesc.InputParameters];
 	for(UINT i = 0; i < shaderDesc.InputParameters; ++ i)
 	{
 		pReflection->GetInputParameterDesc(i, &sigDesc);

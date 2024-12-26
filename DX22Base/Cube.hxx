@@ -16,7 +16,9 @@ class Cube :public Render
 public:
 	Cube();
 	~Cube();
-
+	void Draw()override;
+protected:
+	bool Init()override;
 private:
 
 };

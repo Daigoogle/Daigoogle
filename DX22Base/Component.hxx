@@ -1,5 +1,5 @@
 //	ファイル名	：Component.hxx
-//	  概  要		：
+//	  概  要	：
 //	作	成	者	：daigo
 //	 作成日時	：2024/06/16 9:43:49
 //_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/_/
@@ -8,25 +8,22 @@
 #ifndef _____Component_HXX_____
 #define _____Component_HXX_____
 
-#include "Transform.hxx"
-
-class GameObjectInst;
-class GameObject;
+#include "GameObject.hxx"
 
 class Component
 {
 	friend class GameObjectInst;
 public:
-	GameObject GetGameObject();
-
-private:
-	Component() :m_pGameObjectInst(nullptr) {}
+	Component(){};
 	virtual ~Component() {}
 
 	virtual bool Init() = 0;
 	virtual void Update() = 0;
 
-	GameObjectInst* m_pGameObjectInst;
+	GameObject GetGameObject();
+
+private:
+	GameObject m_GameObject;
 };
 
 #endif // !_____Component_HXX_____

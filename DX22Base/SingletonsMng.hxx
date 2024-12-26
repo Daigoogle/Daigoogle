@@ -11,11 +11,10 @@
 // =-=-= インクルード部 =-=-=
 #include <array>
 #include <deque>
+#include <stack>
 #include <mutex>
+#include <functional>
 #include <type_traits>
-#ifdef _DEBUG
-#include <Windows.h>
-#endif // _DEBUG
 
 // =-=-= 定数定義部 =-=-=
 enum class UPDATE_ORDER {
@@ -55,8 +54,6 @@ public:
 	static bool Initialize();
 	/// @brief 更新処理を行う
 	static void Updater();
-	/// @brief 描画処理を行う
-	static void Drawing();
 	/// @brief 終了処理を行う
 	static void Finalize();
 
@@ -71,14 +68,13 @@ private:
 
 private:
 	static std::array<std::deque<_SingletonBase*>, static_cast<int>(UPDATE_ORDER::LAST_UPDATE) + 1> m_Updaters;//更新処理
-	static std::deque<void(*)()> m_finalizers;//終了処理
+	static std::stack<void(*)()> m_finalizers;//終了処理
 };
 
 /// @brief シングルトンのインスタンスを生成・保持するクラス
 template<typename Type>
 class Singleton :public _SingletonBase
 {
-	using getInst = Type& (*)();
 public:
 	/// @brief インスタンスを取得する ※非推奨
 	/// @return インスタンス
@@ -86,7 +82,6 @@ public:
 	{
 		//初めて呼び出されたならインスタンスの生成
 		std::call_once(initFlag, Create);
-		_GetInstance = __GetInstance;
 		return *instance;
 	}
 
@@ -97,32 +92,26 @@ public:
 		return *instance;
 	}
 
-	/// @brief 関数ポインタ
-	static const getInst &GetInstance;
-
+	/// @brief 静的でコンストな関数ポインタの参照
+	static const std::function<Type&(void)>& GetInstance;
 private:
-	static getInst _GetInstance;
+	static std::function<Type&(void)> _GetInstfuncP;
 
 	/// @brief インスタンスを生成する
 	static void Create()
 	{
-		instance = new Type;
+		instance = New(Type);
+		_GetInstfuncP = __GetInstance;
 		Supervision::addFinalizer(&Singleton<Type>::destroy);
 	}
 
 	/// @brief インスタンスを破棄する
 	static void destroy()
 	{
-#ifdef _DEBUG
-		OutputDebugString(typeid(Type).name());
-		OutputDebugString(" 終了処理開始   ===== 人人人 \n");
-#endif // _DEBUG
+		DebugString_(typeid(Type).name() + std::string(" 終了処理開始   ===== 人人人 \n"))
 		delete instance;
 		instance = nullptr;
-#ifdef _DEBUG
-		OutputDebugString(typeid(Type).name());
-		OutputDebugString(" 終了処理終わり ===== ＹＹＹ\n");
-#endif // _DEBUG
+		DebugString_(typeid(Type).name() + std::string(" 終了処理終わり ===== ＹＹＹ \n"))
 	}
 
 	static std::once_flag initFlag;	//作ったかのフラグ(排他制御)
@@ -141,11 +130,10 @@ protected:
 	Singleton(const Singleton&) = delete;
 	Singleton& operator=(const Singleton&) = delete;
 };
-
 // 静的メンバを定義
-template<typename Type> std::once_flag Singleton<Type>::initFlag;
+template <typename Type> std::once_flag Singleton<Type>::initFlag;
 template <typename Type> Type* Singleton<Type>::instance = nullptr;
-template <typename Type> const Singleton<Type>::getInst &Singleton<Type>::GetInstance = Singleton<Type>::_GetInstance;
-template <typename Type> Singleton<Type>::getInst Singleton<Type>::_GetInstance = Singleton<Type>::__CreateInstance;
+template <typename Type> const std::function<Type& (void)>& Singleton<Type>::GetInstance = Singleton<Type>::_GetInstfuncP;
+template <typename Type> std::function<Type& (void)> Singleton<Type>::_GetInstfuncP = Singleton<Type>::__CreateInstance;
 
 #endif // !_____SingletonsMng_HXX_____

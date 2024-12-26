@@ -4,5 +4,5 @@
 
 GameObject Component::GetGameObject()
 {
-	return GameObject(m_pGameObjectInst);
+	return m_GameObject;
 }
