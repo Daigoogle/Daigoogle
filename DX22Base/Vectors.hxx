@@ -29,19 +29,19 @@ using int64 = long long;
 
 using count = unsigned short;
 using ID = unsigned long;
+using Tag = unsigned short;
 using Name = std::string;
 
-/**
-	@brief		ユニークIDを作成・保持するクラス
+/**	@brief		ユニークIDを作成・保持するクラス
 	@details	生成時固有のIDを保持する
-	@author		伊藤大悟
-*/
+	@author		伊藤大悟*/
 class unique_ID {
 	ID m_ID; static ID m_Counter;
 public:
 	inline unique_ID() { m_ID = ++m_Counter; }
 	inline explicit operator ID() { return m_ID; }
 };
+ID unique_ID::m_Counter = 0;
 
 //__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__/__///
 //																	//

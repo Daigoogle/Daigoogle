@@ -59,6 +59,9 @@
     <Filter Include="__Shader\_PixelShader">
       <UniqueIdentifier>{00255ad9-be1e-4041-aa0d-74f017b722ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="__New\Tree">
+      <UniqueIdentifier>{d1b31829-6c46-4c65-8960-357dfcaf6446}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Shader.cpp">
@@ -122,12 +125,6 @@
       <Filter>Singleton</Filter>
     </ClCompile>
     <ClCompile Include="GameObject.cxx">
-      <Filter>__New</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObjectInst.cxx">
-      <Filter>__New</Filter>
-    </ClCompile>
-    <ClCompile Include="GameObjectMng.cxx">
       <Filter>__New</Filter>
     </ClCompile>
     <ClCompile Include="Render.cxx">
@@ -196,11 +193,8 @@
     <ClCompile Include="WavesCamera.cxx">
       <Filter>Camera</Filter>
     </ClCompile>
-    <ClCompile Include="ParticleCmp.cxx">
-      <Filter>__New</Filter>
-    </ClCompile>
-    <ClCompile Include="ParsCmp.cxx">
-      <Filter>__New</Filter>
+    <ClCompile Include="Object.cxx">
+      <Filter>__New\Tree</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -262,12 +256,6 @@
     </ClInclude>
     <ClInclude Include="DefaultSetting.hxx" />
     <ClInclude Include="GameObject.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObjectInst.hxx">
-      <Filter>__New</Filter>
-    </ClInclude>
-    <ClInclude Include="GameObjectMng.hxx">
       <Filter>__New</Filter>
     </ClInclude>
     <ClInclude Include="Render.hxx">
@@ -339,11 +327,11 @@
     <ClInclude Include="WavesCamera.hxx">
       <Filter>Camera</Filter>
     </ClInclude>
-    <ClInclude Include="ParticleCmp.hxx">
-      <Filter>__New</Filter>
+    <ClInclude Include="Object.hxx">
+      <Filter>__New\Tree</Filter>
     </ClInclude>
-    <ClInclude Include="ParsCmp.hxx">
-      <Filter>__New</Filter>
+    <ClInclude Include="Location.hxx">
+      <Filter>__New\Tree</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

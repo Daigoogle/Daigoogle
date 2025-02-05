@@ -6,7 +6,6 @@
 #include "DirectX11SetUp.h"
 #include "InputDeviceManager.h"
 #include "SceneMng.hxx"
-#include "GameObjectMng.hxx"
 #include "RenderMng.hxx"
 #include "ThreadPool.hxx"
 #include "CameraManager.h"
@@ -20,15 +19,16 @@ bool Supervision::Initialize()
 	bool Sucsses = true;
 
 	// èâä˙âªèàóùÇÕÇ±ÇÃíÜÇ÷
-	Sucsses &= FalseCheck(Window::GetInstance().Init()				);
-	Sucsses &= FalseCheck(DirectX11SetUp::GetInstance().Init()		);
-	Sucsses &= FalseCheck(InputDeviceManager::GetInstance().Init()	);
-	Sucsses &= FalseCheck(GameObjectMng::GetInstance().Init()		);
-	Sucsses &= FalseCheck(SceneMng::GetInstance().Init()			);
-	Sucsses &= FalseCheck(CameraManager::GetInstance().Init()		);
-	Sucsses &= FalseCheck(RenderMng::GetInstance().Init()			);
+	Sucsses &= FalseCheck(Window			::CreateInstance().Init()	);
+	Sucsses &= FalseCheck(DirectX11SetUp	::CreateInstance().Init()	);
+	Sucsses &= FalseCheck(InputDeviceManager::CreateInstance().Init()	);
+	//Sucsses &= FalseCheck(GameObjectMng	::CreateInstance().Init()	);
+	Sucsses &= FalseCheck(SceneManager		::CreateInstance().Init()	);
+	Sucsses &= FalseCheck(CameraManager		::CreateInstance().Init()	);
+	Sucsses &= FalseCheck(RenderMng			::CreateInstance().Init()	);
+	Sucsses &= FalseCheck(ThreadPool		::CreateInstance().Init()	);
 
-	SceneMng::GetInstance().ChangeScene<testScene>();
+	SceneManager::GetInstance().ChangeScene<testScene>();
 
 	if(Sucsses)
 		return true;

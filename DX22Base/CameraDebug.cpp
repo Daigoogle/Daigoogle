@@ -14,7 +14,7 @@ CameraDebug::~CameraDebug()
 
 bool CameraDebug::Init()
 {
-	m_Transform = GetGameObject().GetTransform();
+	m_Transform = GetGameObject()->GetTransform();
 
 	//m_look = Vec::ToXMFLOAT3(tf::RotationToVector(m_Transform->GetWorldRotation()) + m_Transform->GetWorldPosition());
 

@@ -14,18 +14,39 @@ Object::~Object()
 	m_Children.clear();
 }
 
+Object* Object::GetParent() const
+{
+	return m_pParent;
+}
+
+void Object::AddChild(Object* pChild)
+{
+	m_Children.push_back(pChild);
+	pChild->m_pParent = this;
+}
+
+bool Object::IsActive() const
+{
+	return m_IsActive && (m_pParent ? m_pParent->IsActive() : true);
+}
+
+void Object::SetActive(bool IsActive)
+{
+	m_IsActive = IsActive;
+}
+
+const ID Object::GetID()
+{
+	return static_cast<ID>(m_ID);
+}
+
 void Object::UpdateChildren()
 {
 	if (!m_IsActive)
 		return;
-	this->Update();
+	Update();
 	for(auto& elem:m_Children)
 		elem->UpdateChildren();
-}
-
-GameObject Object::MakeObject()
-{
-	return GameObjectMng::GetInstance().MakeObject(this);
 }
 
 void Object::Delete()
@@ -35,8 +56,6 @@ void Object::Delete()
 		m_Children.front()->Delete();
 		m_Children.pop_front();
 	}
-
-
 }
 
 /// @brief Ø‚è—£‚µˆ—B•K‚¸íœ‚âˆÙ“®‚Æˆê‚Ég‚¤‚±‚Æ

@@ -29,7 +29,11 @@ private:
 	ThreadPool();
 	~ThreadPool();
 
+	static void poolloop();
 private:
+	
+	static bool ThreadContinue;
+
 	uint16 m_ThreadCount;
 
 	std::shared_mutex m_Mutex;

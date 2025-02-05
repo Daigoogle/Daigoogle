@@ -76,32 +76,27 @@ template<typename Type>
 class Singleton :public _SingletonBase
 {
 public:
-	/// @brief インスタンスを取得する ※非推奨
+	/// @brief インスタンスを生成する
 	/// @return インスタンス
-	static inline Type& __CreateInstance()
+	static inline Type& CreateInstance()
 	{
 		//初めて呼び出されたならインスタンスの生成
 		std::call_once(initFlag, Create);
 		return *instance;
 	}
 
-	/// @brief インスタンスを取得する ※非推奨
+	/// @brief 既に生成されているインスタンスを取得する
 	/// @return インスタンス
-	static inline Type& __GetInstance()
+	static inline Type& GetInstance()
 	{
 		return *instance;
 	}
 
-	/// @brief 静的でコンストな関数ポインタの参照
-	static const std::function<Type&(void)>& GetInstance;
 private:
-	static std::function<Type&(void)> _GetInstfuncP;
-
 	/// @brief インスタンスを生成する
 	static void Create()
 	{
 		instance = New(Type);
-		_GetInstfuncP = __GetInstance;
 		Supervision::addFinalizer(&Singleton<Type>::destroy);
 	}
 
@@ -133,7 +128,5 @@ protected:
 // 静的メンバを定義
 template <typename Type> std::once_flag Singleton<Type>::initFlag;
 template <typename Type> Type* Singleton<Type>::instance = nullptr;
-template <typename Type> const std::function<Type& (void)>& Singleton<Type>::GetInstance = Singleton<Type>::_GetInstfuncP;
-template <typename Type> std::function<Type& (void)> Singleton<Type>::_GetInstfuncP = Singleton<Type>::__CreateInstance;
 
 #endif // !_____SingletonsMng_HXX_____

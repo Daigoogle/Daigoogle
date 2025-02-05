@@ -1,14 +1,14 @@
 #include "ThreadPool.hxx"
 #include <thread>
 
-namespace{
-	bool ThreadContinue = false;
-	void poolloop(){
-		std::function<void()> func;
-		while (ThreadContinue) {
-			func = ThreadPool::GetInstance().GetPoolFead();
-			if (func)func();
-		}
+
+bool ThreadPool::ThreadContinue = false;
+
+void ThreadPool::poolloop(){
+	std::function<void()> func;
+	while (ThreadContinue) {
+		func = ThreadPool::GetInstance().GetPoolFead();
+		if (func)func();
 	}
 }
 
@@ -19,7 +19,7 @@ ThreadPool::ThreadPool()
 	ThreadContinue = true;
 	m_ThreadCount = static_cast<uint16>(std::thread::hardware_concurrency() * 0.13f);
 	for (uint16 i = 0; i < m_ThreadCount; i++) {
-		m_Thread.push_back(std::make_unique<std::thread>(poolloop));
+		m_Thread.push_back(std::make_unique<std::thread>([]() {ThreadPool::poolloop(); }));
 	}
 }
 #else
@@ -55,8 +55,7 @@ void ThreadPool::AddPool(std::function<void()> _func)
 	m_Pool.push(_func);
 }
 
-/// @brief 
-/// @return
+
 std::function<void()> ThreadPool::GetPoolFead()
 {
 	std::unique_lock<std::shared_mutex> lock(m_Mutex);

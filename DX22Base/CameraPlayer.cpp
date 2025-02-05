@@ -18,7 +18,7 @@ CameraPlayer::~CameraPlayer()
 
 void CameraPlayer::Update()
 {
-	m_look = Vec::ToXMFLOAT3(this->GetGameObject().GetTransform()->GetWorldPosition());//注視点をプレイヤーの位置とする
+	m_look = Vec::ToXMFLOAT3(this->GetGameObject()->GetTransform()->GetWorldPosition());//注視点をプレイヤーの位置とする
 	m_look.y += 0.4f;	//位置調整
 
 	const float Speed = 0.1f;

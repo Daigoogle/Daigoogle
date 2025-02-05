@@ -19,9 +19,9 @@ class TagManager :public Singleton<TagManager>
 {
 	friend class Singleton<TagManager>;
 public:
-	int AddTag(const std::string& tagName);
-	int GetTagNo(const std::string& tagName);
-	std::string GetTagName(int tagNo);
+	Tag AddTag(const std::string& tagName);
+	Tag GetTagNo(const std::string& tagName);
+	std::string GetTagName(Tag tagNo);
 
 private:
 	TagManager():Singleton(UPDATE_ORDER::NO_UPDATE) {}

@@ -16,7 +16,7 @@ WaveCubeCmp::~WaveCubeCmp()
 
 bool WaveCubeCmp::Init()
 {
-	m_Transform = GetGameObject().GetTransform();
+	m_Transform = GetGameObject()->GetTransform();
 	return true;
 }
 

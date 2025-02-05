@@ -5,24 +5,24 @@ TagManager::~TagManager()
 	m_tags.clear();
 }
 
-int TagManager::AddTag(const std::string& tagName)
+Tag TagManager::AddTag(const std::string& tagName)
 {
 	for (int i = 0; i < m_tags.size(); i++)
 		if (m_tags[i] == tagName)
-			return i;
+			return i + 1;
 	m_tags.push_back(tagName);
-	return (int)m_tags.size() - 1;
+	return (int)m_tags.size();
 }
 
-int TagManager::GetTagNo(const std::string& tagName)
+Tag TagManager::GetTagNo(const std::string& tagName)
 {
 	for (int i = 0; i < m_tags.size(); i++)
 		if (m_tags[i] == tagName)
-			return i;
-	return -1;
+			return i + 1;
+	return 0;
 }
 
-std::string TagManager::GetTagName(int tagNo)
+std::string TagManager::GetTagName(Tag tagNo)
 {
-	return m_tags[tagNo];
+	return m_tags[tagNo - 1];
 }

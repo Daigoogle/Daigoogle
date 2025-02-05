@@ -12,7 +12,7 @@
 //#define _SHIPPING
 
 // í«â¡èàóù
-#define _THREADPOOL_
+//#define _THREADPOOL_
 #define _MEMORY_ARROCATOR_
 
 #define DIRECTX11_PRJ

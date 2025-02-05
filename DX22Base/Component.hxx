@@ -9,21 +9,25 @@
 #define _____Component_HXX_____
 
 #include "GameObject.hxx"
+#include "SceneBase.hxx"
 
 class Component
 {
-	friend class GameObjectInst;
+	friend class GameObject;
+	friend class SceneBase;
 public:
-	Component(){};
+	Component():m_pBaseObject(nullptr){};
 	virtual ~Component() {}
 
 	virtual bool Init() = 0;
 	virtual void Update() = 0;
 
-	GameObject GetGameObject();
-
+	/// @brief GameObjectを取得する
+	/// @brief 注意※SceneComponentの場合エラー
+	/// @return 所属ゲームオブジェクト
+	GameObject* GetGameObject();
 private:
-	GameObject m_GameObject;
+	Object* m_pBaseObject;
 };
 
 #endif // !_____Component_HXX_____

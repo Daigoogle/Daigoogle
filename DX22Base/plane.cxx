@@ -19,7 +19,7 @@ bool Plane::Init()
 	m_VertexShader = RenderMng::GetInstance().GetVertexShader("Assets/Shader/Sprite3D_Defalt_VS.cso");
 	m_PixelShader = RenderMng::GetInstance().GetPixelShader("Assets/Shader/Sprite3D_Defalt_PS.cso");
 	Render::InitSetting();
-	m_Transform = GetGameObject().GetTransform();
+	m_Transform = GetGameObject()->GetTransform();
 	return true;
 }
 

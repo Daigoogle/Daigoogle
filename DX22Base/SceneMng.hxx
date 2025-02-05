@@ -15,57 +15,76 @@
 #include "ThreadPool.hxx"
 #include "SceneBase.hxx"
 
-class SceneMng: public Singleton<SceneMng>
+class SceneManager: public Singleton<SceneManager>
 {
-	friend class Singleton<SceneMng>;
+	friend class Singleton<SceneManager>;
+	friend class Object;
 public:
 	bool Init() override;
 	void Update() override;
 
-	template<typename TypeScene, typename = std::enable_if_t<std::is_base_of_v<SceneBase, TypeScene>>>
+	template<typename SceneObject, typename = std::enable_if_t<std::is_base_of_v<SceneBase, SceneObject>>>
 	void StartLoading()
 	{
 		// 既にロード済みシーンならば生成しない
 		for (const auto& elem : m_LoadScenes) {
-			if (dynamic_cast<TypeScene*>(elem.get())) {
+			if (dynamic_cast<SceneObject*>(elem.get())) {
 				return;
 			}
 		}
-		m_LoadScenes.push_back(std::make_unique<TypeScene>());
+		m_LoadScenes.push_back(std::make_unique<SceneObject>());
 		
-		// 本来は並列化！！！
-		m_LoadScenes.back()->Init();
+		ThreadPool::GetInstance().AddPool([this]() {m_NextScene->Loading(&m_pInstantChange); });
 	}
 
-	template<typename TypeScene, typename = std::enable_if_t<std::is_base_of_v<SceneBase, TypeScene>>>
+
+
+	template<typename SceneObject, typename = std::enable_if_t<std::is_base_of_v<SceneBase, SceneObject>>>
 	void ChangeScene()
 	{
 		// 既にロード済みか調べる
 		for (int i = 0; i < m_LoadScenes.size();i++) {
-			if (dynamic_cast<TypeScene*>(m_LoadScenes[i].get())) {
-				m_NextScene.swap(m_LoadScenes[i]);
-				if (!m_LoadScenes[i].get())
+			if (typeid(SceneObject) == typeid(m_LoadScenes[i].get())) {
+				if (m_LoadScenes[i]->m_LoadComplete);
+				{
+					m_NextScene.swap(m_LoadScenes[i]);
 					m_LoadScenes.erase(m_LoadScenes.begin() + i);
-				return;
+					return;
+				}
 			}
 		}
 		// ロードしていない場合はロードする
-		m_NextScene = std::make_unique<TypeScene>();
-
-		//ThreadPoolMng::GetInstance().AddPool([m_NextScene]() {m_NextScene.Init()})
-
-		// 本来は並列化！！！
+		m_NextScene = std::make_unique<SceneObject>();
 		m_NextScene->Init();
+		m_NextScene->m_LoadComplete = true;
+		
+		//m_LoadScenes.push_back(std::make_unique<SceneObject>());
+		//m_pInstantChange = m_LoadScenes.back().get();
+		//ThreadPool::GetInstance().AddPool([this]() {m_pInstantChange->Loading(&m_pInstantChange); });
+	}
+
+	inline void ChangeScene(SceneBase* pScene)
+	{
+		for (int i = 0; i < m_LoadScenes.size(); i++) {
+			if (pScene == m_LoadScenes[i].get()) {
+				m_NextScene.swap(m_LoadScenes[i]);
+				m_LoadScenes.erase(m_LoadScenes.begin() + i);
+				return;
+			}
+		}
 	}
 
 	SceneBase* GetNowScene() const { return m_NowScene.get(); }
 private:
-	SceneMng();
-	~SceneMng();
+	SceneManager();
+	~SceneManager();
+
+	SceneBase* m_pInstantChange;
 	
 	std::unique_ptr<SceneBase> m_NowScene;
 	std::unique_ptr<SceneBase> m_NextScene;
 	std::vector<std::unique_ptr<SceneBase>> m_LoadScenes;
+	std::queue<Object*> m_InitQueue;
 };
 
 #endif // !_____SceneMng_HXX_____

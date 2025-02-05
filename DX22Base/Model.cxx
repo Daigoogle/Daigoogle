@@ -27,7 +27,7 @@ bool Model::Init()
 void Model::Draw()
 {
 	fVec4x4 wvp[3];
-	wvp[0] = GetGameObject().GetTransform()->GetWorldMatrix();
+	wvp[0] = GetGameObject()->GetTransform()->GetWorldMatrix();
 	CameraBase* cam = CameraManager::GetInstance().GetMainCamera();
 	wvp[1] = cam->GetViewMatrix();
 	wvp[2] = cam->GetProjMatrix();

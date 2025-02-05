@@ -10,17 +10,22 @@
 
 // =-=-= インクルード部 =-=-=
 #include <type_traits>
-#include "GameObjectInst.hxx"
+#include <deque> 
+#include <memory>
+#include "Object.hxx"
+#include "Transform.hxx"
 #include "DebugRestriction.hxx"
 
-class GameObject
+class Component;
+
+class GameObject : public Object, private Transform
 {
 public:
 	GameObject();
-	GameObject(GameObjectInst* pInstance);
 	~GameObject();
 
-	bool IsNull() const;
+	GameObject& operator=(const GameObject&) = delete;
+	GameObject& operator=(GameObject&&) = delete;
 
 	/// @brief コンポーネントの追加
 	/// @tparam TypeComp 追加するコンポーネントの型
@@ -28,8 +33,10 @@ public:
 	template<typename TypeComp, typename = std::enable_if_t<std::is_base_of_v<Component, TypeComp>>>
 	TypeComp* AddComponent()
 	{
-		NullptrCheck_(m_pInstance)
-		return m_pInstance->AddComponent<TypeComp>();
+		std::unique_ptr<TypeComp> pComp(New(TypeComp));
+		pComp->m_pBaseObject = this;
+		m_Components.push_back(std::move(pComp));
+		return static_cast<TypeComp*>(m_Components.back().get());
 	}
 
 	/// @brief コンポーネントの取得
@@ -38,49 +45,37 @@ public:
 	template<typename TypeComp, typename = std::enable_if_t<std::is_base_of_v<Component, TypeComp>>>
 	TypeComp* GetComponent()
 	{
-		NullptrCheck_(m_pInstance)
-		return m_pInstance->GetComponent<TypeComp>();
+		for (const auto elem : m_Components)
+		{
+			if (typeid(TypeComp) == typeid(elem.get()))
+				return elem.get();
+		}
+		DebugBreakPoint_
+		return nullptr;
 	}
 
-	/// @brief 子オブジェクトを追加
-	/// @param pChild 追加する子オブジェクト
-	void AddChild(GameObject& pChild);
-	/// @brief 子オブジェクトを分離
-	/// @param pChild 分離する子オブジェクト
-	void RemoveChild(GameObject& pChild);
-
-	/// @brief 有効かどうか
-	/// @return 有効ならtrue
-	const bool IsActive();
-	/// @brief 有効かどうかを設定
-	/// @param isActive 有効にするならtrue
-	void SetActive(bool isActive);
-	/// @brief IDの取得
-	/// @return ID
-	const unsigned __int64 GetID();
 	/// @brief 名前の設定
 	/// @param name 設定する名前
 	void SetName(const std::string& name);
 	/// @brief 名前の取得
 	/// @return 名前
 	const std::string& GetName();
-	/// @brief 親オブジェクトの取得
-	/// @return 親オブジェクト
-	GameObject GetParent();
 	/// @brief タグの取得
 	/// @return タグ
 	unsigned GetTag();
 	/// @brief タグの設定
 	/// @param tag 設定するタグ
 	void SetTag(unsigned tag);
-	/// @brief シーンの取得
-	/// @return シーン
-	SceneBase* GetScene();
 	/// @brief Transformの取得
 	/// @return Transform
 	Transform* GetTransform();
+
+	virtual bool Init()override;
+	virtual void Update()override;
 private:
-	GameObjectInst* m_pInstance;// 実体
+	Name m_Name;						// オブジェクト名
+	unsigned m_Tag;						// タグ
+	std::deque<std::unique_ptr<Component>> m_Components;	// 追加されたコンポーネント
 };
 
 #endif // !_____GameObject_HXX_____

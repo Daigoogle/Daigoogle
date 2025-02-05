@@ -10,6 +10,8 @@
 #ifndef _____TRANSFORM_H_____
 #define _____TRANSFORM_H_____
 
+#include "Location.hxx"
+
 /**
  * @brief		Transformの
  * @details		{クラスの詳細説明}
@@ -19,7 +21,7 @@
  * @remark		{注釈}
  * @note		{覚え書き}
 */
-class Transform
+class Transform : virtual public Location
 {
 public:
 	Transform();
@@ -49,17 +51,17 @@ public:
 	fVec4x4 GetWorldMatrix(void);
 
 private:
-	void ParentCheck();
-private:
-	fVec3 m_localPosition;
-	fVec3 m_localRotation;
-	fVec3 m_localScale;
+	void ChangeParent();
 
-	bool m_HaveParent;
-	Transform* m_Parent;
+private:
+	fVec3 m_Rotation;// ローカル座標の回転
+	fVec3 m_Scale;// ローカル座標の拡大縮小
 
 	bool m_IsLook;
 	Transform* m_LookPoint;
+
+
+	Transform* m_Parent;
 };
 
 namespace tf

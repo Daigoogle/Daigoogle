@@ -5,15 +5,13 @@ using namespace tf;
 const static float c_fPi_180 = 3.1415926535f / 180.0f;
 
 Transform::Transform() 
-	: m_localPosition()
-	, m_localRotation()
-	, m_localScale()
+	: m_Rotation()
+	, m_Scale()
 	, m_Parent(nullptr)
-	, m_HaveParent(false)
 	, m_IsLook(false)
 	, m_LookPoint(nullptr)
 {
-	m_localScale = m_localScale + 1.0f;
+	m_Scale = m_Scale + 1.0f;
 }
 Transform::~Transform()
 {
@@ -33,85 +31,83 @@ void Transform::Update()
 
 void  Transform::SetLocalPosition(fVec3 Get)
 {
-	ParentCheck();
-	m_localPosition = Get;
+	m_Location = Get;
 }
 fVec3 Transform::GetLocalPosition()
 {
-	ParentCheck();
-	return m_localPosition;
+	return m_Location;
 }
 void  Transform::SetLocalRotation(fVec3 Get)
 {
-	ParentCheck();
-	m_localRotation = Get;
+	m_Rotation = Get;
 }
 fVec3 Transform::GetLocalRotation()
 {
-	ParentCheck();
-	return m_localRotation;
+	return m_Rotation;
 }
 void  Transform::SetLocalScale(fVec3 Get)
 {
-	ParentCheck();
-	m_localScale = Get;
+	m_Scale = Get;
 }
 fVec3 Transform::GetLocalScale()
 {
-	ParentCheck();
-	return m_localScale;
+	return m_Scale;
 }
 
 void  Transform::SetWorldPosition(fVec3 Get)
 {
 	if (m_Parent)
-		m_localPosition = PositionWorldToLocal(Get, m_Parent);
+		m_Location = PositionWorldToLocal(Get, m_Parent);
 	else
-		m_localPosition = Get;
+		m_Location = Get;
 }
 fVec3 Transform::GetWorldPosition()
 {
 	if (m_Parent)
-		return PositionLocalToWorld(m_localPosition, m_Parent);
+		return PositionLocalToWorld(m_Location, m_Parent);
 	else
-		return m_localPosition;
+		return m_Location;
 }
 void  Transform::SetWorldRotation(fVec3 Get)
 {
 	if (m_Parent)
-		m_localRotation = RotationWorldToLocal(Get, m_Parent);
+		m_Rotation = RotationWorldToLocal(Get, m_Parent);
 	else
-		m_localRotation = Get;
+		m_Rotation = Get;
 }
 fVec3 Transform::GetWorldRotation()
 {
 	if (m_Parent)
-		return RotationLocalToWorld(m_localRotation, m_Parent);
+		return RotationLocalToWorld(m_Rotation, m_Parent);
 	else
-		return m_localRotation;
+		return m_Rotation;
 }
 void  Transform::SetWorldScale(fVec3 Get)
 {
 	if (m_Parent)
-		m_localScale = ScaleWorldToLocal(Get, m_Parent);
+		m_Scale = ScaleWorldToLocal(Get, m_Parent);
 	else
-		m_localScale = Get;
+		m_Scale = Get;
 }
+
 fVec3 Transform::GetWorldScale()
 {
 	if (m_Parent)
-		return ScaleLocalToWorld(m_localScale, m_Parent);
+		return ScaleLocalToWorld(m_Scale, m_Parent);
 	else
-		return m_localScale;
+		return m_Scale;
 }
 
 void Transform::SetParent(Transform* tf)
 {
 	m_Parent = tf;
+	ChangeParent();
 }
+
 void Transform::RemoveParent()
 {
 	m_Parent = nullptr;
+	ChangeParent();
 }
 
 void Transform::LookPoint(Transform* Point)
@@ -144,28 +140,21 @@ DirectX::XMFLOAT4X4 Transform::GetWorldMatrix(void)
 	return fMat;
 }
 
-void Transform::ParentCheck()
+void Transform::ChangeParent()
 {
-	if (!m_HaveParent && m_Parent)
+	if (m_Parent)
 	{
-		m_localPosition = PositionWorldToLocal(m_localPosition, m_Parent);
-		m_localRotation = RotationWorldToLocal(m_localRotation, m_Parent);
-		m_localScale = ScaleWorldToLocal(m_localScale, m_Parent);
-		m_HaveParent = true;
+		m_Location = PositionWorldToLocal(m_Location, m_Parent);
+		m_Rotation = RotationWorldToLocal(m_Rotation, m_Parent);
+		m_Scale = ScaleWorldToLocal(m_Scale, m_Parent);
 	}
-	else if (m_HaveParent && !m_Parent)
+	else if (m_Parent == nullptr)
 	{
-		m_localPosition = PositionLocalToWorld(m_localPosition, m_Parent);
-		m_localRotation = RotationLocalToWorld(m_localRotation, m_Parent);
-		m_localScale = ScaleLocalToWorld(m_localScale, m_Parent);
-		m_HaveParent = false;
+		m_Location = PositionLocalToWorld(m_Location, m_Parent);
+		m_Rotation = RotationLocalToWorld(m_Rotation, m_Parent);
+		m_Scale = ScaleLocalToWorld(m_Scale, m_Parent);
 	}
 }
-
-
-
-
-
 
 fVec3 tf::PositionLocalToWorld(fVec3 localPos, Transform* pParentTransform)
 {

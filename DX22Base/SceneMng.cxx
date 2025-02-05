@@ -1,30 +1,37 @@
 #include "SceneMng.hxx"
 
-SceneMng::SceneMng()
+SceneManager::SceneManager()
 	: Singleton(UPDATE_ORDER::SECOND_UPDATE)
 	, m_NowScene()
 	, m_NextScene()
 	, m_LoadScenes()
+	, m_InitQueue()
 {
 
 }
 
-SceneMng::~SceneMng()
+SceneManager::~SceneManager()
 {
 	m_LoadScenes.clear();
 }
 
-bool SceneMng::Init()
+bool SceneManager::Init()
 {
 	return true;
 }
 
-void SceneMng::Update()
+void SceneManager::Update()
 {
 	if (m_NextScene){
 		m_NowScene.release();
 		m_NowScene = std::move(m_NextScene);
 	}
-	if(m_NowScene)
-		m_NowScene->Update();
+	if (m_NowScene) {
+		while(!m_InitQueue.empty())
+		{
+			m_InitQueue.front()->Init();
+			m_InitQueue.pop();
+		}
+		m_NowScene->UpdateChildren();
+	}
 }

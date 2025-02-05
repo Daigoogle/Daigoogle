@@ -80,20 +80,24 @@
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>$(ProjectDir);$(IncludePath)</IncludePath>
     <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\$(PlatformTarget)\$(Configuration)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <LibraryPath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Debug;C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\Win32\Release;$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\$(PlatformTarget)\$(Configuration)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\DirectXTex\x64\$(Configuration);$(ProjectDir)\DirectXTex\Win32\$(Configuration);$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\$(PlatformTarget)\$(Configuration)</ExternalIncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <IncludePath>C:\Users\kirar\Desktop\DX22Base\DX22Base;$(ProjectDir);C:\HAL\program\assimpS;$(IncludePath)</IncludePath>
     <LibraryPath>$(ProjectDir)\DirectXTex\x64\$(Configuration);$(LibraryPath)</LibraryPath>
+    <ExternalIncludePath>C:\HAL\Project\EmploymentWorks\DX22Base\DirectXTex\$(PlatformTarget)\$(Configuration)</ExternalIncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -213,8 +217,6 @@
     <ClCompile Include="easing.cpp" />
     <ClCompile Include="Effect.cpp" />
     <ClCompile Include="GameObject.cxx" />
-    <ClCompile Include="GameObjectInst.cxx" />
-    <ClCompile Include="GameObjectMng.cxx" />
     <ClCompile Include="InputDeviceManager.cpp" />
     <ClCompile Include="ItemUI.cpp" />
     <ClCompile Include="MeshBuffer.cpp" />
@@ -222,8 +224,7 @@
     <ClCompile Include="ModelData.cpp" />
     <ClCompile Include="Model.cxx" />
     <ClCompile Include="MoveEmitter.cpp" />
-    <ClCompile Include="ParsCmp.cxx" />
-    <ClCompile Include="ParticleCmp.cxx" />
+    <ClCompile Include="Object.cxx" />
     <ClCompile Include="Plane.cxx" />
     <ClCompile Include="Polyline.cpp" />
     <ClCompile Include="Render.cxx" />
@@ -268,17 +269,15 @@
     <ClInclude Include="Effect.h" />
     <ClInclude Include="ExVector.hxx" />
     <ClInclude Include="GameObject.hxx" />
-    <ClInclude Include="GameObjectInst.hxx" />
-    <ClInclude Include="GameObjectMng.hxx" />
     <ClInclude Include="InputDeviceManager.h" />
     <ClInclude Include="ItemUI.h" />
+    <ClInclude Include="Location.hxx" />
     <ClInclude Include="MeshBuffer.h" />
     <ClInclude Include="Geometory.h" />
     <ClInclude Include="ModelData.h" />
     <ClInclude Include="Model.hxx" />
     <ClInclude Include="MoveEmitter.h" />
-    <ClInclude Include="ParsCmp.hxx" />
-    <ClInclude Include="ParticleCmp.hxx" />
+    <ClInclude Include="Object.hxx" />
     <ClInclude Include="Plane.hxx" />
     <ClInclude Include="Polyline.h" />
     <ClInclude Include="Render.hxx" />

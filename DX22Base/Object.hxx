@@ -10,34 +10,45 @@
 
 // =-=-= インクルード部 =-=-=
 #include <deque>
+#include "Location.hxx"
 
-class GameObject;
-
-class Object
+class Object : virtual protected Location
 {
+	friend class SceneManager;
 public:
-	Object* GetParent()const { return m_pParent; }
-	Object* GetRootObject() { return (m_pParent ? m_pParent->GetRootObject() : this); }
+	Object* GetParent()const;
+	void AddChild(Object* pChild); 
+	
+	template <typename TypeObject, typename = std::enable_if_t<std::is_base_of_v<Object, TypeObject>>>
+	TypeObject& thisCreateObject() {
+		TypeObject* pObject = new TypeObject();
+		this->AddChild(pObject);
+		SceneManager::GetInstance().m_InitQueue.push(pObject);
+		return *pObject;
+	}
 
-	void AddChild(Object* pChild) { m_Children.push_back(pChild); };
+	virtual bool Init() = 0;
+	virtual void Update() = 0;
+	
+	void Delete();
+	void RemoveChild(Object*);
+
+	bool IsActive()const;
+	void SetActive(bool IsActive);
+
+	const ID GetID();
 
 protected:
 	Object();
 	virtual ~Object();
 
-	GameObject MakeObject();
 	void UpdateChildren();
-	void Delete();
-	void RemoveChild(Object*);
-
-	virtual void Update() = 0;
-
-	bool m_IsActive;
-
-	Object* m_pParent;
-	std::deque<Object*> m_Children;
 
 private:
+	bool m_IsActive;
+	unique_ID m_ID;
+	Object* m_pParent;
+	std::deque<Object*> m_Children;
 };
 
 #endif // !_____Object_HXX_____

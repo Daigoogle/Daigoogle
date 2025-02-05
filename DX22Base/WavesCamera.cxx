@@ -14,7 +14,7 @@ WavesCamera::~WavesCamera()
 
 bool WavesCamera::Init()
 {
-	m_Transform = GetGameObject().GetTransform();
+	m_Transform = GetGameObject()->GetTransform();
 	m_Transform->SetWorldPosition({ 0.0f, 2.75f, 0.0f });
 	m_Transform->SetWorldRotation({ -90.0f, 180.0f, 0.0f });
 	//m_look = Vec::ToXMFLOAT3(tf::RotationToVector(m_Transform->GetWorldRotation()) + m_Transform->GetWorldPosition());

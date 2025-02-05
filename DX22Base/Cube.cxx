@@ -100,7 +100,7 @@ bool Cube::Init()
 	m_pMeshBuffer = RenderMng::GetInstance().GetMeshBuffer(MESH_Cube);
 	m_VertexShader = RenderMng::GetInstance().GetVertexShader("Assets/Shader/Sprite3D_Defalt_VS.cso");
 	m_PixelShader = RenderMng::GetInstance().GetPixelShader("Assets/Shader/Sprite3D_Defalt_PS.cso");
-	m_Transform = GetGameObject().GetTransform();
+	m_Transform = GetGameObject()->GetTransform();
 	Render::InitSetting();
 	return true;
 }

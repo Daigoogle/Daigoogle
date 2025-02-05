@@ -1,6 +1,7 @@
 #ifndef ___CAMERA_H___
 #define ___CAMERA_H___
 
+#include <type_traits>
 #include <DirectXMath.h>
 #include "Transform.hxx"
 #include "Component.hxx"

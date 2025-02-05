@@ -10,21 +10,36 @@
 
 // =-=-= インクルード部 =-=-=
 #include "DebugRestriction.hxx"
+#include "Object.hxx"
+#include "Component.hxx"
 
-class GameObject;
-
-class SceneBase
+class SceneBase : public Object
 {
+	friend class SceneManager;
 public:
-	SceneBase() {}
+	SceneBase();
 	virtual ~SceneBase();
 
-	virtual bool Init() = 0;
-	virtual void Update() {}
+	void ReadFile(const std::string& path);
 
-	GameObject MakeObject();
+	Location& GetLocation() { return *this; }
+
+	template<typename TypeComp, typename = std::enable_if_t<std::is_base_of_v<Component, TypeComp>>>
+	TypeComp* AddSceneComponent()
+	{
+		std::unique_ptr<TypeComp> pComp(New(TypeComp));
+		pComp->m_pBaseObject = this;
+		m_SceneComponent = std::move(pComp);
+		return m_SceneComponent.get();
+	}
+
+	inline virtual void Update() override{}
 
 private:
+	void Loading(SceneBase** ppInstantChange);
+
+	bool m_LoadComplete;
+	std::unique_ptr<Component> m_SceneComponent;
 };
 
 #endif // !_____Class_HXX_____
